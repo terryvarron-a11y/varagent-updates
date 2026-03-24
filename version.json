@@ -1,8 +1,8 @@
 {
-  "version": "2026.03.24.2325",
+  "version": "2026.03.24.2327",
   "changelog": [
-    "updater.py: добавлена аутентификация через GITHUB_TOKEN для обхода rate limit (403 error)",
-    "agent/.env: добавлены ключи VeoNonStop API, KIE_AI_API_KEY, REMIX_ENGINE, dual-key режим"
+    "updater.py: фикс ошибки 'name data is undefined' при установке обновлений",
+    "updater.py: добавлена аутентификация через GITHUB_TOKEN для обхода rate limit (403 error)"
   ],
   "requires_restart": false,
   "files": {

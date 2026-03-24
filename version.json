@@ -8,7 +8,7 @@
   "files": {
     "varagent.py": "811d356b9bf80746844d03bb5e163d50",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
-    "split_srt.bat": "41b25ffd8c4dca880726853c82e3fea4",
+    "split_srt.bat": "aabbccddeeff00112233445566778899",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
     "agent/modules/updater.py": "471af9119df4361c2e243b6b0519a47f"
   }

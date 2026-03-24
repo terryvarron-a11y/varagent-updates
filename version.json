@@ -1,8 +1,8 @@
 {
-  "version": "2026.03.24.2330",
+  "version": "2026.03.24.2332",
   "changelog": [
-    "updater.py: фикс ошибки 'data is undefined' — теперь requires_restart инициализируется до загрузки version.json",
-    "updater.py: если version.json не загрузился, установка продолжается без requires_restart"
+    "updater.py: добавлен cache busting (?v=version) для patch.zip — теперь CDN не кэширует старую версию",
+    "updater.py: version.json загружается ПЕРЕД скачиванием патча для получения версии"
   ],
   "requires_restart": false,
   "files": {

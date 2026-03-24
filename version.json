@@ -1,28 +1,23 @@
 {
-  "version": "2026.03.24.1838",
+  "version": "2026.03.24.2030",
   "changelog": [
-    "Субтитры: автоматическое слияние SRT + ASS шаблона при выжигании",
-    "Два шаблона субтитров: subtitles_720p.ass и subtitles_1080p.ass",
-    "GUI: чекбокс Subtitles авто-выбирает шаблон по разрешению (720p/1080p)",
-    "GUI: редактирование ASS шаблонов прямо во вкладке Prompts",
-    "Кнопка Перезапустить GUI в вкладке Donate",
-    "Gemini: фелбек на другую модель после исчерпания ретраев (3.x→2.5-pro, 2.5-pro→3.1-pro)",
-    "Исправлен краш конката при выжигании субтитров (args.bitrate)"
+    "Логотип сдвинут ближе к углу для перекрытия Veo watermark",
+    "Размер субтитров увеличен до 38pt"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     "varagent.py": "6a16adfc952fd608e20bc5c3589c1dcf",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
     "agent/modules/updater.py": "ebfe21435953c0adfc26ceac26d46bf6",
-    "video_concat.py": "d7152eb18ee329723b3b61f2eb60edf3",
+    "video_concat.py": "944232519a8d6628a39b8b5e693add93",
     "agent/modules/director.py": "28ec3e589d742067a7c3d202ef16a329",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
     "agent/templates/process_1080p.txt": "904bba1d2dd719338a8e44ee80249f54",
     "agent/templates/process_1080p.command": "5ac61b1e5ec37eaac2d16a568a45d910",
-    "agent/templates/subtitles_720p.ass": "a71e70ea5446adfb73e9e85e2230b9e8",
-    "agent/templates/subtitles_1080p.ass": "a4e08f3259752f39b6dfb31dc52b9418"
+    "agent/templates/subtitles_720p.ass": "2241bc780df5affffe64aaf259a201c4",
+    "agent/templates/subtitles_1080p.ass": "beaaf884d6400afd6199263f4455b08c"
   }
 }

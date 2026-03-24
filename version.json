@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.25.0006",
+  "version": "2026.03.25.0015",
   "changelog": [
-    "Синхронизация varagent.py и split_srt.bat с версией в репозитории"
+    "README.md: тестовое обновление версии"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     "varagent.py": "2a23adaef2d6857ff45d6c79f6121c0b",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
@@ -17,6 +17,7 @@
     "agent/templates/process_1080p.txt": "904bba1d2dd719338a8e44ee80249f54",
     "agent/templates/process_1080p.command": "5ac61b1e5ec37eaac2d16a568a45d910",
     "agent/templates/subtitles_720p.ass": "2241bc780df5affffe64aaf259a201c4",
-    "agent/templates/subtitles_1080p.ass": "beaaf884d6400afd6199263f4455b08c"
+    "agent/templates/subtitles_1080p.ass": "beaaf884d6400afd6199263f4455b08c",
+    "README.md": "33f0a31bf1836cdeced8a6d7f7019caa"
   }
 }

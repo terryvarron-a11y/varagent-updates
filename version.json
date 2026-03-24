@@ -1,8 +1,8 @@
 {
-  "version": "2026.03.24.2332",
+  "version": "2026.03.24.2335",
   "changelog": [
-    "updater.py: добавлен cache busting (?v=version) для patch.zip — теперь CDN не кэширует старую версию",
-    "updater.py: version.json загружается ПЕРЕД скачиванием патча для получения версии"
+    "updater.py: patch.zip загружается через GitHub API (как и version.json) — CDN кэш больше не проблема",
+    "updater.py: убран cache busting ?v=version, теперь не нужен"
   ],
   "requires_restart": false,
   "files": {

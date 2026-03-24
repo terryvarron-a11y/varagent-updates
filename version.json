@@ -1,7 +1,8 @@
 {
-  "version": "2026.03.24.2346",
+  "version": "2026.03.24.2351",
   "changelog": [
-    "updater.py: ФИНАЛЬНЫЙ ФИКС - убрана ссылка на несуществующую переменную data в install_update()"
+    "updater.py: возвращена загрузка version.json в install_update() для requires_restart",
+    "updater.py: фикс - requires_restart инициализируется до использования"
   ],
   "requires_restart": false,
   "files": {
@@ -9,7 +10,7 @@
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
-    "agent/modules/updater.py": "d1370e5d7946eddd404308ff41a26998",
+    "agent/modules/updater.py": "4cc22dcf49aafacae00776fde56a47c2",
     "video_concat.py": "944232519a8d6628a39b8b5e693add93",
     "agent/modules/director.py": "28ec3e589d742067a7c3d202ef16a329",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",

@@ -1,11 +1,11 @@
 {
-  "version": "2026.03.25.1427",
+  "version": "2026.03.25.1441",
   "changelog": [
-    "Grok remix: 403 Cloudflare immediate fallback to KieAI, 429 retry with longer delays (30s/60s/90s), HTML garbage truncation in logs"
+    "Fix: REMIX_ENGINE checkbox now correctly passed to subprocess env (was written only to .env, not overriding os.environ)"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
-    "varagent.py": "aa6f13af8768729a2fdeffe874d06f31",
+    "varagent.py": "5897f02acbbda10c84ee8e7d793baf9c",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",

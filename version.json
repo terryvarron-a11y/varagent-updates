@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1814",
+  "version": "2026.03.25.1823",
   "changelog": [
-    "run_veo_i2v.txt/command: show single_prompt.txt content on startup"
+    "director.py: Gemini 15min timeout в†’ auto-fallback to alternate model (gen3в†”2.5-pro)"
   ],
   "requires_restart": false,
   "files": {
@@ -11,7 +11,7 @@
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
     "agent/modules/updater.py": "5bdd315d36e72fbfedc3214646d8056b",
     "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
-    "agent/modules/director.py": "28ec3e589d742067a7c3d202ef16a329",
+    "agent/modules/director.py": "bb5a270c9915c545b597a3d5e442986b",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
     "agent/templates/process_1080p.txt": "904bba1d2dd719338a8e44ee80249f54",

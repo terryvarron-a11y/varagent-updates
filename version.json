@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1516",
+  "version": "2026.03.25.1518",
   "changelog": [
-    "Auto-install Pillow if missing (ref size check)"
+    "Auto-install Pillow on module load in kieai.py (needed for ref resize and compression)"
   ],
   "requires_restart": false,
   "files": {
@@ -156,7 +156,7 @@
     "agent/modules/fastgen.py": "e7ebc967c04fcc4aae7b7560d57760ab",
     "agent/modules/gemini_rewrite.py": "d2ebf6b7921994d48cce43c66a624bcb",
     "agent/modules/imggen.py": "e68eca152dd7a6b21d1066accc7f0c32",
-    "agent/modules/kieai.py": "533f8910f1a457927300109f911257ca",
+    "agent/modules/kieai.py": "7a3fbc38b94388ac54af2d79690f74ba",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
     "agent/modules/ref_compress.py": "7eb7aa1744fbeaa3cfeaecc53259c691",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",

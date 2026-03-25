@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1518",
+  "version": "2026.03.25.1520",
   "changelog": [
-    "Auto-install Pillow on module load in kieai.py (needed for ref resize and compression)"
+    "Auto-install Pillow on startup of remix module (used by both KieAI and Grok ref processing)"
   ],
   "requires_restart": false,
   "files": {
@@ -29,7 +29,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "522a970753ba4620fe8bdb3eb356bcfa",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "bb6a5520cb1b326c71026b8b829b6719",
+    "agent/agent.py": "b26f7f5cc8c0205ab2005f6185a8b2aa",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -156,7 +156,7 @@
     "agent/modules/fastgen.py": "e7ebc967c04fcc4aae7b7560d57760ab",
     "agent/modules/gemini_rewrite.py": "d2ebf6b7921994d48cce43c66a624bcb",
     "agent/modules/imggen.py": "e68eca152dd7a6b21d1066accc7f0c32",
-    "agent/modules/kieai.py": "7a3fbc38b94388ac54af2d79690f74ba",
+    "agent/modules/kieai.py": "e63d71a615eeda98ac40af7295dc5524",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
     "agent/modules/ref_compress.py": "7eb7aa1744fbeaa3cfeaecc53259c691",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",

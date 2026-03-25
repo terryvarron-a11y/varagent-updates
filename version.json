@@ -1,11 +1,11 @@
 {
-  "version": "2026.03.25.0737",
+  "version": "2026.03.25.1324",
   "changelog": [
-    "Add: BrainstormTab (YouTube channel transcription via AssemblyAI), yt_transcriber module, yt-dlp.exe bundled"
+    "РџРµСЂРµС…РѕРґ veononstop.com в†’ veononstop.org (СЃРјРµРЅР° РґРѕРјРµРЅР° API)"
   ],
   "requires_restart": true,
   "files": {
-    "varagent.py": "ea6014ab2e53eb1dc2cc023cc505cf46",
+    "varagent.py": "aa6f13af8768729a2fdeffe874d06f31",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
@@ -30,11 +30,11 @@
     "1_silentstart.command": "522a970753ba4620fe8bdb3eb356bcfa",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
     "agent/agent.py": "bb6a5520cb1b326c71026b8b829b6719",
-    "agent/cancel_all.py": "b5b83ff7429561e21b7995aa937c1c15",
+    "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
-    "agent/check_slots.py": "8b82631eb25aa3850860f8fc46868cd3",
-    "agent/config.py": "cb1b54362e385232ae3dbf99b080ca9e",
+    "agent/check_slots.py": "be50fa4127dfe459a74d5bef800bbe5c",
+    "agent/config.py": "eeae7d209b6c6a00c9d81a82ff2f1ed8",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -164,7 +164,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "eafaceddb62548d4e6865bb1792295f3",
-    "agent/modules/veononstop.py": "61231a398153f72785ed2941116a347b",
+    "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "497c982ed613af421fbc0d6f4c901a98",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
@@ -211,7 +211,7 @@
     "agent/templates/start_veonon_gen.command": "82887b3cda9d51e2ca4e1faa5af31487",
     "agent/templates/start_yt_pack.command": "9670cdd55ee17e3556afb85c1bbfbcec",
     "agent/templates/start_yt_pack_interactive.command": "c490dab1452e0454ffbb6dba4415c9f1",
-    "agent/test_refs.py": "664d74e23b2b2b5c7e16651c90b92523",
+    "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "24a1714f0202e9a20b0b2648a0aec802",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
@@ -220,7 +220,7 @@
     "check_install.command": "fd92b2ff4b1f9776b93d6360679e8e51",
     "check_update_debug.py": "ee09fb9493c65199d237b9ae08c2414e",
     "check_version.py": "133c121fb9f2648388ddc7ca0f5e79be",
-    "debug/varagent.py": "e57f66926be39adc28edb3ffd63c50a4",
+    "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "ac8926c4cb40edff269e129237527c48",
     "install.bat": "c966a09d8c3d168c674364fc744d224e",
     "install.command": "91fcf8f15ce74c07ec1dd8d56459fd92",
@@ -230,7 +230,7 @@
     "photo_concat.py": "9de6c35af4c6d1b710cf97bffc7f34b3",
     "pipeline.bat": "52d8c770402d9ac6ca2e9b3e775926c6",
     "PIPELINE.md": "13628b259d56cb7a94094b279153cd75",
-    "project_init.py": "13cefc359679d0172b861501f1a275b0",
+    "project_init.py": "5d0eaf203185a0a66c2241eeb33b0d79",
     "README_MACOS.md": "21a25190c43dc601fc4365493e1c8cb4",
     "run_dogenerator.bat": "c975a8e1a721e27d5347da65706ffee3",
     "run_dogenerator.command": "c72b59ec830a6b7acb3ee5cb8e50c488",
@@ -247,6 +247,7 @@
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "agent/modules/yt_transcriber.py": "e8906cd7b3e52585c7606737f105342c",
-    "yt-dlp.exe": "4115d4623d7c068729a6c0b4c7629015"
+    "yt-dlp.exe": "4115d4623d7c068729a6c0b4c7629015",
+    "check_veo_key.py": "17964d2ff2ce74e6e9aef6af7240690d"
   }
 }

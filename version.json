@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.25.1828",
+  "version": "2026.03.25.1833",
   "changelog": [
-    "updater.py: raw URL fallback вЂ” fixes users stuck on VERSION_API error"
+    "Full sync patch: all files every update, excludes yt-dlp.exe вЂ” fixes stale files after missed patches"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     "varagent.py": "5897f02acbbda10c84ee8e7d793baf9c",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",

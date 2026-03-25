@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1809",
+  "version": "2026.03.25.1814",
   "changelog": [
-    "i2v: STATUS_FAILED 3x в†’ pause 90s в†’ retry 3x в†’ only then remix/rewrite"
+    "run_veo_i2v.txt/command: show single_prompt.txt content on startup"
   ],
   "requires_restart": false,
   "files": {
@@ -192,7 +192,7 @@
     "agent/templates/run_translate.txt": "9a30742b05c9c39046a50b6e8ae1da99",
     "agent/templates/run_variableconcat.txt": "821fecef97ab32aca5bac7b83f16b90d",
     "agent/templates/run_veo_components.txt": "c0455bc9320ca8acd9eca256e16bedb7",
-    "agent/templates/run_veo_i2v.txt": "94007301f2c76fcc4223453396e95b80",
+    "agent/templates/run_veo_i2v.txt": "70f66a3055cd0d7a32b868db20e4734c",
     "agent/templates/run_veo_imggen.txt": "6e7817da20adb9f3262ff749806ca42a",
     "agent/templates/run_veo_t2v.txt": "0d0895ee6342f62ca48698389e78da13",
     "agent/templates/run_veonon_gen.txt": "0509e461e2dd130ef6dc72823303f8b0",
@@ -205,7 +205,7 @@
     "agent/templates/start_translate.command": "fa78c9c6d9e208b91d60fd6ac3d1097c",
     "agent/templates/start_variableconcat.command": "2b0cc2816b8ec9f35d2c7f97b053715a",
     "agent/templates/start_veo_components.command": "8f81c7cffa3e6e3e45d5f694eb210a74",
-    "agent/templates/start_veo_i2v.command": "fe4c6d4146e5dd37645025147e8125c6",
+    "agent/templates/start_veo_i2v.command": "0cbbdd291a26f5f4f06ddc9d20223942",
     "agent/templates/start_veo_imggen.command": "cd6ae4b8e4ca1b2d2bffba6240b1d098",
     "agent/templates/start_veo_t2v.command": "d282a4a70c30566672621c8201b826e5",
     "agent/templates/start_veonon_gen.command": "82887b3cda9d51e2ca4e1faa5af31487",

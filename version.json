@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1827",
+  "version": "2026.03.25.1828",
   "changelog": [
-    "updater.py: fix VERSION_API undefined вЂ” was causing update check crash"
+    "updater.py: raw URL fallback вЂ” fixes users stuck on VERSION_API error"
   ],
   "requires_restart": false,
   "files": {
@@ -9,7 +9,7 @@
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
-    "agent/modules/updater.py": "bbb9e218caebb064d24852096e38290a",
+    "agent/modules/updater.py": "ea116f57fcd9f8f30fa42f5df19405e0",
     "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
     "agent/modules/director.py": "bb5a270c9915c545b597a3d5e442986b",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",

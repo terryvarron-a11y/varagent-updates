@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1447",
+  "version": "2026.03.25.1516",
   "changelog": [
-    "Fix updater: retry without token on 401 (expired GitHub token no longer breaks update check on public repo)"
+    "Auto-install Pillow if missing (ref size check)"
   ],
   "requires_restart": false,
   "files": {
@@ -9,7 +9,7 @@
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
-    "agent/modules/updater.py": "a9793fb98e05c8297c877788e5e22a2a",
+    "agent/modules/updater.py": "5bdd315d36e72fbfedc3214646d8056b",
     "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
     "agent/modules/director.py": "28ec3e589d742067a7c3d202ef16a329",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
@@ -158,7 +158,7 @@
     "agent/modules/imggen.py": "e68eca152dd7a6b21d1066accc7f0c32",
     "agent/modules/kieai.py": "533f8910f1a457927300109f911257ca",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
-    "agent/modules/ref_compress.py": "372254ba71b5cc8bcfe3d1271c862020",
+    "agent/modules/ref_compress.py": "7eb7aa1744fbeaa3cfeaecc53259c691",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",

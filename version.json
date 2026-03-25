@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.25.1833",
+  "version": "2026.03.25.1834",
   "changelog": [
-    "Full sync patch: all files every update, excludes yt-dlp.exe вЂ” fixes stale files after missed patches"
+    "publisher: requires_restart only when varagent.py MD5 actually changed"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     "varagent.py": "5897f02acbbda10c84ee8e7d793baf9c",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",

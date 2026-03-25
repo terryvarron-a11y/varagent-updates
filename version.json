@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1955",
+  "version": "2026.03.25.2047",
   "changelog": [
-    "Fix: update available loop вЂ” stale manifest entries (deleted files) no longer persist across publishes"
+    "Fix: Gemini fallback chain вЂ” correct model names + 2-level fallback (3.x->2.5-pro->3-pro-preview, 2.5-pro->3.1-pro-preview->3-pro-preview)"
   ],
   "requires_restart": false,
   "files": {
@@ -26,7 +26,7 @@
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
     "agent/find_missing_clips.py": "076858dda8baec215abe7dd838fdfa7c",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/director.py": "bb5a270c9915c545b597a3d5e442986b",
+    "agent/modules/director.py": "35b2f2623a9c624584d401c130c0282b",
     "agent/modules/fastgen.py": "02a6eb31b72f1d9f3cccc48759ffb345",
     "agent/modules/gemini_rewrite.py": "d2ebf6b7921994d48cce43c66a624bcb",
     "agent/modules/imggen.py": "45c22c15d5f328d0ecd766473a83ac82",

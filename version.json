@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.2047",
+  "version": "2026.03.25.2235",
   "changelog": [
-    "Fix: Gemini fallback chain вЂ” correct model names + 2-level fallback (3.x->2.5-pro->3-pro-preview, 2.5-pro->3.1-pro-preview->3-pro-preview)"
+    "Fix: install.command вЂ” Homebrew Python 3.14 PEP 668 compatibility (pip3 fallback + --break-system-packages retry)"
   ],
   "requires_restart": false,
   "files": {
@@ -107,7 +107,7 @@
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "ac8926c4cb40edff269e129237527c48",
     "install.bat": "c966a09d8c3d168c674364fc744d224e",
-    "install.command": "91fcf8f15ce74c07ec1dd8d56459fd92",
+    "install.command": "e8710aed9982fb48cc23d4a2effd4cf3",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",
     "install_ffmpeg.bat": "8f889306561ac9c4c286ebd61fb094c8",
     "install_ffmpeg.command": "0d2a42638cd601e638be816ebbfb33d4",

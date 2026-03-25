@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.26.0052",
+  "version": "2026.03.26.0054",
   "changelog": [
-    "Fix: Full clipboard support in Settings fields вЂ” Ctrl+V/C/X/Z/A + right-click menu"
+    "Fix: Added Undo to right-click context menu in Settings fields"
   ],
   "requires_restart": true,
   "files": {
@@ -131,7 +131,7 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "5c56716e4a9b20185fb7b80c1afd5182",
+    "varagent.py": "3c3f09f44e3328a8df2f3b1f96cf16c8",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

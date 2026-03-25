@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1834",
+  "version": "2026.03.25.1844",
   "changelog": [
-    "publisher: requires_restart only when varagent.py MD5 actually changed"
+    "STATUS_FAILED round 2 fix: 3x fail -> 90s pause -> 3x more attempts before censorship detection"
   ],
   "requires_restart": false,
   "files": {
@@ -163,7 +163,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "b07dc749386cefe6239957b216045a45",
+    "agent/modules/veo_video.py": "11917a66b4d084e4aaa0ba43b7e7b705",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "497c982ed613af421fbc0d6f4c901a98",

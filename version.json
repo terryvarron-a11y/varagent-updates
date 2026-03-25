@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.1520",
+  "version": "2026.03.25.1524",
   "changelog": [
-    "Auto-install Pillow on startup of remix module (used by both KieAI and Grok ref processing)"
+    "Rename kieai.py -> remix.py (module handles both KieAI and Grok engines)"
   ],
   "requires_restart": false,
   "files": {
@@ -153,9 +153,9 @@
     "agent/logs/agent_20260325_051116.log": "088fc3ff260f0864dd41ddc5656210e1",
     "agent/logs/agent_20260325_051217.log": "0f6d646f34ad3dbfb5c1a4e854b5f1b9",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/fastgen.py": "e7ebc967c04fcc4aae7b7560d57760ab",
+    "agent/modules/fastgen.py": "02a6eb31b72f1d9f3cccc48759ffb345",
     "agent/modules/gemini_rewrite.py": "d2ebf6b7921994d48cce43c66a624bcb",
-    "agent/modules/imggen.py": "e68eca152dd7a6b21d1066accc7f0c32",
+    "agent/modules/imggen.py": "45c22c15d5f328d0ecd766473a83ac82",
     "agent/modules/kieai.py": "e63d71a615eeda98ac40af7295dc5524",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
     "agent/modules/ref_compress.py": "7eb7aa1744fbeaa3cfeaecc53259c691",
@@ -163,7 +163,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "eafaceddb62548d4e6865bb1792295f3",
+    "agent/modules/veo_video.py": "dfa4d34015cef67d84130db6b0824059",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "497c982ed613af421fbc0d6f4c901a98",
@@ -248,6 +248,7 @@
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "agent/modules/yt_transcriber.py": "e8906cd7b3e52585c7606737f105342c",
     "yt-dlp.exe": "4115d4623d7c068729a6c0b4c7629015",
-    "check_veo_key.py": "17964d2ff2ce74e6e9aef6af7240690d"
+    "check_veo_key.py": "17964d2ff2ce74e6e9aef6af7240690d",
+    "agent/modules/remix.py": "e63d71a615eeda98ac40af7295dc5524"
   }
 }

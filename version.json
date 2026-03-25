@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.25.2235",
+  "version": "2026.03.25.2236",
   "changelog": [
-    "Fix: install.command вЂ” Homebrew Python 3.14 PEP 668 compatibility (pip3 fallback + --break-system-packages retry)"
+    "Fix: install.command вЂ” auto-install tkinter via brew (python-tk@3.14 for Homebrew Python)"
   ],
   "requires_restart": false,
   "files": {
@@ -107,7 +107,7 @@
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "ac8926c4cb40edff269e129237527c48",
     "install.bat": "c966a09d8c3d168c674364fc744d224e",
-    "install.command": "e8710aed9982fb48cc23d4a2effd4cf3",
+    "install.command": "18f22f629bb1ddead7c47a09c1123def",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",
     "install_ffmpeg.bat": "8f889306561ac9c4c286ebd61fb094c8",
     "install_ffmpeg.command": "0d2a42638cd601e638be816ebbfb33d4",

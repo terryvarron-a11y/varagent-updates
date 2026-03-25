@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.25.1324",
+  "version": "2026.03.25.1358",
   "changelog": [
-    "РџРµСЂРµС…РѕРґ veononstop.com в†’ veononstop.org (СЃРјРµРЅР° РґРѕРјРµРЅР° API)"
+    "Fix: FastGen HTML error responses truncated in logs (Cloudflare/5xx no longer floods log)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     "varagent.py": "aa6f13af8768729a2fdeffe874d06f31",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
@@ -153,7 +153,7 @@
     "agent/logs/agent_20260325_051116.log": "088fc3ff260f0864dd41ddc5656210e1",
     "agent/logs/agent_20260325_051217.log": "0f6d646f34ad3dbfb5c1a4e854b5f1b9",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/fastgen.py": "98953b078de26966b47d4dcce969e59e",
+    "agent/modules/fastgen.py": "e7ebc967c04fcc4aae7b7560d57760ab",
     "agent/modules/gemini_rewrite.py": "d2ebf6b7921994d48cce43c66a624bcb",
     "agent/modules/imggen.py": "e68eca152dd7a6b21d1066accc7f0c32",
     "agent/modules/kieai.py": "4e5cb35ed4ce462d81a64b6557c9d49f",

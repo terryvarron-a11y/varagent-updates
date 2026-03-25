@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.26.0054",
+  "version": "2026.03.26.0154",
   "changelog": [
-    "Fix: Added Undo to right-click context menu in Settings fields"
+    "Fix: 1080p mode was passing invalid -r 1080 flag, now uses --force-reprocess"
   ],
   "requires_restart": true,
   "files": {
@@ -105,7 +105,7 @@
     "check_veo_key.py": "17964d2ff2ce74e6e9aef6af7240690d",
     "check_version.py": "133c121fb9f2648388ddc7ca0f5e79be",
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
-    "debug/video_concat.py": "ac8926c4cb40edff269e129237527c48",
+    "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
     "install.bat": "c966a09d8c3d168c674364fc744d224e",
     "install.command": "501c62006b1c961308e4b3dba6ddaa49",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",
@@ -131,9 +131,9 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "3c3f09f44e3328a8df2f3b1f96cf16c8",
+    "varagent.py": "720f7002cec09bc30b9d0f798c3b9b30",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
+    "video_concat.py": "515c65b609009e8089dbff5b47b06f03",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

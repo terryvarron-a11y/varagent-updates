@@ -1,15 +1,15 @@
 {
-  "version": "2026.03.25.1441",
+  "version": "2026.03.25.1447",
   "changelog": [
-    "Fix: REMIX_ENGINE checkbox now correctly passed to subprocess env (was written only to .env, not overriding os.environ)"
+    "Fix updater: retry without token on 401 (expired GitHub token no longer breaks update check on public repo)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     "varagent.py": "5897f02acbbda10c84ee8e7d793baf9c",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
-    "agent/modules/updater.py": "4cc22dcf49aafacae00776fde56a47c2",
+    "agent/modules/updater.py": "a9793fb98e05c8297c877788e5e22a2a",
     "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
     "agent/modules/director.py": "28ec3e589d742067a7c3d202ef16a329",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",

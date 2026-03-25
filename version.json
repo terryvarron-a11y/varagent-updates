@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.25.0531",
+  "version": "2026.03.25.0538",
   "changelog": [
-    "Fix: temp_processed folder now auto-deleted after concat when Keep Retime Files is unchecked"
+    "Fix: subtitle font size increased to 42 in both 720p and 1080p ASS templates"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     "varagent.py": "2a23adaef2d6857ff45d6c79f6121c0b",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
@@ -16,8 +16,8 @@
     "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
     "agent/templates/process_1080p.txt": "904bba1d2dd719338a8e44ee80249f54",
     "agent/templates/process_1080p.command": "5ac61b1e5ec37eaac2d16a568a45d910",
-    "agent/templates/subtitles_720p.ass": "2241bc780df5affffe64aaf259a201c4",
-    "agent/templates/subtitles_1080p.ass": "beaaf884d6400afd6199263f4455b08c",
+    "agent/templates/subtitles_720p.ass": "c9c3c5cb0f817d3852670aa3ea1eeda8",
+    "agent/templates/subtitles_1080p.ass": "4e33a7d53b823412dc4f528b7f4a95f4",
     "README.md": "33f0a31bf1836cdeced8a6d7f7019caa",
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

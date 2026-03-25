@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.25.2236",
+  "version": "2026.03.26.0034",
   "changelog": [
-    "Fix: install.command вЂ” auto-install tkinter via brew (python-tk@3.14 for Homebrew Python)"
+    "Fix: Settings tab вЂ” Cmd+V paste works in API key fields on macOS"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -107,7 +107,7 @@
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "ac8926c4cb40edff269e129237527c48",
     "install.bat": "c966a09d8c3d168c674364fc744d224e",
-    "install.command": "18f22f629bb1ddead7c47a09c1123def",
+    "install.command": "501c62006b1c961308e4b3dba6ddaa49",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",
     "install_ffmpeg.bat": "8f889306561ac9c4c286ebd61fb094c8",
     "install_ffmpeg.command": "0d2a42638cd601e638be816ebbfb33d4",
@@ -131,7 +131,7 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "5897f02acbbda10c84ee8e7d793baf9c",
+    "varagent.py": "5c2730c3de8823cdc694e5f369f35936",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "65e37d65993a3a9bdafe70e36c8102ec",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

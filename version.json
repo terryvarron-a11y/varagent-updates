@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.26.0154",
+  "version": "2026.03.26.1209",
   "changelog": [
-    "Fix: 1080p mode was passing invalid -r 1080 flag, now uses --force-reprocess"
+    "Feat: Interactive choice for missing fragments in process_*_interactive.command вЂ” [1] show prompts or [2] copy images to vid_img"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -59,10 +59,10 @@
     "agent/requirements.txt": "7c19d04a02d84f87c7c5e84fea2fe0db",
     "agent/templates/process_1080p.command": "5ac61b1e5ec37eaac2d16a568a45d910",
     "agent/templates/process_1080p.txt": "904bba1d2dd719338a8e44ee80249f54",
-    "agent/templates/process_1080p_interactive.command": "7b74cd24b9576922b39376b3ea9260f3",
+    "agent/templates/process_1080p_interactive.command": "4e60bc024a6f53241ed6245f4203b230",
     "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
-    "agent/templates/process_fast_interactive.command": "ac0285805b8bda081ef8bd202170f9fa",
+    "agent/templates/process_fast_interactive.command": "9ba1c79b91fc6600ba14e60b4e0cdbb7",
     "agent/templates/run_director.txt": "c25f9676037a3138c7e4ae2a5bed38c3",
     "agent/templates/run_dogenerator.txt": "c940b76c89b73108af213f9c5530a109",
     "agent/templates/run_fastgen_veo_i2v.txt": "7747977c2c7b690508aa0feec9257728",

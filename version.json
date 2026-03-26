@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.26.1808",
+  "version": "2026.03.26.1809",
   "changelog": [
-    "Fix: NameError _DROPDOWN_OPTIONS -> ENV_DROPDOWN_OPTIONS in GUI settings"
+    "i2v: rewrite/remix цепочка сокращена (2 реврайта + 2 ремикса вместо 3+3); новые настройки в .env и GUI Settings: VEONONSTOP_MAX_RETRIES, VEONONSTOP_MAX_SILENT_CYCLES, VEONONSTOP_FAST_CENSOR (off / after_rewrites / ultrafast)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

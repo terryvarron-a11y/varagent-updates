@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.26.1242",
+  "version": "2026.03.26.1806",
   "changelog": [
-    "Feat: rewrite_prompt.txt вЂ” added point 4 to scan and soften additional Veo triggers"
+    "i2v: rewrite/remix С†РµРїРѕС‡РєР° СЃРѕРєСЂР°С‰РµРЅР° (2 СЂРµРІСЂР°Р№С‚Р° + 2 СЂРµРјРёРєСЃР° РІРјРµСЃС‚Рѕ 3+3); РЅРѕРІС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё РІ .env Рё GUI Settings: VEONONSTOP_MAX_RETRIES, VEONONSTOP_MAX_SILENT_CYCLES, VEONONSTOP_FAST_CENSOR (off / after_rewrites / ultrafast)"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "be50fa4127dfe459a74d5bef800bbe5c",
-    "agent/config.py": "eeae7d209b6c6a00c9d81a82ff2f1ed8",
+    "agent/config.py": "a7d617090e9f0c2b5a1eda5971886cd1",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -39,7 +39,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "ea116f57fcd9f8f30fa42f5df19405e0",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "3656a09b86a8830f7551ebbf96e6349e",
+    "agent/modules/veo_video.py": "e8710992e9815c445ed3264a5fe2573f",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "497c982ed613af421fbc0d6f4c901a98",
@@ -106,7 +106,7 @@
     "check_version.py": "133c121fb9f2648388ddc7ca0f5e79be",
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
-    "install.bat": "c966a09d8c3d168c674364fc744d224e",
+    "install.bat": "0c998cbe87ff8e61bb07435ee85f7619",
     "install.command": "501c62006b1c961308e4b3dba6ddaa49",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",
     "install_ffmpeg.bat": "8f889306561ac9c4c286ebd61fb094c8",
@@ -131,7 +131,7 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "720f7002cec09bc30b9d0f798c3b9b30",
+    "varagent.py": "faa06797fa71a61cb6ea57f233e05cf0",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "515c65b609009e8089dbff5b47b06f03",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.26.1806",
+  "version": "2026.03.26.1808",
   "changelog": [
-    "i2v: rewrite/remix С†РµРїРѕС‡РєР° СЃРѕРєСЂР°С‰РµРЅР° (2 СЂРµРІСЂР°Р№С‚Р° + 2 СЂРµРјРёРєСЃР° РІРјРµСЃС‚Рѕ 3+3); РЅРѕРІС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё РІ .env Рё GUI Settings: VEONONSTOP_MAX_RETRIES, VEONONSTOP_MAX_SILENT_CYCLES, VEONONSTOP_FAST_CENSOR (off / after_rewrites / ultrafast)"
+    "Fix: NameError _DROPDOWN_OPTIONS -> ENV_DROPDOWN_OPTIONS in GUI settings"
   ],
   "requires_restart": true,
   "files": {
@@ -131,7 +131,7 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "faa06797fa71a61cb6ea57f233e05cf0",
+    "varagent.py": "44e96d40d746e42bb04fc2352a3b39cf",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "515c65b609009e8089dbff5b47b06f03",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

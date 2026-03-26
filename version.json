@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.26.1818",
+  "version": "2026.03.26.1927",
   "changelog": [
-    "Add update.bat + update.command — emergency update files that work even if varagent.py fails to launch"
+    "Fix: video_concat.py auto-finds ffmpeg/ffprobe after winget install (no restart needed)"
   ],
   "requires_restart": false,
   "files": {
@@ -135,7 +135,7 @@
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
     "varagent.py": "44e96d40d746e42bb04fc2352a3b39cf",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "515c65b609009e8089dbff5b47b06f03",
+    "video_concat.py": "285bc4f8bc80526852fcb58953d37d19",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

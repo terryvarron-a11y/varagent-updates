@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.26.1209",
+  "version": "2026.03.26.1218",
   "changelog": [
-    "Feat: Interactive choice for missing fragments in process_*_interactive.command вЂ” [1] show prompts or [2] copy images to vid_img"
+    "Fix: invalid_argument in phase2 rewrites no longer breaks early вЂ” now continues to image remix"
   ],
   "requires_restart": false,
   "files": {
@@ -39,7 +39,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "ea116f57fcd9f8f30fa42f5df19405e0",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "11917a66b4d084e4aaa0ba43b7e7b705",
+    "agent/modules/veo_video.py": "3656a09b86a8830f7551ebbf96e6349e",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "497c982ed613af421fbc0d6f4c901a98",

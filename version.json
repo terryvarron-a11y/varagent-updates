@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.26.1218",
+  "version": "2026.03.26.1242",
   "changelog": [
-    "Fix: invalid_argument in phase2 rewrites no longer breaks early вЂ” now continues to image remix"
+    "Feat: rewrite_prompt.txt вЂ” added point 4 to scan and soften additional Veo triggers"
   ],
   "requires_restart": false,
   "files": {
@@ -50,7 +50,7 @@
     "agent/prompts/director_pause_guide.txt": "2b2742f0d1bb530924b4a9040b5c3d31",
     "agent/prompts/i2v_remix_prompt.txt": "464eeead9545818550256b181ababeca",
     "agent/prompts/ref_remix_prompt.txt": "db3f438d6f5ca7d9d4c9d9701a76fa58",
-    "agent/prompts/rewrite_prompt.txt": "7db10be5e46e029805d062886b1f518d",
+    "agent/prompts/rewrite_prompt.txt": "841570253b4b3f60e712df8a774ec041",
     "agent/prompts/script_director_prose.txt": "ed9cdd900d783815058908280458fd18",
     "agent/prompts/script_director_screenplay.txt": "596583992050f75a9f60d958389c7aeb",
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",

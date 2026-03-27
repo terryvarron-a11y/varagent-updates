@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.27.0546",
+  "version": "2026.03.27.0548",
   "changelog": [
     "Presets: save/load named pipeline presets + per-file preset assignment"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

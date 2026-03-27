@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.28.0005",
+  "version": "2026.03.28.0107",
   "changelog": [
-    "Hotfix: GUI не запускается после обновления — config.VEONONSTOP_MAX_RETRIES missing"
+    "4 keys support: dynamic key selector, spinbox limits, show buttons in settings, layout fixes"
   ],
   "requires_restart": true,
   "files": {
@@ -134,7 +134,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "e6763eb8b80febfc4ec971534bd8d625",
+    "varagent.py": "04586ad890e12544e4bd8be3fbbb09b3",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "285bc4f8bc80526852fcb58953d37d19",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

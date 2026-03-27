@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.27.0409",
+  "version": "2026.03.27.0546",
   "changelog": [
-    "Rename: Skipper mod -> Skiper mod in Settings GUI"
+    "Presets: save/load named pipeline presets + per-file preset assignment"
   ],
   "requires_restart": true,
   "files": {
@@ -133,7 +133,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "059f6c5d7b4808314365e2fa59eea6d5",
+    "varagent.py": "86fab437c56b887fd5d687b241c8655e",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "285bc4f8bc80526852fcb58953d37d19",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

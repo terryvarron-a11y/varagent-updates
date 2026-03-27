@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.27.0141",
+  "version": "2026.03.27.0408",
   "changelog": [
-    "Rename: Censor → Skipper mode in Settings GUI"
+    "Rename: Skipper mode -> Skipper mod in Settings GUI"
   ],
   "requires_restart": true,
   "files": {
@@ -93,7 +93,7 @@
     "agent/templates/start_yt_pack.command": "9670cdd55ee17e3556afb85c1bbfbcec",
     "agent/templates/start_yt_pack_interactive.command": "c490dab1452e0454ffbb6dba4415c9f1",
     "agent/templates/subtitles_1080p.ass": "4e33a7d53b823412dc4f528b7f4a95f4",
-    "agent/templates/subtitles_720p.ass": "c9c3c5cb0f817d3852670aa3ea1eeda8",
+    "agent/templates/subtitles_720p.ass": "5371c7aea61e53c9adbd2f2055aaa566",
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "24a1714f0202e9a20b0b2648a0aec802",
@@ -133,7 +133,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "fc2da0999c25c170df4caba006928b67",
+    "varagent.py": "d1a0d9f4141f4ee9dc5655b76a992621",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "285bc4f8bc80526852fcb58953d37d19",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

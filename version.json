@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.28.0117",
+  "version": "2026.03.28.0129",
   "changelog": [
-    "Hotfix: imggen NameError dual_key after 4-key refactor"
+    "Hotfix: imggen NameError client not defined after 4-key refactor"
   ],
   "requires_restart": false,
   "files": {
@@ -29,7 +29,7 @@
     "agent/modules/director.py": "35b2f2623a9c624584d401c130c0282b",
     "agent/modules/fastgen.py": "02a6eb31b72f1d9f3cccc48759ffb345",
     "agent/modules/gemini_rewrite.py": "d2ebf6b7921994d48cce43c66a624bcb",
-    "agent/modules/imggen.py": "0edbf735417b9afee92da6d2f88d3302",
+    "agent/modules/imggen.py": "36e56d43428a2281b60ad6391e8a2e06",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
     "agent/modules/ref_compress.py": "7eb7aa1744fbeaa3cfeaecc53259c691",
     "agent/modules/remix.py": "e63d71a615eeda98ac40af7295dc5524",

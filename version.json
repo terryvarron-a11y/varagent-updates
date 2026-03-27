@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.27.1928",
+  "version": "2026.03.27.1932",
   "changelog": [
-    "Fix: updater.py не устанавливал файлы в подпапки на macOS (Path separator bug)"
+    "Fix: fix_macos.command — emergency restore for macOS broken subfolders after update"
   ],
   "requires_restart": false,
   "files": {
@@ -106,6 +106,7 @@
     "check_version.py": "133c121fb9f2648388ddc7ca0f5e79be",
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
+    "fix_macos.command": "ccf69aad2da976431565f5e096c5b893",
     "install.bat": "0c998cbe87ff8e61bb07435ee85f7619",
     "install.command": "501c62006b1c961308e4b3dba6ddaa49",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",

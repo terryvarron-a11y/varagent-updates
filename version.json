@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.28.0129",
+  "version": "2026.03.28.0311",
   "changelog": [
-    "Hotfix: imggen NameError client not defined after 4-key refactor"
+    "Hotfix: _resolve_veo_key not accessible from cmd_generate/cmd_img2video — moved to module level"
   ],
   "requires_restart": false,
   "files": {
@@ -15,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "522a970753ba4620fe8bdb3eb356bcfa",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "f25eea2c7302647dbde81882936d3f26",
+    "agent/agent.py": "3d9cb136b62f7cbe5eb742b0e21be888",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",

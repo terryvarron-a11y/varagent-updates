@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.28.2137",
+  "version": "2026.03.28.2140",
   "changelog": [
-    "UI: Delete button in Control Panel — remove selected projects from disk with confirmation dialog"
+    "Fix: missing Key3/Key4 lines now auto-added to agent/.env on app start and after update (patch_env migration)"
   ],
   "requires_restart": true,
   "files": {
@@ -37,7 +37,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
-    "agent/modules/updater.py": "0721cff8c8ec1faeeaeabd4df923693f",
+    "agent/modules/updater.py": "70c0c6cc9f27a218182aa47d790447ce",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "1e2d63f3d8100b5599b0ce7d69d28a66",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
@@ -134,7 +134,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "874357af4584a7e7af564c03fbb8539d",
+    "varagent.py": "ca713919b6ec12ce02f0b9e6e2e84af8",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "285bc4f8bc80526852fcb58953d37d19",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

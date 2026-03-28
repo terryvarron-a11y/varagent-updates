@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.28.2202",
+  "version": "2026.03.28.2303",
   "changelog": [
-    "Fix: Control Panel key selector now supports Key1-Key4 + All in VideoGen, ImageGen, and Pipeline Mode finalize panel"
+    "Fix: Director Pass 1 chunk coverage — sub-chunking with cursor, model fallback on stall, filler clips in autofix for uncovered gaps"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -26,7 +26,7 @@
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
     "agent/find_missing_clips.py": "076858dda8baec215abe7dd838fdfa7c",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/director.py": "35b2f2623a9c624584d401c130c0282b",
+    "agent/modules/director.py": "281209d06bc489decd411e4658730e83",
     "agent/modules/fastgen.py": "02a6eb31b72f1d9f3cccc48759ffb345",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "76fd1ac242e158f0e2d4d5b0c757c144",

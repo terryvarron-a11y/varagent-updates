@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.28.2303",
+  "version": "2026.03.28.2308",
   "changelog": [
-    "Fix: Director Pass 1 chunk coverage — sub-chunking with cursor, model fallback on stall, filler clips in autofix for uncovered gaps"
+    "Fix: subtitle burn-in crash on macOS with non-ASCII paths — copy .ass to temp dir with safe name before ffmpeg"
   ],
   "requires_restart": false,
   "files": {
@@ -136,7 +136,7 @@
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
     "varagent.py": "3b437b5cc1ecbc1b2a0a3f7ec6cc7617",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "285bc4f8bc80526852fcb58953d37d19",
+    "video_concat.py": "0993851f6897993ffc26e9714248a0f3",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

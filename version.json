@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.28.2308",
+  "version": "2026.03.29.0828",
   "changelog": [
-    "Fix: subtitle burn-in crash on macOS with non-ASCII paths — copy .ass to temp dir with safe name before ffmpeg"
+    "Fix: SRT subtitles now enforced <=50 chars per line (_split_phrases was unused, now called after _merge_to_phrases)"
   ],
   "requires_restart": false,
   "files": {
@@ -35,7 +35,7 @@
     "agent/modules/remix.py": "e63d71a615eeda98ac40af7295dc5524",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
-    "agent/modules/transcriber.py": "208be25b134dd263bf3b01a00b87d9f7",
+    "agent/modules/transcriber.py": "6e23b64a9657f780928a434100300fe5",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "70c0c6cc9f27a218182aa47d790447ce",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",

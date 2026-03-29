@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.29.2158",
+  "version": "2026.03.29.2201",
   "changelog": [
-    "Fix: remove stale --force-reprocess from all 3 GUI concat paths in varagent.py"
+    "Fix: macOS .command subtitle path — split into if/else branches to avoid broken quoting in SUB_ARG"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -59,10 +59,10 @@
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
     "agent/requirements.txt": "7c19d04a02d84f87c7c5e84fea2fe0db",
-    "agent/templates/process_1080p.command": "639f9eaf922d9b3609de15569fa14c19",
+    "agent/templates/process_1080p.command": "ebac5427491f43839887dea4899b4d30",
     "agent/templates/process_1080p.txt": "700e43485898b6fc4931044797723e5e",
-    "agent/templates/process_1080p_interactive.command": "10df68ec565352235bf7b0d77fcad4a6",
-    "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
+    "agent/templates/process_1080p_interactive.command": "7d3c93554f49fee1b3a09e7d64cfc7ef",
+    "agent/templates/process_fast.command": "88782c303879ad5f85a42ff1813f303c",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast_interactive.command": "9ba1c79b91fc6600ba14e60b4e0cdbb7",
     "agent/templates/run_director.txt": "c25f9676037a3138c7e4ae2a5bed38c3",

@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.0107",
+  "version": "2026.03.30.0117",
   "changelog": [
-    "Fix: full clipboard support for all Entry fields — Ctrl+V/C/X/A/Z keyboard + right-click menu with Undo (uses event_generate for Tk virtual events)"
+    "Fix: Ctrl+V/C/X/A/Z now works on Russian keyboard layout (keycode-based detection), right-click context menu, replaced gemini-2.0-flash-exp with gemini-2.5-flash"
   ],
   "requires_restart": true,
   "files": {
@@ -136,7 +136,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "b4362988e08eab495f4d59eaf79aacf6",
+    "varagent.py": "b4e027a0566ff8f32eacfee0bf5987cc",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "7505764a9b65d0f23569e40adfb4790d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.29.1137",
+  "version": "2026.03.29.1150",
   "changelog": [
-    "Fix: concat progress bar (AAC/Сборка %), Gemini model in presets, fallback chain 3.1->2.5->150s->3.1->300s->2.5, sub-chunking с курсором в Pass1, filler clips вместо растяжки, STATUS_FAILED threshold, T2V static fallback->Banana, Key3/Key4 в .env, удаление проектов, 4-ключевые селекторы, SRT <=50 chars, шрифт Book Antiqua при апдейте"
+    "Fix: process_1080p upscale to 1920x1080 (-r 1080 flag), subtitle path fix (copy to /tmp for non-ASCII project names), process_1080p_interactive.command missing flags restored"
   ],
   "requires_restart": true,
   "files": {
@@ -59,9 +59,9 @@
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
     "agent/requirements.txt": "7c19d04a02d84f87c7c5e84fea2fe0db",
-    "agent/templates/process_1080p.command": "5ac61b1e5ec37eaac2d16a568a45d910",
-    "agent/templates/process_1080p.txt": "904bba1d2dd719338a8e44ee80249f54",
-    "agent/templates/process_1080p_interactive.command": "4e60bc024a6f53241ed6245f4203b230",
+    "agent/templates/process_1080p.command": "e944b259d03032239fbf80409e35d07b",
+    "agent/templates/process_1080p.txt": "a52c7ef4b8152987571afa1109388e72",
+    "agent/templates/process_1080p_interactive.command": "90919af54badffff7464066a9f25f44c",
     "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast_interactive.command": "9ba1c79b91fc6600ba14e60b4e0cdbb7",
@@ -136,9 +136,9 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "0f3ef4270573037f18e997562e29ed29",
+    "varagent.py": "4b423e732707089447f3fa1290f99061",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "0993851f6897993ffc26e9714248a0f3",
+    "video_concat.py": "f159fa31ee6ca328d1473dd49ba8c6e7",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

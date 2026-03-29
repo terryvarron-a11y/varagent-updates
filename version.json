@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.29.0828",
+  "version": "2026.03.29.0902",
   "changelog": [
-    "Fix: SRT subtitles now enforced <=50 chars per line (_split_phrases was unused, now called after _merge_to_phrases)"
+    "Feature: auto-install Book Antiqua font on update (agent/fonts/ -> user fonts dir, Win/Mac/Linux)"
   ],
   "requires_restart": false,
   "files": {
@@ -25,6 +25,8 @@
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
     "agent/find_missing_clips.py": "076858dda8baec215abe7dd838fdfa7c",
+    "agent/fonts/BookAntiqua.ttf": "4267d8aa8711bb8c72cbefb26066c9e0",
+    "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/director.py": "281209d06bc489decd411e4658730e83",
     "agent/modules/fastgen.py": "02a6eb31b72f1d9f3cccc48759ffb345",
@@ -37,7 +39,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "6e23b64a9657f780928a434100300fe5",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
-    "agent/modules/updater.py": "70c0c6cc9f27a218182aa47d790447ce",
+    "agent/modules/updater.py": "27a766ea12f412b09cf25fa174041385",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "1e2d63f3d8100b5599b0ce7d69d28a66",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",

@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.29.1537",
+  "version": "2026.03.29.1551",
   "changelog": [
-    "Fix: intro block duration limit removed (0-9999s instead of 0-120s)"
+    "Feature: multi-key selection via checkboxes (any combo of Key1-Key4) for imggen and videogen"
   ],
   "requires_restart": true,
   "files": {
@@ -136,7 +136,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "469a6158dd90a9230f73039780d9d0bd",
+    "varagent.py": "3af8fd474de74937fe8468adb2551411",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f847966c16da26f257354c5422aa1caa",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.29.0902",
+  "version": "2026.03.29.1007",
   "changelog": [
-    "Feature: auto-install Book Antiqua font on update (agent/fonts/ -> user fonts dir, Win/Mac/Linux)"
+    "Feature: Gemini model selector in Pipeline Tab + presets; updated pricing (gemini-3-flash-preview); fallback chain: orig→alt→150s→orig→300s→alt→fail; removed deprecated gemini-3-pro-preview; incremental key limit fetch with retry"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "6c2e410ff36e0e30e1057c62c9db362d",
+    "agent/config.py": "fcd9dc88bb353f31bbb1a11975559ce6",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -28,7 +28,7 @@
     "agent/fonts/BookAntiqua.ttf": "4267d8aa8711bb8c72cbefb26066c9e0",
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/director.py": "281209d06bc489decd411e4658730e83",
+    "agent/modules/director.py": "d5dd7df72b1fdd13d939f72f1f854e10",
     "agent/modules/fastgen.py": "02a6eb31b72f1d9f3cccc48759ffb345",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "76fd1ac242e158f0e2d4d5b0c757c144",
@@ -136,7 +136,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "3b437b5cc1ecbc1b2a0a3f7ec6cc7617",
+    "varagent.py": "d6fcdf127bc00f89379e1477bc3739fb",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "0993851f6897993ffc26e9714248a0f3",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

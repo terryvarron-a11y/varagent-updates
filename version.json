@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.29.1007",
+  "version": "2026.03.29.1137",
   "changelog": [
-    "Feature: Gemini model selector in Pipeline Tab + presets; updated pricing (gemini-3-flash-preview); fallback chain: orig→alt→150s→orig→300s→alt→fail; removed deprecated gemini-3-pro-preview; incremental key limit fetch with retry"
+    "Fix: concat progress bar (AAC/Сборка %), Gemini model in presets, fallback chain 3.1->2.5->150s->3.1->300s->2.5, sub-chunking с курсором в Pass1, filler clips вместо растяжки, STATUS_FAILED threshold, T2V static fallback->Banana, Key3/Key4 в .env, удаление проектов, 4-ключевые селекторы, SRT <=50 chars, шрифт Book Antiqua при апдейте"
   ],
   "requires_restart": true,
   "files": {
@@ -136,7 +136,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "d6fcdf127bc00f89379e1477bc3739fb",
+    "varagent.py": "0f3ef4270573037f18e997562e29ed29",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "0993851f6897993ffc26e9714248a0f3",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

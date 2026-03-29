@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.29.1502",
+  "version": "2026.03.29.1507",
   "changelog": [
-    "Fix: subtitle burn-in exit 234 on macOS — add fontsdir= pointing to agent/fonts/ so libass finds Book Antiqua"
+    "Fix: 1080p smart cache — reuse existing 1920x1080 clips, re-encode only 720p ones; remove --force-reprocess; subtitle fontsdir fix"
   ],
   "requires_restart": false,
   "files": {
@@ -59,9 +59,9 @@
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
     "agent/requirements.txt": "7c19d04a02d84f87c7c5e84fea2fe0db",
-    "agent/templates/process_1080p.command": "e944b259d03032239fbf80409e35d07b",
-    "agent/templates/process_1080p.txt": "a52c7ef4b8152987571afa1109388e72",
-    "agent/templates/process_1080p_interactive.command": "90919af54badffff7464066a9f25f44c",
+    "agent/templates/process_1080p.command": "639f9eaf922d9b3609de15569fa14c19",
+    "agent/templates/process_1080p.txt": "700e43485898b6fc4931044797723e5e",
+    "agent/templates/process_1080p_interactive.command": "10df68ec565352235bf7b0d77fcad4a6",
     "agent/templates/process_fast.command": "a2f357b724f573b513f8c8807bd83192",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast_interactive.command": "9ba1c79b91fc6600ba14e60b4e0cdbb7",
@@ -138,7 +138,7 @@
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
     "varagent.py": "45a8cbbbdadfbb006d730fa4ab119425",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "ac3c1c91d68a21fb3b565d449fbc6ef0",
+    "video_concat.py": "f847966c16da26f257354c5422aa1caa",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

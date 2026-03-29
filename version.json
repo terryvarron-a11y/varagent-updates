@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.29.1150",
+  "version": "2026.03.29.1220",
   "changelog": [
-    "Fix: process_1080p upscale to 1920x1080 (-r 1080 flag), subtitle path fix (copy to /tmp for non-ASCII project names), process_1080p_interactive.command missing flags restored"
+    "Feature: YT Packer cover provider selector (FastGen / VeoNonStop) + model selector, refs mapped as base64 for VeoNonStop"
   ],
   "requires_restart": true,
   "files": {
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "fcd9dc88bb353f31bbb1a11975559ce6",
+    "agent/config.py": "4bcef03cdd4b8cff1442ce7f24fd4a83",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -44,7 +44,7 @@
     "agent/modules/veo_video.py": "1e2d63f3d8100b5599b0ce7d69d28a66",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
-    "agent/modules/yt_packer.py": "497c982ed613af421fbc0d6f4c901a98",
+    "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
     "agent/modules/yt_transcriber.py": "e8906cd7b3e52585c7606737f105342c",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "bc77a442d02f737f972a7a4f0439146a",
@@ -136,7 +136,7 @@
     "update.command": "935c4f308768016d4f7a70e219a406a9",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
-    "varagent.py": "4b423e732707089447f3fa1290f99061",
+    "varagent.py": "45a8cbbbdadfbb006d730fa4ab119425",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f159fa31ee6ca328d1473dd49ba8c6e7",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

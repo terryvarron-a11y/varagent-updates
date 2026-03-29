@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.29.1551",
+  "version": "2026.03.29.2157",
   "changelog": [
-    "Feature: multi-key selection via checkboxes (any combo of Key1-Key4) for imggen and videogen"
+    "Fix: upscale_1080 NameError in video_concat.py — use args.resolution"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -138,7 +138,7 @@
     "varagent.command": "9fd83833263d9d9a8c0e94a5172e9d54",
     "varagent.py": "3af8fd474de74937fe8468adb2551411",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "f847966c16da26f257354c5422aa1caa",
+    "video_concat.py": "7505764a9b65d0f23569e40adfb4790d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

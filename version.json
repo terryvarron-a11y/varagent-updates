@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.1958",
+  "version": "2026.03.30.2001",
   "changelog": [
-    "Fix: macOS endless update loop — path separator was Windows-only backslash, now uses Path() cross-platform"
+    "Fix: update.bat/.command self-heals updater.py from GitHub before checking — breaks chicken-egg loop on macOS"
   ],
   "requires_restart": false,
   "files": {
@@ -133,8 +133,8 @@
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "START_HERE.md": "970fec509b6e2f2c6baa9227b902ee28",
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
-    "update.bat": "f1aeaddbf27de0892aa6d631418898c0",
-    "update.command": "935c4f308768016d4f7a70e219a406a9",
+    "update.bat": "59c6354bc324d54da95457f3f599d627",
+    "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "e4914a94033e98b4dc6d884c34d206c9",
     "varagent.py": "c381848fdad3cceca71296c869bc01c8",

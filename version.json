@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.2008",
+  "version": "2026.03.30.2014",
   "changelog": [
-    "Fix: ref image size limit 1.5MB -> 2.0MB"
+    "Fix: ref size limit 5MB default (VeoNonStop), 2MB only for FastGen"
   ],
   "requires_restart": false,
   "files": {
@@ -15,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "522a970753ba4620fe8bdb3eb356bcfa",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "3d9cb136b62f7cbe5eb742b0e21be888",
+    "agent/agent.py": "04c2b1890595842d102213be5a4e2151",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -33,7 +33,7 @@
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "0681421f2f73bcfba4317f9010f21b7d",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
-    "agent/modules/ref_compress.py": "e826f224be981005fcf22aeefec2a25d",
+    "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",

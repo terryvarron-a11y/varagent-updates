@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.1810",
+  "version": "2026.03.30.1950",
   "changelog": [
-    "Fix: varagent.command auto-installs missing packages, install_arm.bat for ARM64 Windows, remix KieAI->Grok fallback"
+    "Fix: VeoNonStop new error codes (PUBLIC_ERROR_DANGER_FILTER, PROMINENT_PEOPLE_FILTER, IP_INPUT_IMAGE, AUDIO_FILTERED, UNSAFE_GENERATION) now trigger Gemini rewrite instead of silent fail"
   ],
   "requires_restart": false,
   "files": {
@@ -41,7 +41,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "4e3b27fc09dc3f9bee1d6d495a03f12c",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "1e2d63f3d8100b5599b0ce7d69d28a66",
+    "agent/modules/veo_video.py": "a7e7785a374c6719fe1bc245add80279",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -58,7 +58,7 @@
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
-    "agent/requirements.txt": "7c19d04a02d84f87c7c5e84fea2fe0db",
+    "agent/requirements.txt": "8a30d3bb4892aec359a4ed0e034a1bfb",
     "agent/templates/process_1080p.command": "ebac5427491f43839887dea4899b4d30",
     "agent/templates/process_1080p.txt": "700e43485898b6fc4931044797723e5e",
     "agent/templates/process_1080p_interactive.command": "7d3c93554f49fee1b3a09e7d64cfc7ef",
@@ -110,7 +110,7 @@
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
     "fix_macos.command": "ccf69aad2da976431565f5e096c5b893",
     "install.bat": "0c998cbe87ff8e61bb07435ee85f7619",
-    "install.command": "501c62006b1c961308e4b3dba6ddaa49",
+    "install.command": "033a4dca80e96d1e96879df767120506",
     "install_arm.bat": "956bdd0e2e3a49b26c8fe69dfaff820a",
     "install_colorama.command": "c9274c4341e42f809b47259800dbc830",
     "install_ffmpeg.bat": "8f889306561ac9c4c286ebd61fb094c8",

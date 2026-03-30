@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.30.0117",
+  "version": "2026.03.30.1212",
   "changelog": [
-    "Fix: Ctrl+V/C/X/A/Z now works on Russian keyboard layout (keycode-based detection), right-click context menu, replaced gemini-2.0-flash-exp with gemini-2.5-flash"
+    "Fix: auto-upgrade ASSEMBLYAI_SPEECH_MODELS from universal-3-pro to universal-3-pro,universal-2 in user .env on update"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -39,7 +39,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "6e23b64a9657f780928a434100300fe5",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
-    "agent/modules/updater.py": "27a766ea12f412b09cf25fa174041385",
+    "agent/modules/updater.py": "ae1f74d74da50706373ec7ebda297cd0",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "1e2d63f3d8100b5599b0ce7d69d28a66",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",

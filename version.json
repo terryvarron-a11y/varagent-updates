@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.2014",
+  "version": "2026.03.30.2100",
   "changelog": [
-    "Fix: ref size limit 5MB default (VeoNonStop), 2MB only for FastGen"
+    "Fix: varagent.command finds Python 3.10+ explicitly (Homebrew first) — fixes crash on macOS with system Python 3.9"
   ],
   "requires_restart": false,
   "files": {
@@ -136,7 +136,7 @@
     "update.bat": "59c6354bc324d54da95457f3f599d627",
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
-    "varagent.command": "e4914a94033e98b4dc6d884c34d206c9",
+    "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
     "varagent.py": "c381848fdad3cceca71296c869bc01c8",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "7505764a9b65d0f23569e40adfb4790d",

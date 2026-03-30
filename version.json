@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.2001",
+  "version": "2026.03.30.2008",
   "changelog": [
-    "Fix: update.bat/.command self-heals updater.py from GitHub before checking — breaks chicken-egg loop on macOS"
+    "Fix: ref image size limit 1.5MB -> 2.0MB"
   ],
   "requires_restart": false,
   "files": {
@@ -33,7 +33,7 @@
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "0681421f2f73bcfba4317f9010f21b7d",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
-    "agent/modules/ref_compress.py": "7eb7aa1744fbeaa3cfeaecc53259c691",
+    "agent/modules/ref_compress.py": "e826f224be981005fcf22aeefec2a25d",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",

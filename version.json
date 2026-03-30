@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.30.1222",
+  "version": "2026.03.30.1227",
   "changelog": [
-    "Fix: Settings Save .env now appends new keys edited in GUI that were missing from file; patch_env adds KIE_AI_API_KEY on update"
+    "Fix: patch_env fills empty keys with defaults (KIE_AI_API_KEY etc.) — not just missing keys"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -39,7 +39,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "6e23b64a9657f780928a434100300fe5",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
-    "agent/modules/updater.py": "7400f1d229fdd3732b14e8eb21f84bae",
+    "agent/modules/updater.py": "4e3b27fc09dc3f9bee1d6d495a03f12c",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "1e2d63f3d8100b5599b0ce7d69d28a66",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",

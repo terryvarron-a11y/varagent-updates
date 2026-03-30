@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.30.1951",
+  "version": "2026.03.30.1958",
   "changelog": [
-    "Fix: VeoNonStop error codes added to imggen.py censorship keywords (triggers rewrite for image generation too)"
+    "Fix: macOS endless update loop — path separator was Windows-only backslash, now uses Path() cross-platform"
   ],
   "requires_restart": false,
   "files": {
@@ -39,7 +39,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "6e23b64a9657f780928a434100300fe5",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
-    "agent/modules/updater.py": "4e3b27fc09dc3f9bee1d6d495a03f12c",
+    "agent/modules/updater.py": "81796f07cbf0ee95320ef702336cbe9b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "a7e7785a374c6719fe1bc245add80279",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",

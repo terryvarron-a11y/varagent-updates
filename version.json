@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.31.0852",
+  "version": "2026.03.31.0919",
   "changelog": [
-    "Fix: Control panel Finalize — multi-key checkboxes for ImageGen/VideoGen, auto parallel count, _veo_key_options combos"
+    "Feature: VideoGen prompt mode selector (per-clip / single) in Finalize panel and quick-run dialog"
   ],
   "requires_restart": true,
   "files": {
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "d3b56196c151e944b7c976dedb4b4e8c",
+    "varagent.py": "e01598406efad3e3b3dc87147fe53328",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "7505764a9b65d0f23569e40adfb4790d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

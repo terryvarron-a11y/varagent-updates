@@ -1,9 +1,9 @@
 {
-  "version": "2026.03.30.2100",
+  "version": "2026.03.31.0839",
   "changelog": [
-    "Fix: varagent.command finds Python 3.10+ explicitly (Homebrew first) — fixes crash on macOS with system Python 3.9"
+    "Fix: watch_i2v INFLIGHT crash on multi-key slot (1,2), _resolve_veo_key comma-separated support"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -15,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "522a970753ba4620fe8bdb3eb356bcfa",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "04c2b1890595842d102213be5a4e2151",
+    "agent/agent.py": "f9c9c8d77414f973be581208d6160c6d",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -98,7 +98,7 @@
     "agent/templates/subtitles_720p.ass": "5371c7aea61e53c9adbd2f2055aaa566",
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
-    "agent/watch_i2v.py": "24a1714f0202e9a20b0b2648a0aec802",
+    "agent/watch_i2v.py": "06a3e1c9bb8df72770d291cf75f3bc17",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "db1dc94efdc16c4892d5aec37a496c2c",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "c381848fdad3cceca71296c869bc01c8",
+    "varagent.py": "ac1e12bb8678b50874c2ac06e1ca35ce",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "7505764a9b65d0f23569e40adfb4790d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

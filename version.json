@@ -1,7 +1,7 @@
 {
-  "version": "2026.03.31.0839",
+  "version": "2026.03.31.0852",
   "changelog": [
-    "Fix: watch_i2v INFLIGHT crash on multi-key slot (1,2), _resolve_veo_key comma-separated support"
+    "Fix: Control panel Finalize — multi-key checkboxes for ImageGen/VideoGen, auto parallel count, _veo_key_options combos"
   ],
   "requires_restart": true,
   "files": {
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "ac1e12bb8678b50874c2ac06e1ca35ce",
+    "varagent.py": "d3b56196c151e944b7c976dedb4b4e8c",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "7505764a9b65d0f23569e40adfb4790d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

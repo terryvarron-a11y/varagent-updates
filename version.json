@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.0807",
+  "version": "2026.04.01.0812",
   "changelog": [
-    "Fix: Control Panel scroll layout - inner frame fills full width, no split columns"
+    "Finalize: components ref picker - file selector instead of dir, all image formats, copies to project/ref/"
   ],
   "requires_restart": true,
   "files": {
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "20eb00e5efe4f189afa316910d8d0bf0",
+    "varagent.py": "83a77541c8c283194cd00adbf86db1b2",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f7abf8c7af12f1336dbd62e9bdbcdd0c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

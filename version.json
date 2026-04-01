@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.0812",
+  "version": "2026.04.01.0822",
   "changelog": [
-    "Finalize: components ref picker - file selector instead of dir, all image formats, copies to project/ref/"
+    "FPS selector: --fps flag in video_concat.py (24/25/30/50/60), GUI combobox in Pipeline + Control Panel + Finalize"
   ],
   "requires_restart": true,
   "files": {
@@ -137,9 +137,9 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "83a77541c8c283194cd00adbf86db1b2",
+    "varagent.py": "8185bb020713db449ceca9f9f0a4d30f",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "f7abf8c7af12f1336dbd62e9bdbcdd0c",
+    "video_concat.py": "1392b2df524436b335031956677376a8",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

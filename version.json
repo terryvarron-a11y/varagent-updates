@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.0949",
+  "version": "2026.04.01.1010",
   "changelog": [
-    "Concat output now appended to pipeline_full.log (was missing from full log)"
+    "Fix: Finalize stops if VideoGen produces 0 clips (no blind Concat on empty vid_img), check result"
   ],
   "requires_restart": true,
   "files": {
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "63ac378cb67c7f4812f4c50adeddf896",
+    "varagent.py": "8adc1c0e81072fe1e63714f5b470464d",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

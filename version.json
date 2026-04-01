@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.01.1106",
+  "version": "2026.04.01.1109",
   "changelog": [
-    "Finalize: img ref picker for banana_ref, skip preflight checkbox, ref copy for both ImageGen+VideoGen"
+    "Fix preflight: distinguish network vs censorship failure, skip on Banana API down (components uses VeoNonStop)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -41,7 +41,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "81796f07cbf0ee95320ef702336cbe9b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "efd5e80b881a0990b1b078c776128b82",
+    "agent/modules/veo_video.py": "d900a89bc06d2346c705ec5013867a2b",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

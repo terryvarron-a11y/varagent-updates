@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.01.1213",
+  "version": "2026.04.01.1232",
   "changelog": [
-    "Fix: AssemblyAI upload timeout — increased http_timeout from 30s to 300s"
+    "Fix: imggen semaphore mp//3, Stop button cancels server tasks, transcriber retry 'timed out'"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "95d7605c7183168728f8560a7c7906ca",
+    "agent/config.py": "5562f3ce729e854646087d7c63ba942c",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -31,17 +31,17 @@
     "agent/modules/director.py": "74ac77e2a707d74109c1d8a17b9f5f52",
     "agent/modules/fastgen.py": "975732cb59ecf9addd14fd7a1b0be3c6",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
-    "agent/modules/imggen.py": "0681421f2f73bcfba4317f9010f21b7d",
+    "agent/modules/imggen.py": "3950d8aa87c15ca28dc4b67392bf742d",
     "agent/modules/queue.py": "fe1ef75ac1344dcc80e9c17206c9552a",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
-    "agent/modules/transcriber.py": "a2c52746a9892e4a338ba9435e62fce5",
+    "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "81796f07cbf0ee95320ef702336cbe9b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "9b6edad354aa19776380a8de3fa4b083",
+    "agent/modules/veo_video.py": "7cd49be525679c603156af638e506506",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "39c33ef70c8c19a9118cd4d17da40766",
+    "varagent.py": "e30fc64df0c27727899b901adf97895c",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

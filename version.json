@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.0758",
+  "version": "2026.04.01.0804",
   "changelog": [
-    "Vislide mode: new clip mode (every Nth clip animated, rest Ken Burns), intro block always animated, static fallback copy, script subcommand support, finalize panel vislide filtering + components ref_dir picker"
+    "Control Panel: scrollable layout for small screens (laptops)"
   ],
   "requires_restart": true,
   "files": {
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "f0282fd2014bf82521debf87e76583fa",
+    "varagent.py": "e01048b4c6372be7ba60e28fb93dfada",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f7abf8c7af12f1336dbd62e9bdbcdd0c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

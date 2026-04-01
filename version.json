@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.1726",
+  "version": "2026.04.01.1837",
   "changelog": [
-    "Fix: server 5xx errors no longer consume retry attempts in imggen"
+    "Fix: updater.py Python 3.9 compat (str|None -> Optional[str])"
   ],
   "requires_restart": false,
   "files": {
@@ -39,7 +39,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
-    "agent/modules/updater.py": "3d38c4731ec9a4a31f19aa362d12d943",
+    "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "7cd49be525679c603156af638e506506",
     "agent/modules/veononstop.py": "b84a4c8373b531fae87d715e22acf074",

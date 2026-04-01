@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.01.1112",
+  "version": "2026.04.01.1213",
   "changelog": [
-    "Finalize: Skipper mode (off/after_rewrites/ultrafast), dynamic remix engine name, img ref picker for banana_ref"
+    "Fix: AssemblyAI upload timeout — increased http_timeout from 30s to 300s"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "aafec15d56c926f314bff39ece7294f2",
+    "agent/config.py": "95d7605c7183168728f8560a7c7906ca",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -37,7 +37,7 @@
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
-    "agent/modules/transcriber.py": "6e23b64a9657f780928a434100300fe5",
+    "agent/modules/transcriber.py": "a2c52746a9892e4a338ba9435e62fce5",
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "81796f07cbf0ee95320ef702336cbe9b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",

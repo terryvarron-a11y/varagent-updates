@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.1037",
+  "version": "2026.04.01.1059",
   "changelog": [
-    "Fix: fallback model sticks for remaining chunks (no bounce back to hung original model)"
+    "Fix: fallback chain uses original model name, smart chain direction based on current model"
   ],
   "requires_restart": false,
   "files": {
@@ -28,7 +28,7 @@
     "agent/fonts/BookAntiqua.ttf": "4267d8aa8711bb8c72cbefb26066c9e0",
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/director.py": "17e8a676778533b27f56cef7e84ea2db",
+    "agent/modules/director.py": "74ac77e2a707d74109c1d8a17b9f5f52",
     "agent/modules/fastgen.py": "975732cb59ecf9addd14fd7a1b0be3c6",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "0681421f2f73bcfba4317f9010f21b7d",

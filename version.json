@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.1019",
+  "version": "2026.04.01.1037",
   "changelog": [
-    "Preflight: skip via checkbox (VARAGENT_SKIP_PREFLIGHT env var), not force-disabled"
+    "Fix: fallback model sticks for remaining chunks (no bounce back to hung original model)"
   ],
   "requires_restart": false,
   "files": {
@@ -28,7 +28,7 @@
     "agent/fonts/BookAntiqua.ttf": "4267d8aa8711bb8c72cbefb26066c9e0",
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
-    "agent/modules/director.py": "d5dd7df72b1fdd13d939f72f1f854e10",
+    "agent/modules/director.py": "17e8a676778533b27f56cef7e84ea2db",
     "agent/modules/fastgen.py": "975732cb59ecf9addd14fd7a1b0be3c6",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "0681421f2f73bcfba4317f9010f21b7d",

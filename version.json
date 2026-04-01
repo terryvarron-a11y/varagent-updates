@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.0822",
+  "version": "2026.04.01.0823",
   "changelog": [
-    "FPS selector: --fps flag in video_concat.py (24/25/30/50/60), GUI combobox in Pipeline + Control Panel + Finalize"
+    "Fix: Finalize VideoGen components - ref copy before capture_stdout, inline vislide logic (no agent import)"
   ],
   "requires_restart": true,
   "files": {
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "8185bb020713db449ceca9f9f0a4d30f",
+    "varagent.py": "78bc1b8dae7b1d53e5520d96b82edd6f",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "1392b2df524436b335031956677376a8",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

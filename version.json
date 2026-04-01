@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.01.0823",
+  "version": "2026.04.01.0846",
   "changelog": [
-    "Fix: Finalize VideoGen components - ref copy before capture_stdout, inline vislide logic (no agent import)"
+    "Increase HUNG_TASK_TIMEOUT 120->300s (components multi-image upload needs more time), key selection in t2v+components templates"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -41,7 +41,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "81796f07cbf0ee95320ef702336cbe9b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "a7e7785a374c6719fe1bc245add80279",
+    "agent/modules/veo_video.py": "1133c6b87934935a43d0072241b9a84c",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -74,10 +74,10 @@
     "agent/templates/run_photo.txt": "eb55e09f3fd460de2855a74db0e07922",
     "agent/templates/run_translate.txt": "9a30742b05c9c39046a50b6e8ae1da99",
     "agent/templates/run_variableconcat.txt": "821fecef97ab32aca5bac7b83f16b90d",
-    "agent/templates/run_veo_components.txt": "c0455bc9320ca8acd9eca256e16bedb7",
+    "agent/templates/run_veo_components.txt": "1b598e101763073e57f7b78c8819d35f",
     "agent/templates/run_veo_i2v.txt": "ee2b52db76e65ffb69cc486af2847ec5",
     "agent/templates/run_veo_imggen.txt": "528c1c9a35a6b45b53c85f1027a18216",
-    "agent/templates/run_veo_t2v.txt": "0d0895ee6342f62ca48698389e78da13",
+    "agent/templates/run_veo_t2v.txt": "ede45f28cab20afc68ffbc1c993fd23f",
     "agent/templates/run_veonon_gen.txt": "a17c31bf24af8ed6661f0b3932d690dd",
     "agent/templates/run_yt_pack.txt": "b5e7537fc80ec668dc2feea168da311d",
     "agent/templates/start_director.command": "c20f2508b2c635ff388b7f24a064fc65",
@@ -87,10 +87,10 @@
     "agent/templates/start_photo.command": "4c084daf92e2c9ef89d6946b1fe5c2bb",
     "agent/templates/start_translate.command": "fa78c9c6d9e208b91d60fd6ac3d1097c",
     "agent/templates/start_variableconcat.command": "2b0cc2816b8ec9f35d2c7f97b053715a",
-    "agent/templates/start_veo_components.command": "8f81c7cffa3e6e3e45d5f694eb210a74",
+    "agent/templates/start_veo_components.command": "b026320eb0efe1bd81bcf9bd1ef454a8",
     "agent/templates/start_veo_i2v.command": "0cbbdd291a26f5f4f06ddc9d20223942",
     "agent/templates/start_veo_imggen.command": "cd6ae4b8e4ca1b2d2bffba6240b1d098",
-    "agent/templates/start_veo_t2v.command": "d282a4a70c30566672621c8201b826e5",
+    "agent/templates/start_veo_t2v.command": "a0547a1de9de6aaab5c571b999b973dd",
     "agent/templates/start_veonon_gen.command": "5608dc478212632c0a56ece56e1d079c",
     "agent/templates/start_yt_pack.command": "9670cdd55ee17e3556afb85c1bbfbcec",
     "agent/templates/start_yt_pack_interactive.command": "c490dab1452e0454ffbb6dba4415c9f1",

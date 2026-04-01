@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.0939",
+  "version": "2026.04.01.0947",
   "changelog": [
-    "Concat: debug logging for audio file search (cwd, found files) to diagnose macOS issues"
+    "Fix: concat audio search case-insensitive (*.MP3, *.WAV etc for macOS case-sensitive APFS)"
   ],
   "requires_restart": false,
   "files": {
@@ -139,7 +139,7 @@
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
     "varagent.py": "78bc1b8dae7b1d53e5520d96b82edd6f",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "e32676e8d495ed97ec9e46030dcddcda",
+    "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

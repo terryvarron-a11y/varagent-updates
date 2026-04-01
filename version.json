@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.1010",
+  "version": "2026.04.01.1016",
   "changelog": [
-    "Fix: Finalize stops if VideoGen produces 0 clips (no blind Concat on empty vid_img), check result"
+    "Fix preflight: 503/502 treated as network errors (retry), API-down stops generation, skip preflight checkbox in GUI, 3 retries"
   ],
   "requires_restart": true,
   "files": {
@@ -41,7 +41,7 @@
     "agent/modules/tts.py": "8ff5dfac024b7a4839f6fb2eafdc846a",
     "agent/modules/updater.py": "81796f07cbf0ee95320ef702336cbe9b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "1133c6b87934935a43d0072241b9a84c",
+    "agent/modules/veo_video.py": "efd5e80b881a0990b1b078c776128b82",
     "agent/modules/veononstop.py": "12c00eeacef0c8d663af7ff278a94431",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "8adc1c0e81072fe1e63714f5b470464d",
+    "varagent.py": "6df2c9efe7c183457dc2b135b194cf99",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

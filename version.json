@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.01.1016",
+  "version": "2026.04.01.1019",
   "changelog": [
-    "Fix preflight: 503/502 treated as network errors (retry), API-down stops generation, skip preflight checkbox in GUI, 3 retries"
+    "Preflight: skip via checkbox (VARAGENT_SKIP_PREFLIGHT env var), not force-disabled"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

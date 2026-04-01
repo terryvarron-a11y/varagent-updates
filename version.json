@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.01.0947",
+  "version": "2026.04.01.0949",
   "changelog": [
-    "Fix: concat audio search case-insensitive (*.MP3, *.WAV etc for macOS case-sensitive APFS)"
+    "Concat output now appended to pipeline_full.log (was missing from full log)"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -137,7 +137,7 @@
     "update.command": "674974f8b379f97b43343e0c75387126",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "78bc1b8dae7b1d53e5520d96b82edd6f",
+    "varagent.py": "63ac378cb67c7f4812f4c50adeddf896",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

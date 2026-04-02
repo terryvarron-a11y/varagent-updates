@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.01.1916",
+  "version": "2026.04.02.0859",
   "changelog": [
-    "Fix: all config attrs use getattr with defaults, immune to old config.py or __pycache__"
+    "Feature: Image upscale (2K/4K) + Video upscale (1080p) in imggen and videogen"
   ],
   "requires_restart": true,
   "files": {
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "5562f3ce729e854646087d7c63ba942c",
+    "agent/config.py": "30b55fea6ad69212ca3928a64a714d75",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -31,7 +31,7 @@
     "agent/modules/director.py": "c3395531afbacdb7484a5d9ac873b198",
     "agent/modules/fastgen.py": "975732cb59ecf9addd14fd7a1b0be3c6",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
-    "agent/modules/imggen.py": "90d80a2dfc0f3c23a7530b93a3576e6a",
+    "agent/modules/imggen.py": "d3f53a6a78e87783a8f5bdcbf9862e20",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
@@ -41,8 +41,8 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "7cd49be525679c603156af638e506506",
-    "agent/modules/veononstop.py": "b84a4c8373b531fae87d715e22acf074",
+    "agent/modules/veo_video.py": "b44841856027949b4db351ef4521aa74",
+    "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
     "agent/modules/yt_transcriber.py": "e8906cd7b3e52585c7606737f105342c",
@@ -136,10 +136,9 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "update.bat": "59c6354bc324d54da95457f3f599d627",
     "update.command": "87b9c595e9abf95d69d5ee6e9ab6cbac",
-    "update.rar": "17868a6efd7c65666897817f3d24e5c4",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "7e9ec062d5f54b04bc2540195aa4d620",
+    "varagent.py": "a675b2ea955ec6bbfd7dcd35c3f7ae50",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

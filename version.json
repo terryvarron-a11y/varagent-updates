@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.02.1913",
+  "version": "2026.04.02.1926",
   "changelog": [
-    "Fix: fastgen silent param, finalize passes silent=True + --no-cleanup from keep_files, concat EOF auto-deletes temp"
+    "Fix: concat fps hardcode 60→param (desync fix), keep_files checkbox in Control Panel, fastgen silent param"
   ],
   "requires_restart": true,
   "files": {
@@ -138,9 +138,9 @@
     "update.command": "87b9c595e9abf95d69d5ee6e9ab6cbac",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "092eab5df8b63c8eb13288fe96c19c51",
+    "varagent.py": "bb0f2db959a0219a258d76c83383c1b6",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "b8a7b2d26ef04402eee977af4f630753",
+    "video_concat.py": "f60d50883ab68afde59012dc877e3b3c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

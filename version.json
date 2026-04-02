@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.02.0859",
+  "version": "2026.04.02.0913",
   "changelog": [
-    "Feature: Image upscale (2K/4K) + Video upscale (1080p) in imggen and videogen"
+    "UX: 1080p concat disabled when Video Upscale on, auto-detect in separate Concat"
   ],
   "requires_restart": true,
   "files": {
@@ -138,7 +138,7 @@
     "update.command": "87b9c595e9abf95d69d5ee6e9ab6cbac",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "a675b2ea955ec6bbfd7dcd35c3f7ae50",
+    "varagent.py": "7c56786990c07a79a72924d172160a65",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "e47d73171e95aa3c6fcfd8ab248ab2d9",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

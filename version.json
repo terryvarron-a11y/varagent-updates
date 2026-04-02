@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.02.1538",
+  "version": "2026.04.02.1737",
   "changelog": [
-    "Fix: vislide mode activating when clip_mode=video (argparse default=3 leaked into env)"
+    "Fix: summary shows 'fast' instead of misleading '720p' for no-reencode mode"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -138,7 +138,7 @@
     "update.command": "87b9c595e9abf95d69d5ee6e9ab6cbac",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "cfce2dc10c67355e3eb7fb1cf738a621",
+    "varagent.py": "9fdbb448eb3447d45d18b57950a2e9d0",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "9c8c88b576aa4a87361b3a39ce3ca1f1",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

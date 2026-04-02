@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.02.1737",
+  "version": "2026.04.02.1908",
   "changelog": [
-    "Fix: summary shows 'fast' instead of misleading '720p' for no-reencode mode"
+    "Fix: Finalize VideoGen+ImageGen missing silent=True — console blocked on input()"
   ],
   "requires_restart": true,
   "files": {
@@ -138,7 +138,7 @@
     "update.command": "87b9c595e9abf95d69d5ee6e9ab6cbac",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "9fdbb448eb3447d45d18b57950a2e9d0",
+    "varagent.py": "735035423bf209d67a63e5acbcd07b47",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "9c8c88b576aa4a87361b3a39ce3ca1f1",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

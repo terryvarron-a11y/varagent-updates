@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.02.1908",
+  "version": "2026.04.02.1913",
   "changelog": [
-    "Fix: Finalize VideoGen+ImageGen missing silent=True — console blocked on input()"
+    "Fix: fastgen silent param, finalize passes silent=True + --no-cleanup from keep_files, concat EOF auto-deletes temp"
   ],
   "requires_restart": true,
   "files": {
@@ -29,7 +29,7 @@
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/director.py": "c3395531afbacdb7484a5d9ac873b198",
-    "agent/modules/fastgen.py": "975732cb59ecf9addd14fd7a1b0be3c6",
+    "agent/modules/fastgen.py": "a4b876c329e6593ee972b34c710d65a2",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/imggen.py": "d3f53a6a78e87783a8f5bdcbf9862e20",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
@@ -138,9 +138,9 @@
     "update.command": "87b9c595e9abf95d69d5ee6e9ab6cbac",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "06040e3cbb67a02eac6d96ebf904a6ee",
-    "varagent.py": "735035423bf209d67a63e5acbcd07b47",
+    "varagent.py": "092eab5df8b63c8eb13288fe96c19c51",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "9c8c88b576aa4a87361b3a39ce3ca1f1",
+    "video_concat.py": "b8a7b2d26ef04402eee977af4f630753",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

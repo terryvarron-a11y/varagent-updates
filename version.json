@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.02.1500",
+  "version": "2026.04.02.1538",
   "changelog": [
-    "Fix: video_concat searches vid_img/{id:03d} first (Mac compat); IP_INPUT_IMAGE handler — banana regen + remix + static fallback"
+    "Fix: vislide mode activating when clip_mode=video (argparse default=3 leaked into env)"
   ],
   "requires_restart": false,
   "files": {
@@ -15,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "522a970753ba4620fe8bdb3eb356bcfa",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "d5b2df2fabd2295004ccf93936c1d648",
+    "agent/agent.py": "24a5a922eeb7eb4c57a9402e9bed931d",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",

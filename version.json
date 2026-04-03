@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.02.1926",
+  "version": "2026.04.03.1159",
   "changelog": [
-    "Fix: concat fps hardcode 60→param (desync fix), keep_files checkbox in Control Panel, fastgen silent param"
+    "Fix: video upscale 1080p now works from CLI/pipeline (.env VEONONSTOP_VIDEO_UPSCALE); imggen fallback chain uses full FastGen auto-chain (silent=True); AssemblyAI upload timeout 300s"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -31,7 +31,7 @@
     "agent/modules/director.py": "c3395531afbacdb7484a5d9ac873b198",
     "agent/modules/fastgen.py": "a4b876c329e6593ee972b34c710d65a2",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
-    "agent/modules/imggen.py": "d3f53a6a78e87783a8f5bdcbf9862e20",
+    "agent/modules/imggen.py": "69816e658fbc8df8be103760bed21a08",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
@@ -41,7 +41,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "a976cb48ff0a4dd6c956e2909244d0d4",
+    "agent/modules/veo_video.py": "a02e1cdfe7ea52f90523c3858a87dc20",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

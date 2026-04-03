@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.03.1804",
+  "version": "2026.04.03.2058",
   "changelog": [
-    "Fix: CRLF->LF in all .command files (macOS bad interpreter error); remix overwrites original ref in-place"
+    "Fix: VideoGen missing clips auto-retry + static fallback before Concat; video_concat handles corrupt files gracefully"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -140,9 +140,9 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "a5287cb9d0aeaaa663ff148512a7ab60",
+    "varagent.py": "c6e01932ea4827fe59a1bbe98ce28379",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "f60d50883ab68afde59012dc877e3b3c",
+    "video_concat.py": "2225a4834a985777ad39c3e8ac74e54d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

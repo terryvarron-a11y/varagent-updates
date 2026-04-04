@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.03.2058",
+  "version": "2026.04.04.1259",
   "changelog": [
-    "Fix: VideoGen missing clips auto-retry + static fallback before Concat; video_concat handles corrupt files gracefully"
+    "Fix: VideoGen 5xx auto-reconnect (cancel-all at 5+ per key); imggen skip_preflight from GUI; concat handles corrupt files; FPS in presets"
   ],
   "requires_restart": true,
   "files": {
@@ -31,7 +31,7 @@
     "agent/modules/director.py": "c3395531afbacdb7484a5d9ac873b198",
     "agent/modules/fastgen.py": "e84492e2de1c8b7e61af9b09bfeec529",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
-    "agent/modules/imggen.py": "79855448a03e32731311f01d2b653154",
+    "agent/modules/imggen.py": "749358629e58b30a264e54a7b2eac0cc",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
@@ -41,7 +41,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "a02e1cdfe7ea52f90523c3858a87dc20",
+    "agent/modules/veo_video.py": "70acf658fce444ca6c0f7eab189f6ded",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -140,7 +140,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "c6e01932ea4827fe59a1bbe98ce28379",
+    "varagent.py": "b94ca80205c02d84d9508413bee504f6",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "2225a4834a985777ad39c3e8ac74e54d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

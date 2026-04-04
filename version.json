@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.04.1605",
+  "version": "2026.04.04.1634",
   "changelog": [
-    "Brainstorm: fix Cyrillic in yt-dlp (cp1251 decode); segmentation mode (words/sentences/paragraphs); subtitle language selector"
+    "Fix: use sys.executable instead of hardcoded python on macOS"
   ],
   "requires_restart": true,
   "files": {
@@ -140,7 +140,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "23ff7b515e884b6414b3912ca51f5d44",
+    "varagent.py": "3ed726415efb7a5a974fa0aeaf4a3dd4",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "2225a4834a985777ad39c3e8ac74e54d",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

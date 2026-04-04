@@ -1,7 +1,10 @@
 {
-  "version": "2026.04.04.1634",
+  "version": "2026.04.04.1827",
   "changelog": [
-    "Fix: use sys.executable instead of hardcoded python on macOS"
+    "Fix: concat crash (exit 228) on large projects on macOS",
+    "Fix: ffmpeg output no longer fills RAM on huge projects",
+    "Add: progress bar for subtitle burn-in",
+    "Optimization: skip redundant ffmpeg pass when only 1 chunk"
   ],
   "requires_restart": true,
   "files": {
@@ -41,7 +44,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "70acf658fce444ca6c0f7eab189f6ded",
+    "agent/modules/veo_video.py": "20b3e2549b453d5a1a43768b9db5dde0",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -140,9 +143,9 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "3ed726415efb7a5a974fa0aeaf4a3dd4",
+    "varagent.py": "499ae279d1132b5fcd8729e87a9431dd",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "2225a4834a985777ad39c3e8ac74e54d",
+    "video_concat.py": "f875a5c3e72df404aed47f4bb56a6a5f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

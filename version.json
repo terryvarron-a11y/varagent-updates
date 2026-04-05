@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.05.1751",
+  "version": "2026.04.05.1955",
   "changelog": [
-    "Fix: VEO prompt Browse/Reset buttons moved below label line"
+    "Add: bitrate selector in Pipeline Launcher, fix 1080p templates to 20M"
   ],
   "requires_restart": true,
   "files": {
@@ -59,9 +59,9 @@
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
     "agent/requirements.txt": "8a30d3bb4892aec359a4ed0e034a1bfb",
-    "agent/templates/process_1080p.command": "968719a3c16205b8dd3b2341f48a2998",
-    "agent/templates/process_1080p.txt": "700e43485898b6fc4931044797723e5e",
-    "agent/templates/process_1080p_interactive.command": "5cb1953ffb84fa74204634a7b902c277",
+    "agent/templates/process_1080p.command": "07530329f776aed6f64cb22479d10d49",
+    "agent/templates/process_1080p.txt": "c0093e4710270ab3124020586b105587",
+    "agent/templates/process_1080p_interactive.command": "f13287ccef1c6683425bb7b91ef3de3b",
     "agent/templates/process_fast.command": "e26433ea45066bf9fb8a09d4cabebadc",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast_interactive.command": "c0139b8666ab8ea6291e7c8b30f8f78f",
@@ -140,7 +140,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "a42a24500cb891ea60e0451b9d1e0065",
+    "varagent.py": "e8c9a74b77864c4f074d28cdc16caef5",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f875a5c3e72df404aed47f4bb56a6a5f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

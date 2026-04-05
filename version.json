@@ -1,8 +1,7 @@
 {
-  "version": "2026.04.04.2120",
+  "version": "2026.04.05.1315",
   "changelog": [
-    "Fix: Control Panel hide/show panels button always visible",
-    "Fix: hide panels now hides tree + stages + finalize, toolbar stays"
+    "Fix: Hide panels button moved to Stage Progress header — always visible on small screens"
   ],
   "requires_restart": true,
   "files": {
@@ -141,7 +140,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "02679769cd29ef724bbe0bcd33fd211f",
+    "varagent.py": "52992f4a1220cf74b1f795787347d735",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f875a5c3e72df404aed47f4bb56a6a5f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

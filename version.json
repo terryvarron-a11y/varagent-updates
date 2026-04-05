@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.05.1315",
+  "version": "2026.04.05.1417",
   "changelog": [
-    "Fix: Hide panels button moved to Stage Progress header — always visible on small screens"
+    "Fix: yt-dlp --js-runtimes node + cookies centralized in _run_ytdlp, channel name parsing without --flat-playlist, Director selector in Pipeline Launcher, Codex Login in Settings"
   ],
   "requires_restart": true,
   "files": {
@@ -45,7 +45,7 @@
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
-    "agent/modules/yt_transcriber.py": "32a73725d24c9306aa6bbdecfa65dfd7",
+    "agent/modules/yt_transcriber.py": "c33980dc2fbf5d1987f38a5e0ea8ef9d",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "bc77a442d02f737f972a7a4f0439146a",
     "agent/prompts/director_instruction_pass1.txt": "efc70d49900fabedba967b43485bafa8",
@@ -140,7 +140,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "52992f4a1220cf74b1f795787347d735",
+    "varagent.py": "85a80992a6c764ded9fc7dd52ca7700d",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f875a5c3e72df404aed47f4bb56a6a5f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.05.1417",
+  "version": "2026.04.05.1747",
   "changelog": [
-    "Fix: yt-dlp --js-runtimes node + cookies centralized in _run_ytdlp, channel name parsing without --flat-playlist, Director selector in Pipeline Launcher, Codex Login in Settings"
+    "Fix: 5xx infinite loop in imggen — now immediately resubmits instead of waiting forever"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -31,7 +31,7 @@
     "agent/modules/director.py": "c3395531afbacdb7484a5d9ac873b198",
     "agent/modules/fastgen.py": "e84492e2de1c8b7e61af9b09bfeec529",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
-    "agent/modules/imggen.py": "749358629e58b30a264e54a7b2eac0cc",
+    "agent/modules/imggen.py": "28718e617cfe4d4690241955780cc4d7",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",

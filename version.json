@@ -1,9 +1,7 @@
 {
-  "version": "2026.04.06.1528",
+  "version": "2026.04.06.1911",
   "changelog": [
-    "Inflight fallback: auto-fallback to standard i2v if watch_i2v fails",
-    "Config sync: GPT/Codex director settings added to PORTABLE",
-    "get_account_info: 3 retries (10s, 30s) before fallback to mp=12"
+    "Added Codex/ folder with setup instructions (README.txt)"
   ],
   "requires_restart": false,
   "files": {
@@ -110,6 +108,7 @@
     "check_update_debug.py": "ee09fb9493c65199d237b9ae08c2414e",
     "check_veo_key.py": "17964d2ff2ce74e6e9aef6af7240690d",
     "check_version.py": "133c121fb9f2648388ddc7ca0f5e79be",
+    "Codex/README.txt": "c619829be90439784e94c8bae74de73c",
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
     "fix_macos.command": "34344f8afa0cf5e4318a65fb0392cd88",

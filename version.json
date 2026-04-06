@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.06.1940",
+  "version": "2026.04.06.1944",
   "changelog": [
-    "Pipeline log now shows Backend: gemini/gpt in settings dump"
+    "Full pipeline settings dump in log: all stages, concat, YT pack, codex adapt, VEO keys/opts"
   ],
   "requires_restart": true,
   "files": {
@@ -142,7 +142,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "c3789710ebd2a7dc4403e761a3574e46",
+    "varagent.py": "94cfba4f5c2ff23dcc370f6e4a50724b",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

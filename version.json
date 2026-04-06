@@ -1,10 +1,11 @@
 {
-  "version": "2026.04.06.1358",
+  "version": "2026.04.06.1528",
   "changelog": [
-    "Inflight fallback: if watch_i2v crashes or produces no videos, auto-fallback to standard i2v",
-    "Config sync: added GPT/Codex director settings to PORTABLE"
+    "Inflight fallback: auto-fallback to standard i2v if watch_i2v fails",
+    "Config sync: GPT/Codex director settings added to PORTABLE",
+    "get_account_info: 3 retries (10s, 30s) before fallback to mp=12"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -42,7 +43,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "55553250155f24d6b8ffbbe36087bfed",
+    "agent/modules/veo_video.py": "f2a49c0c9df5fe4598d1cfe96e7bc00d",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

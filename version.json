@@ -1,7 +1,8 @@
 {
-  "version": "2026.04.05.1955",
+  "version": "2026.04.06.1358",
   "changelog": [
-    "Add: bitrate selector in Pipeline Launcher, fix 1080p templates to 20M"
+    "Inflight fallback: if watch_i2v crashes or produces no videos, auto-fallback to standard i2v",
+    "Config sync: added GPT/Codex director settings to PORTABLE"
   ],
   "requires_restart": true,
   "files": {
@@ -15,12 +16,12 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "24a5a922eeb7eb4c57a9402e9bed931d",
+    "agent/agent.py": "74411f13d1002fef9f01076d67070d0e",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "30b55fea6ad69212ca3928a64a714d75",
+    "agent/config.py": "724c2821327426f1dfdef301fec834d5",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -41,7 +42,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "2865d2402c75770049a944603c1e7b80",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "20b3e2549b453d5a1a43768b9db5dde0",
+    "agent/modules/veo_video.py": "55553250155f24d6b8ffbbe36087bfed",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
@@ -55,6 +56,7 @@
     "agent/prompts/rewrite_prompt.txt": "841570253b4b3f60e712df8a774ec041",
     "agent/prompts/script_director_prose.txt": "ed9cdd900d783815058908280458fd18",
     "agent/prompts/script_director_screenplay.txt": "596583992050f75a9f60d958389c7aeb",
+    "agent/prompts/veo_adapt_prompt.txt": "484e8b047354a0f3fea184acf62efe9f",
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
@@ -140,9 +142,9 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "e8c9a74b77864c4f074d28cdc16caef5",
+    "varagent.py": "36c38933e617e3f93047034d66aee676",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "f875a5c3e72df404aed47f4bb56a6a5f",
+    "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

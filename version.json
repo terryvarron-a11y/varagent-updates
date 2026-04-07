@@ -1,7 +1,9 @@
 {
-  "version": "2026.04.07.1712",
+  "version": "2026.04.07.1715",
   "changelog": [
-    "Fix: _safe_int missing in ControlPanelTab — caused crash on Finalize"
+    "Fix: sv_veo_keys_var NameError in ImageGen dialog (used wrong variable from different scope)",
+    "Fix: all IntVar .get() in Finalize settings wrapped with _safe_int",
+    "Fix: _clips variable scope in finalize VideoGen vislide fallback"
   ],
   "requires_restart": true,
   "files": {
@@ -143,7 +145,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "d0f53aaf04547fbef7c5269349c162ca",
+    "varagent.py": "7bf14b63b46b6cea2de7d4e2e14c8d38",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

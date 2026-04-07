@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.07.1719",
+  "version": "2026.04.07.1722",
   "changelog": [
-    "GPT director: real-time progress — prompts count + file size in spinner",
-    "GPT director: stream Codex stdout (file write events shown live)",
-    "GPT director: idle time warning when Codex stalls >60s"
+    "imggen: rewrite prompt on SILENT fail (not just explicit block)",
+    "imggen: show failed clip IDs in cycle summary",
+    "GPT director: real-time progress monitoring (prompts count, idle warning)"
   ],
   "requires_restart": false,
   "files": {
@@ -34,7 +34,7 @@
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
     "agent/modules/gpt_director.py": "f3af0ac7aeccaf1158946be72cd2a0a5",
-    "agent/modules/imggen.py": "1c9c946a9260caeb233652716e7b258b",
+    "agent/modules/imggen.py": "99676f6a8c75fdebac1f429228d5b834",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",

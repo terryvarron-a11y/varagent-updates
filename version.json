@@ -1,12 +1,11 @@
 {
-  "version": "2026.04.07.1528",
+  "version": "2026.04.07.1533",
   "changelog": [
-    "Settings tab: added DIRECTOR_BACKEND, GPT_MODEL, GPT_PASS2_CHUNK_SIZE, REWRITE_MODEL, REMIX_ENGINE dropdowns",
-    "Finalize panel: GPT director backend selector + Codex adapt checkbox",
-    "GPT_PASS2_CHUNK_SIZE default: 250 -> 100 (prevents timeout on large projects)",
-    "Codex CLI: auto-detect on macOS (PATH + npm), install prompt if not found",
-    "IntVar safe getter: prevents TclError when spinbox field is temporarily empty",
-    "Updater: auto-add GPT/Rewrite keys to user .env on update"
+    "Fix: Codex CLI auto-detect per platform (Windows=local exe, macOS=PATH)",
+    "Fix: Windows auto-download Codex exe from GitHub if missing",
+    "Fix: macOS npm install prompt for @openai/codex",
+    "Fix: Path(\"\") bug — use is_file() instead of exists() for codex checks",
+    "Fix: config.py missing sys import"
   ],
   "requires_restart": true,
   "files": {
@@ -25,7 +24,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "dd470e248c9430d19f4c8a0b43f4b361",
+    "agent/config.py": "ae461d8c8dcae649dbff229753dde327",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -35,8 +34,8 @@
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/director.py": "c3395531afbacdb7484a5d9ac873b198",
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
-    "agent/modules/gemini_rewrite.py": "b9b58e986b7bb6b3d2b3b798aa9d29ac",
-    "agent/modules/gpt_director.py": "e42d690d30a69cac35362dfbc7f85b38",
+    "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
+    "agent/modules/gpt_director.py": "6ea6a5274382b77d300bbea5404a7d5c",
     "agent/modules/imggen.py": "1c9c946a9260caeb233652716e7b258b",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
@@ -148,7 +147,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "66b46e4f3053e66b9cf2a0ccdf0c7451",
+    "varagent.py": "95688712a06ca368ca99196ad1333093",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

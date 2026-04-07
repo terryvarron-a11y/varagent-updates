@@ -1,9 +1,10 @@
 {
-  "version": "2026.04.07.1134",
+  "version": "2026.04.07.1208",
   "changelog": [
-    "VeoNonStop imggen: silent cycles now use VEONONSTOP_MAX_SILENT_CYCLES (default 5 instead of 3)",
-    "VeoNonStop imggen: technical failures now logged to full.log (was silent)",
-    "FastGen backup API key added for all users"
+    "CRITICAL FIX: _shutdown_requested not reset between runs — caused all clips to silently skip after any Stop/Cancel",
+    "VeoNonStop video: static fallback now uses VEONONSTOP_MAX_SILENT_CYCLES (default 5) instead of hardcoded 2",
+    "VeoNonStop imggen: technical failures now printed to full.log",
+    "FastGen backup API key updated for all users"
   ],
   "requires_restart": false,
   "files": {
@@ -44,7 +45,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "8f1f2b7bfce4a870737ca795fabd9398",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "374f60e81dc53b794435e2e56fdcb95e",
+    "agent/modules/veo_video.py": "8296eb896524c67bd43f45bd96bfec6e",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

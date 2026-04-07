@@ -1,10 +1,10 @@
 {
-  "version": "2026.04.07.1959",
+  "version": "2026.04.07.2005",
   "changelog": [
-    "Fix: GPT Pass2 — спиннер и парсер промптов работают с обоими форматами (",
-    "и"
+    "Fix: Tkinter exception при очистке числового поля в _update_summary подавлен",
+    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -148,7 +148,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "c1008cc1e2834f7625057f1d12b70cb8",
+    "varagent.py": "c97c643f36fdb81c90a94ec807cd0414",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

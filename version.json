@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.07.1938",
+  "version": "2026.04.07.1947",
   "changelog": [
-    "Fix: GPT Pass2 — жёсткая инструкция писать промпты в файл через file-write tool; fallback: восстановление промптов из stdout если файл не создан",
+    "Fix: GPT Pass2 — схема упрощена до {status:done}, убрана тяжёлая финализация; спиннер Pass1 обновляется каждую секунду; fallback восстановление промптов из stdout",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
@@ -33,7 +33,7 @@
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
-    "agent/modules/gpt_director.py": "c481f9b676413523c755274053294169",
+    "agent/modules/gpt_director.py": "0264e91c1e729a9439492460c5de472a",
     "agent/modules/imggen.py": "99676f6a8c75fdebac1f429228d5b834",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
@@ -64,7 +64,7 @@
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
     "agent/requirements.txt": "8a30d3bb4892aec359a4ed0e034a1bfb",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
-    "agent/schemas/pass2_control.json": "7d15efdf27cd28e1ad2682cffce2f1ea",
+    "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
     "agent/schemas/veo_adapt_control.json": "e2c906593a943c1bbc8fc371935580fd",
     "agent/templates/process_1080p.command": "07530329f776aed6f64cb22479d10d49",
     "agent/templates/process_1080p.txt": "c0093e4710270ab3124020586b105587",

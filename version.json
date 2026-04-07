@@ -1,8 +1,7 @@
 {
-  "version": "2026.04.07.1706",
+  "version": "2026.04.07.1712",
   "changelog": [
-    "Fix: GUI now passes --director-backend CLI arg to agent.py (not just env var)",
-    "GPT director: output stats after each pass (chars, estimated tokens)"
+    "Fix: _safe_int missing in ControlPanelTab — caused crash on Finalize"
   ],
   "requires_restart": true,
   "files": {
@@ -144,7 +143,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "8e798c60a19f869f2ca8c3e9e967bc12",
+    "varagent.py": "d0f53aaf04547fbef7c5269349c162ca",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

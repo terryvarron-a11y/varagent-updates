@@ -1,10 +1,9 @@
 {
-  "version": "2026.04.07.1115",
+  "version": "2026.04.07.1134",
   "changelog": [
-    "FastGen: auto-switch to backup key on license_expired/credits_insufficient (no more overnight loops)",
-    "FastGen: license_dead kills retries+rewrites instantly, poisons key for all workers",
-    "VeoNonStop: same license_dead/key_dead protection",
-    "FastGen API key updated for all users"
+    "VeoNonStop imggen: silent cycles now use VEONONSTOP_MAX_SILENT_CYCLES (default 5 instead of 3)",
+    "VeoNonStop imggen: technical failures now logged to full.log (was silent)",
+    "FastGen backup API key added for all users"
   ],
   "requires_restart": false,
   "files": {
@@ -35,7 +34,7 @@
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
     "agent/modules/gemini_rewrite.py": "e8b6a25aa7565d7020e8a1bbf165c1ed",
     "agent/modules/gpt_director.py": "c4f2388402920f5f324f3d9ea9898617",
-    "agent/modules/imggen.py": "28718e617cfe4d4690241955780cc4d7",
+    "agent/modules/imggen.py": "1c9c946a9260caeb233652716e7b258b",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
@@ -43,7 +42,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "c761a109764e7bd95dabffdf1bb10b85",
+    "agent/modules/updater.py": "8f1f2b7bfce4a870737ca795fabd9398",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "374f60e81dc53b794435e2e56fdcb95e",
     "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",

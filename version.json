@@ -1,8 +1,8 @@
 {
-  "version": "2026.04.07.1947",
+  "version": "2026.04.07.1959",
   "changelog": [
-    "Fix: GPT Pass2 — схема упрощена до {status:done}, убрана тяжёлая финализация; спиннер Pass1 обновляется каждую секунду; fallback восстановление промптов из stdout",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: GPT Pass2 — спиннер и парсер промптов работают с обоими форматами (",
+    "и"
   ],
   "requires_restart": false,
   "files": {
@@ -33,7 +33,7 @@
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
-    "agent/modules/gpt_director.py": "0264e91c1e729a9439492460c5de472a",
+    "agent/modules/gpt_director.py": "5548e34d76b7b6bc2befa1e08a3f981b",
     "agent/modules/imggen.py": "99676f6a8c75fdebac1f429228d5b834",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",

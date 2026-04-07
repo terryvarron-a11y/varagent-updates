@@ -1,11 +1,7 @@
 {
-  "version": "2026.04.07.1533",
+  "version": "2026.04.07.1536",
   "changelog": [
-    "Fix: Codex CLI auto-detect per platform (Windows=local exe, macOS=PATH)",
-    "Fix: Windows auto-download Codex exe from GitHub if missing",
-    "Fix: macOS npm install prompt for @openai/codex",
-    "Fix: Path(\"\") bug — use is_file() instead of exists() for codex checks",
-    "Fix: config.py missing sys import"
+    "Fix: macOS Codex install via brew (brew install --cask codex) instead of npm"
   ],
   "requires_restart": true,
   "files": {
@@ -147,7 +143,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "95688712a06ca368ca99196ad1333093",
+    "varagent.py": "cf9790ee462d97dbdfe95f5940ab4a1a",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

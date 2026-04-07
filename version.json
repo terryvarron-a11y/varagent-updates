@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.07.1840",
+  "version": "2026.04.07.1904",
   "changelog": [
-    "Fix: GPT-режиссёр теперь работает корректно — промпты читаются из файла напрямую без зависания на control JSON; Director backend routing добавлен в PORTABLE; DIRECTOR_BACKEND/GPT_MODEL вшиты в .env шаблон. Огромное спасибо тестерам: Амир, Сергей и Oplus!"
+    "Fix: добавлена папка agent/schemas/ (pass1_control.json, pass2_control.json) — GPT-режиссёр падал с ошибкой Schema не найдена"
   ],
   "requires_restart": false,
   "files": {
@@ -61,6 +61,9 @@
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
     "agent/requirements.txt": "8a30d3bb4892aec359a4ed0e034a1bfb",
+    "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
+    "agent/schemas/pass2_control.json": "7d15efdf27cd28e1ad2682cffce2f1ea",
+    "agent/schemas/veo_adapt_control.json": "e2c906593a943c1bbc8fc371935580fd",
     "agent/templates/process_1080p.command": "07530329f776aed6f64cb22479d10d49",
     "agent/templates/process_1080p.txt": "c0093e4710270ab3124020586b105587",
     "agent/templates/process_1080p_interactive.command": "f13287ccef1c6683425bb7b91ef3de3b",

@@ -1,9 +1,10 @@
 {
-  "version": "2026.04.08.1150",
+  "version": "2026.04.08.1151",
   "changelog": [
-    "Fix: GPT Pass2 chunk bug (early exit on offset), partial write recovery, overwrite guard; Chunk spinbox moved to Direction row; default GPT model gpt-5.4"
+    "Fix: GPT Pass2 chunk bug (early exit on offset), partial write recovery, overwrite guard; Chunk spinbox moved to Direction row; default GPT model gpt-5.4",
+    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

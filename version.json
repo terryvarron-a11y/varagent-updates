@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.08.2055",
+  "version": "2026.04.08.2113",
   "changelog": [
-    "Fix: updater patch_env() теперь использует свежий _ENV_REQUIRED/_ENV_FORCE после обновления (exec из нового файла). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: FASTGEN_API_KEY main key updated + updater exec() fix для корректного patch_env после обновления. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
   "files": {
@@ -41,7 +41,7 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "6a3ae05d4f6ee8f7f72c0ea45b5228a2",
+    "agent/modules/updater.py": "dbab0ac76c650643808f30667205d0eb",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "17b915c63b757cfd8e83696aa94765e8",
     "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",

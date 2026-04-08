@@ -1,10 +1,9 @@
 {
-  "version": "2026.04.08.1710",
+  "version": "2026.04.08.1721",
   "changelog": [
-    "Fix: post-action fastgen/fastgen_i2v теперь silent=True — автоматический retry без интерактивного меню",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: Skip preflight чекбокс теперь всегда виден в ImageGen секции Finalize панели (раньше скрывался при veononstop+banana). В VideoGen остаётся только для components режима. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -16,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "59c3c27fcdd62ab292a9ba65b1344114",
+    "agent/agent.py": "cebe864804d23c6af6e80bbff52b00a5",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -148,7 +147,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "255be12ec47126314c2a88b692b6161b",
+    "varagent.py": "f5fcd870a981371b03745d52f522da3a",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,10 +1,12 @@
 {
-  "version": "2026.04.08.1151",
+  "version": "2026.04.08.1307",
   "changelog": [
-    "Fix: GPT Pass2 chunk bug (early exit on offset), partial write recovery, overwrite guard; Chunk spinbox moved to Direction row; default GPT model gpt-5.4",
+    "Fix: Finalize panel — FastGen key selector (main/backup/both)",
+    "Fix: Project folder names shortened to audio_name + timestamp only",
+    "Fix: Style guide single-line prompt format with mandatory Cyrillic overlays",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -21,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "ab2b07a2d56ca53d172d15162759eb37",
+    "agent/config.py": "a1a0f0f78901daa21544b8a967a458c5",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -33,9 +35,9 @@
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
-    "agent/modules/gpt_director.py": "62ce96c3144d25684ba31ccb48f05f5b",
+    "agent/modules/gpt_director.py": "ce54f89d832b47e5e5d55b64e734310f",
     "agent/modules/imggen.py": "b5e43ad6b9ee89139af314ac2d8cec9e",
-    "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
+    "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
@@ -148,7 +150,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "f4d46ff5a188a752cfb7dcf0728e3e6a",
+    "varagent.py": "255be12ec47126314c2a88b692b6161b",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

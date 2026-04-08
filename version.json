@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.08.1326",
+  "version": "2026.04.08.1710",
   "changelog": [
-    "Fix: GPT Pass2 — stdout fallback при пустом файле, ранний выход только при непустом файле, RuntimeError при 0 промптов",
+    "Fix: post-action fastgen/fastgen_i2v теперь silent=True — автоматический retry без интерактивного меню",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
@@ -16,7 +16,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "74411f13d1002fef9f01076d67070d0e",
+    "agent/agent.py": "59c3c27fcdd62ab292a9ba65b1344114",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",

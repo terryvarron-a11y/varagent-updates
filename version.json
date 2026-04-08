@@ -1,8 +1,7 @@
 {
-  "version": "2026.04.07.2005",
+  "version": "2026.04.08.1150",
   "changelog": [
-    "Fix: Tkinter exception при очистке числового поля в _update_summary подавлен",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: GPT Pass2 chunk bug (early exit on offset), partial write recovery, overwrite guard; Chunk spinbox moved to Direction row; default GPT model gpt-5.4"
   ],
   "requires_restart": true,
   "files": {
@@ -21,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "ae461d8c8dcae649dbff229753dde327",
+    "agent/config.py": "ab2b07a2d56ca53d172d15162759eb37",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -33,8 +32,8 @@
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
     "agent/modules/fastgen.py": "efd4dcfc6937f2dcfcb25ca82d216245",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
-    "agent/modules/gpt_director.py": "5548e34d76b7b6bc2befa1e08a3f981b",
-    "agent/modules/imggen.py": "99676f6a8c75fdebac1f429228d5b834",
+    "agent/modules/gpt_director.py": "62ce96c3144d25684ba31ccb48f05f5b",
+    "agent/modules/imggen.py": "b5e43ad6b9ee89139af314ac2d8cec9e",
     "agent/modules/queue.py": "ba88247029b301023feab10f5bf97769",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
@@ -42,10 +41,10 @@
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "3e5401965a2dfd09f7b042cef04fba9e",
+    "agent/modules/updater.py": "13bdfcdd9c0797e2aa1e2c1357e443eb",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "c9ede5e272a26d26fadba50815679751",
-    "agent/modules/veononstop.py": "7836c5564708770781a7646e62eed425",
+    "agent/modules/veo_video.py": "77302c507405e37f231db69bfc1658a1",
+    "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
     "agent/modules/yt_transcriber.py": "c5371c49df57a69e5e483e0e9ad48e83",
@@ -148,7 +147,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "c97c643f36fdb81c90a94ec807cd0414",
+    "varagent.py": "f4d46ff5a188a752cfb7dcf0728e3e6a",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,7 +1,14 @@
 {
-  "version": "2026.04.09.1803",
+  "version": "2026.04.09.1840",
   "changelog": [
-    "Feature: кнопка Update Key — обновить active/total в лейблах ключей VeoNonStop. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "SG Adapt: адаптация мастер-стайлгайда под конкретный сюжет через GPT (Codex CLI)",
+    "Чекбокс \"Adapt SG to script\" рядом с выбором стайлгайда в Pipeline Tab",
+    "Кнопка \"View Adapted SG\" — открыть адаптированный SG из последнего проекта",
+    "Finalize панель: чекбокс \"Adapt SG\" в секции Direction",
+    "CLI: флаг --adapt-sg для process / run / direct",
+    "Новый промпт: SG Adapt Prompt (GPT) — доступен для редактирования в Prompts Tab",
+    "Fallback на оригинальный SG при ошибке Codex — пайплайн не ломается",
+    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
   "files": {
@@ -15,7 +22,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "490c3016e391ecb6a78f14d6b29db1bf",
+    "agent/agent.py": "fc6695a8eb3614827a0f582c7bd96931",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -39,6 +46,7 @@
     "agent/modules/remix.py": "eacc3538cefb2463344b6a261202f5c4",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
+    "agent/modules/sg_adapter.py": "ef464165e146fdd59b8c29f0e566a456",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "dbab0ac76c650643808f30667205d0eb",
@@ -57,6 +65,7 @@
     "agent/prompts/rewrite_prompt.txt": "841570253b4b3f60e712df8a774ec041",
     "agent/prompts/script_director_prose.txt": "ed9cdd900d783815058908280458fd18",
     "agent/prompts/script_director_screenplay.txt": "596583992050f75a9f60d958389c7aeb",
+    "agent/prompts/sg_adapt_prompt.txt": "f19a438d44053d9bee393338602920b9",
     "agent/prompts/veo_adapt_prompt.txt": "484e8b047354a0f3fea184acf62efe9f",
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
@@ -147,7 +156,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "b229755b65738d50935ce9637e365033",
+    "varagent.py": "7fb4cbbec779ed38ee470200494dbf6f",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

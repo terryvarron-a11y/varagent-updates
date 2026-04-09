@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.09.1516",
+  "version": "2026.04.09.1520",
   "changelog": [
-    "Fix: семафор видеогена mp//4 (по числу куков), поллинг /account/usage после cancel_all, отображение занятости ключей (active/total) в GUI. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: Stop button теперь корректно останавливает воркеры (проверка shutdown при cancelled/slots_full). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -43,7 +43,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "dbab0ac76c650643808f30667205d0eb",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "4dc142a0484c2221dca17528bcdb4685",
+    "agent/modules/veo_video.py": "ef1f8f706bcac243fb67862eb97967d7",
     "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

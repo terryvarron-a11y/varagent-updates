@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.09.1520",
+  "version": "2026.04.09.1521",
   "changelog": [
-    "Fix: Stop button теперь корректно останавливает воркеры (проверка shutdown при cancelled/slots_full). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: _wait_for_slot теперь поллит /account/usage (реальные серверные слоты вместо локального счётчика). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
   "files": {
@@ -43,7 +43,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "dbab0ac76c650643808f30667205d0eb",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "ef1f8f706bcac243fb67862eb97967d7",
+    "agent/modules/veo_video.py": "eb069d5ff8c2b0ec549164bf75d5b42e",
     "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

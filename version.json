@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.09.1524",
+  "version": "2026.04.09.1526",
   "changelog": [
-    "Feature: кнопка Restart Key в Pipeline и Control Panel — cancel-all без остановки генерации, воркеры автоматически ретраят. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "UI: GPT chunk size перенесён на строку Direction (рядом с 1-pass/2-pass). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
   "files": {
@@ -147,7 +147,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "3caec10fdf17f6e90744f3d2e9e9395e",
+    "varagent.py": "e2178c466530b5b0332255fd244f2da3",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

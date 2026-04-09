@@ -1,13 +1,14 @@
 {
-  "version": "2026.04.09.2037",
+  "version": "2026.04.09.2041",
   "changelog": [
-    "Fix: [Errno 22] на проектах с длинными именами папок (Windows MAX_PATH)",
-    "Укорочены имена лог-файлов: veo_{ts}.log, gen_{ts}.log, imggen_{ts}.log",
-    "try/except OSError в FileHandler — пропуск лога вместо краша",
-    "varagent.py: stage log safe name [:50] в _run_in_thread",
+    "Brainstorm: авто-детект браузера для cookies (chrome/edge/firefox/opera/brave/safari)",
+    "Brainstorm: авто-установка Node.js если отсутствует (winget на Win, brew на Mac)",
+    "Brainstorm: продолжает без JS runtimes если node не установился",
+    "Fix: [Errno 22] на проектах с длинными именами (MAX_PATH) — укорочены лог-файлы + try/except",
+    "Restart Key: работает даже если VideoGen ещё не стартовал",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -52,7 +53,7 @@
     "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
-    "agent/modules/yt_transcriber.py": "c5371c49df57a69e5e483e0e9ad48e83",
+    "agent/modules/yt_transcriber.py": "225d2760d02ee21b07040c8cac2cc67a",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "bc77a442d02f737f972a7a4f0439146a",
     "agent/prompts/director_instruction_pass1.txt": "efc70d49900fabedba967b43485bafa8",

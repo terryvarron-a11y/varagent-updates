@@ -1,13 +1,10 @@
 {
-  "version": "2026.04.09.1840",
+  "version": "2026.04.09.1848",
   "changelog": [
-    "SG Adapt: адаптация мастер-стайлгайда под конкретный сюжет через GPT (Codex CLI)",
-    "Чекбокс \"Adapt SG to script\" рядом с выбором стайлгайда в Pipeline Tab",
-    "Кнопка \"View Adapted SG\" — открыть адаптированный SG из последнего проекта",
-    "Finalize панель: чекбокс \"Adapt SG\" в секции Direction",
-    "CLI: флаг --adapt-sg для process / run / direct",
-    "Новый промпт: SG Adapt Prompt (GPT) — доступен для редактирования в Prompts Tab",
-    "Fallback на оригинальный SG при ошибке Codex — пайплайн не ломается",
+    "Restart Key: теперь отменяет задачи даже если VideoGen ещё не стартовал",
+    "Fallback: создаёт fresh-клиент из config если _active_clients пустой",
+    "Publisher: исправлен путь к .env (читает из VARAGENT_API/agent, не PORTABLE)",
+    "Publisher: исключён codex exe из patch.zip (слишком большой для GitHub API)",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
@@ -156,7 +153,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "7fb4cbbec779ed38ee470200494dbf6f",
+    "varagent.py": "217925cd337d2d9bab38556b5101227b",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

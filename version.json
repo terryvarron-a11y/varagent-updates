@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.09.1750",
+  "version": "2026.04.09.1753",
   "changelog": [
-    "Fix: Codex Login на Mac — автоустановка через brew если не найден + фикс экранирования AppleScript. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: автоустановка Codex CLI — brew install --cask codex на Mac, скачивание exe с GitHub на Windows. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
   "files": {
@@ -147,7 +147,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "60994ad9446f40eb8a6491467b05436b",
+    "varagent.py": "0b853ba7b3b3352162de611b6d15c337",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

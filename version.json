@@ -1,11 +1,10 @@
 {
-  "version": "2026.04.10.0123",
+  "version": "2026.04.10.1345",
   "changelog": [
-    "GPT Pass2: полный рефакторинг промпт-инструкции — 10 визуальных блоков вместо копипасты скрипта",
-    "Inflight + VEO Adapt: watcher стартует из фонового потока, imggen не блокируется",
-    "watch_i2v: новый --prompts-file аргумент для adapted промптов",
-    "Brainstorm: smart browser detect — пропускает залоченные cookie DB (Chrome), авто-фолбек на Opera",
-    "config: YTDLP_COOKIES_BROWSER переменная для ручного оверрайда"
+    "Fix: config.py PIPELINE_* переменные защищены от пустых .env значений (or default)",
+    "Fix: PIPELINE_IMG_GEN дефолт veononstop (был fastgen)",
+    "Fix: watch_i2v семафор mp//4 (VeoNonStop: N cookies x 4 slots)",
+    "Fix: watch_i2v порционная подача задач (как в generate_all_videos)"
   ],
   "requires_restart": false,
   "files": {
@@ -24,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "0d058694de971bf4823821f952c25011",
+    "agent/config.py": "9dcf1e38243dd6ac757be4c2200b4732",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -111,7 +110,7 @@
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
-    "agent/watch_i2v.py": "52e5b8e0e8c2b94b9144f7883e0acac9",
+    "agent/watch_i2v.py": "8078798b0e906e38913b5af24506d872",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",

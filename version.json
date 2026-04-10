@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.10.1711",
+  "version": "2026.04.10.1839",
   "changelog": [
-    "Fix: reCAPTCHA retry 10s вместо 30s"
+    "Fix: Poll 404 — 3 подряд 404 = задача потеряна, retry с новым submit (пауза 10с между проверками)"
   ],
   "requires_restart": false,
   "files": {
@@ -45,7 +45,7 @@
     "agent/modules/updater.py": "d4a4d2942f74a7aa3e3a9c9a9fddf281",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "fa8b309ba3bea2a760d5f53d934ae3e0",
-    "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
+    "agent/modules/veononstop.py": "8837a60133e682f2165f3d14f36ead5b",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
     "agent/modules/yt_transcriber.py": "f829ffb1ebac2b43435b73e11bbbf513",

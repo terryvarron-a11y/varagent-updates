@@ -1,9 +1,11 @@
 {
-  "version": "2026.04.10.2028",
+  "version": "2026.04.10.2158",
   "changelog": [
-    "Fix: person/censorship ошибки в Exception path теперь корректно ловятся → phase2 (rewrite+remix) запускается"
+    "Flower: новая модель imggen (Banana 2 via Flower) в FastGen dropdown",
+    "Grok edit 429: fallback на backup ключ → Kie.ai → static",
+    "watch_i2v: FAST_CENSOR=ultrafast пропускает remix, сразу static fallback"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -20,7 +22,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "b753251b2af48d862442c1ee6af75e69",
+    "agent/config.py": "045e70e8d0a4a13b14fd469376386b44",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -30,7 +32,7 @@
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/codex_adapt.py": "030a5cd8c89189b8ea2692a78fec069f",
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
-    "agent/modules/fastgen.py": "a83ac6282d50803772661a6bafbc3f83",
+    "agent/modules/fastgen.py": "e5664453a456ad0033f4d4ff43b586f7",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
     "agent/modules/gpt_director.py": "c9895413b5f8527e1795ff60fd6be6d9",
     "agent/modules/imggen.py": "43cebe3eec64c395c6a7660f78805a25",
@@ -107,7 +109,7 @@
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
-    "agent/watch_i2v.py": "8078798b0e906e38913b5af24506d872",
+    "agent/watch_i2v.py": "758541beb7c91172220c555812457a74",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -151,7 +153,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "930f17d049dce1569b30e3a49c593480",
+    "varagent.py": "56be15cd5f59ebbddbdbf5ee786d8f6c",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

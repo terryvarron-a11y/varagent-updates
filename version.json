@@ -1,9 +1,11 @@
 {
-  "version": "2026.04.10.2158",
+  "version": "2026.04.10.2214",
   "changelog": [
-    "Flower: новая модель imggen (Banana 2 via Flower) в FastGen dropdown",
-    "Grok edit 429: fallback на backup ключ → Kie.ai → static",
-    "watch_i2v: FAST_CENSOR=ultrafast пропускает remix, сразу static fallback"
+    "Hotfix: watch_i2v UnboundLocalError _fast_censor",
+    "Flower: новая модель imggen (Banana 2 via Flower)",
+    "Grok edit 429: fallback на backup ключ",
+    "YT Pack: GPT модели (gpt-5.4, gpt-5.4-mini) в dropdown",
+    "watch_i2v: FAST_CENSOR=ultrafast пропускает remix"
   ],
   "requires_restart": true,
   "files": {
@@ -49,7 +51,7 @@
     "agent/modules/veo_video.py": "9f35ec5320321615287f2ff59bd4d6f4",
     "agent/modules/veononstop.py": "8837a60133e682f2165f3d14f36ead5b",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
-    "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",
+    "agent/modules/yt_packer.py": "c6abba605b03d6788c28dc2b7dc4789e",
     "agent/modules/yt_transcriber.py": "f829ffb1ebac2b43435b73e11bbbf513",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "bc77a442d02f737f972a7a4f0439146a",
@@ -109,7 +111,7 @@
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
-    "agent/watch_i2v.py": "758541beb7c91172220c555812457a74",
+    "agent/watch_i2v.py": "8faa7e915674ad0acc96b291fd60729c",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -153,7 +155,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "56be15cd5f59ebbddbdbf5ee786d8f6c",
+    "varagent.py": "52a31cc2f5ab7d3749d056f295018ad9",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

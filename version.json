@@ -1,12 +1,11 @@
 {
-  "version": "2026.04.10.1345",
+  "version": "2026.04.10.1354",
   "changelog": [
-    "Fix: config.py PIPELINE_* переменные защищены от пустых .env значений (or default)",
-    "Fix: PIPELINE_IMG_GEN дефолт veononstop (был fastgen)",
-    "Fix: watch_i2v семафор mp//4 (VeoNonStop: N cookies x 4 slots)",
-    "Fix: watch_i2v порционная подача задач (как в generate_all_videos)"
+    "Fix: Skip imggen + i2v = skip pipeline — теперь i2v дизейблится при Skip imggen",
+    "Fix: config.py PIPELINE_* защита от пустых .env значений",
+    "Fix: PIPELINE_IMG_GEN дефолт veononstop"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -152,7 +151,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "29397da96d6e033ad62497885f437817",
+    "varagent.py": "d2df1d812e06ce803c5be1b5a852c218",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

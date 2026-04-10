@@ -1,9 +1,12 @@
 {
-  "version": "2026.04.10.1427",
+  "version": "2026.04.10.1503",
   "changelog": [
-    "GUI: адаптивный размер окна под экран (geometry по screenwidth/height)",
-    "GUI: кнопки Pipeline tab автоперенос на вторую строку на узких экранах",
-    "GUI: Skip imggen дизейблит i2v (автопереключение на t2v)"
+    "Fix: Director backend/GPT model/chunk size сохраняются в Save Defaults и пресетах",
+    "Fix: _restart() перечитывает .env перед запуском нового процесса",
+    "Fix: Save Defaults обновляет os.environ + reload config",
+    "Fix: DIRECTOR_BACKEND дефолт gpt (ENV_FORCE для всех юзеров)",
+    "Fix: GPT_PASS2_CHUNK_SIZE дефолт 200 (ENV_FORCE)",
+    "Fix: VEO adapt промпт — описание движения вместо запретов на изменения"
   ],
   "requires_restart": true,
   "files": {
@@ -22,7 +25,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "9dcf1e38243dd6ac757be4c2200b4732",
+    "agent/config.py": "b753251b2af48d862442c1ee6af75e69",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -44,7 +47,7 @@
     "agent/modules/sg_adapter.py": "ef464165e146fdd59b8c29f0e566a456",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "dbab0ac76c650643808f30667205d0eb",
+    "agent/modules/updater.py": "d4a4d2942f74a7aa3e3a9c9a9fddf281",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "129cefe50dcfe38db7718d226f6668e2",
     "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
@@ -61,7 +64,7 @@
     "agent/prompts/script_director_prose.txt": "ed9cdd900d783815058908280458fd18",
     "agent/prompts/script_director_screenplay.txt": "596583992050f75a9f60d958389c7aeb",
     "agent/prompts/sg_adapt_prompt.txt": "f19a438d44053d9bee393338602920b9",
-    "agent/prompts/veo_adapt_prompt.txt": "484e8b047354a0f3fea184acf62efe9f",
+    "agent/prompts/veo_adapt_prompt.txt": "97a013461beb153360f0655e0b304683",
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
@@ -151,7 +154,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "8df20e9ee3c8237c64ff025fa83306b8",
+    "varagent.py": "1c65a71f6e9bd2c635a274161fc963c1",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

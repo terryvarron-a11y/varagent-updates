@@ -1,9 +1,7 @@
 {
-  "version": "2026.04.10.1354",
+  "version": "2026.04.10.1404",
   "changelog": [
-    "Fix: Skip imggen + i2v = skip pipeline — теперь i2v дизейблится при Skip imggen",
-    "Fix: config.py PIPELINE_* защита от пустых .env значений",
-    "Fix: PIPELINE_IMG_GEN дефолт veononstop"
+    "Hotfix: AttributeError _vm_radios — getattr guard для порядка инициализации"
   ],
   "requires_restart": true,
   "files": {
@@ -151,7 +149,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "d2df1d812e06ce803c5be1b5a852c218",
+    "varagent.py": "cc20eb9fe43f3d11ee67f65d95eb2676",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

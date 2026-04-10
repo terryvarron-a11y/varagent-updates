@@ -1,13 +1,9 @@
 {
-  "version": "2026.04.10.1557",
+  "version": "2026.04.10.1711",
   "changelog": [
-    "Live Queue: agent.py пересканирует pipeline_queue/ после каждого проекта, подхватывает новые файлы на лету",
-    "Live Queue: order.json — QM Apply сохраняет порядок, agent.py читает при rescan",
-    "Live Queue: QUEUE_UPDATE сигнал в GUI обновляет Stage Progress total",
-    "Пресеты: авто-регистрация переменных — любая новая tk.*Var автоматически в пресетах",
-    "watch_i2v: семафор mp//4 (cookies x 4 slots)"
+    "Fix: reCAPTCHA retry 10s вместо 30s"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -48,7 +44,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "d4a4d2942f74a7aa3e3a9c9a9fddf281",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "129cefe50dcfe38db7718d226f6668e2",
+    "agent/modules/veo_video.py": "fa8b309ba3bea2a760d5f53d934ae3e0",
     "agent/modules/veononstop.py": "a426e57fe013ca00b57cbd8eb2b4abbf",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "2d2287f8137787a57eca1b22338bb08b",

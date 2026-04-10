@@ -1,12 +1,7 @@
 {
-  "version": "2026.04.10.1503",
+  "version": "2026.04.10.1505",
   "changelog": [
-    "Fix: Director backend/GPT model/chunk size сохраняются в Save Defaults и пресетах",
-    "Fix: _restart() перечитывает .env перед запуском нового процесса",
-    "Fix: Save Defaults обновляет os.environ + reload config",
-    "Fix: DIRECTOR_BACKEND дефолт gpt (ENV_FORCE для всех юзеров)",
-    "Fix: GPT_PASS2_CHUNK_SIZE дефолт 200 (ENV_FORCE)",
-    "Fix: VEO adapt промпт — описание движения вместо запретов на изменения"
+    "Fix: Apply Theme теперь предлагает перезапуск GUI сразу"
   ],
   "requires_restart": true,
   "files": {
@@ -154,7 +149,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "1c65a71f6e9bd2c635a274161fc963c1",
+    "varagent.py": "4540ff9e15dc31450485346230f64ba4",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "26674bbe30a1dc1a92c3a5b51a41550c",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

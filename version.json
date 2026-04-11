@@ -1,8 +1,15 @@
 {
-  "version": "2026.04.11.1633",
+  "version": "2026.04.11.1750",
   "changelog": [
-    "YT Pack Pipeline tab: dropdown модели (gpt-5.4, gpt-5.4-mini, gemini)",
-    "YT Pack: модель передаётся в subprocess env"
+    "GPT Pass2: stdin промпт (0 tool calls), inline стайлгайд, resume сессий",
+    "GPT Pass2: обрезка лишних промптов до n_clips",
+    "GPT Pass2: общий таймер всех чанков",
+    "GPT Pass2: счётчик промптов X/total вместо X/chunk",
+    "Save Defaults: REWRITE_MODEL, GEMINI_MODEL, VIDEO_FPS, CONCAT_BITRATE, YT_PACK модели",
+    "YT Pack: GPT модели в Pipeline tab, Control Panel, Finalize",
+    "Concat: static fallback при битом видео (зум из картинки)",
+    "Pipeline: img_gen trace_add для пресетов",
+    "video_concat: TRIM_MAX_DURATION=5.9"
   ],
   "requires_restart": true,
   "files": {
@@ -33,7 +40,7 @@
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
     "agent/modules/fastgen.py": "4e598dc7b9d95d64ce9326e270762e98",
     "agent/modules/gemini_rewrite.py": "c292d1a6ed51929ed5436fd10d7439fa",
-    "agent/modules/gpt_director.py": "797bebff6988d81f6fadea91fa82546b",
+    "agent/modules/gpt_director.py": "0d001d551fdfe2ac1ea454b6d7886f93",
     "agent/modules/imggen.py": "43cebe3eec64c395c6a7660f78805a25",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
@@ -152,9 +159,9 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "84406741fce425492b2e83b31772a0c0",
+    "varagent.py": "fe9db8eb7919c7e3b93bd1da83245a71",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "f8338445622b0aa95499c6734bd2b8c0",
+    "video_concat.py": "3f730c4041d51286620fef087229d6ac",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

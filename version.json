@@ -1,9 +1,12 @@
 {
-  "version": "2026.04.11.2057",
+  "version": "2026.04.12.0205",
   "changelog": [
-    "Семафор фикс: mp//4 -> mp, jitter 0.05-0.1s, REQUEST_DELAY 10->3. Быстрее старт и полная параллельность видеогенерации"
+    "GPT Pass 2: rate limit — одно сообщение в конце лога, стоп без ретраев, время сброса",
+    "GPT Pass 2: [CLIP_ID] префикс — точная детекция пропущенных клипов, retry по ID",
+    "GPT Pass 2: сортировка промптов по порядку клипов после retry",
+    "Фикс: убраны лишние WARN в GUI при rate limit"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -20,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "f69c5660c27615b50b921191594a0d12",
+    "agent/config.py": "047e2362321d2d4365e52dc71bf2fafc",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -32,7 +35,7 @@
     "agent/modules/director.py": "4382cdf3f6c5b0c7e7f7e4289cf51af4",
     "agent/modules/fastgen.py": "4e598dc7b9d95d64ce9326e270762e98",
     "agent/modules/gemini_rewrite.py": "e0486c5e49ea62b40186438036622eb4",
-    "agent/modules/gpt_director.py": "0d001d551fdfe2ac1ea454b6d7886f93",
+    "agent/modules/gpt_director.py": "865562956441eb67f283eb121403de25",
     "agent/modules/imggen.py": "43cebe3eec64c395c6a7660f78805a25",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
@@ -44,7 +47,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "4f75af9d3d379b3a85b2293088e459e7",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
-    "agent/modules/veo_video.py": "2edd5da24cdf43d2f8834f9d111fe090",
+    "agent/modules/veo_video.py": "2d74a78d63e9e60f3c79e15e146bfc5e",
     "agent/modules/veononstop.py": "8837a60133e682f2165f3d14f36ead5b",
     "agent/modules/vision_checks.py": "3c3ab505a6af43686551c99b6aba918b",
     "agent/modules/yt_packer.py": "c6abba605b03d6788c28dc2b7dc4789e",
@@ -151,7 +154,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "23799d28ae338b219ae3cea649966e18",
+    "varagent.py": "36603cea123a06ef1bc5290040567cc2",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "3f730c4041d51286620fef087229d6ac",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

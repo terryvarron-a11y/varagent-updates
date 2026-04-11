@@ -1,8 +1,8 @@
 {
-  "version": "2026.04.11.1627",
+  "version": "2026.04.11.1633",
   "changelog": [
-    "YT Pack: GPT модели (gpt-5.4, gpt-5.4-mini) в Control Panel и Finalize dropdowns",
-    "YT Pack Finalize: выбор Content/Translate модели"
+    "YT Pack Pipeline tab: dropdown модели (gpt-5.4, gpt-5.4-mini, gemini)",
+    "YT Pack: модель передаётся в subprocess env"
   ],
   "requires_restart": true,
   "files": {
@@ -152,7 +152,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "40ac3edfee4331d14f0d6d6023ae477a",
+    "varagent.py": "84406741fce425492b2e83b31772a0c0",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f8338445622b0aa95499c6734bd2b8c0",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

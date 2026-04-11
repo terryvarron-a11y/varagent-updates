@@ -1,12 +1,14 @@
 {
-  "version": "2026.04.12.0205",
+  "version": "2026.04.12.0207",
   "changelog": [
     "GPT Pass 2: rate limit — одно сообщение в конце лога, стоп без ретраев, время сброса",
     "GPT Pass 2: [CLIP_ID] префикс — точная детекция пропущенных клипов, retry по ID",
     "GPT Pass 2: сортировка промптов по порядку клипов после retry",
-    "Фикс: убраны лишние WARN в GUI при rate limit"
+    "Фикс: убраны лишние WARN в GUI при rate limit",
+    "Авто-настройка GPT_PASS2_PARALLEL=2 для новых юзеров",
+    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -45,7 +47,7 @@
     "agent/modules/sg_adapter.py": "ef464165e146fdd59b8c29f0e566a456",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "4f75af9d3d379b3a85b2293088e459e7",
+    "agent/modules/updater.py": "2c30a3bab72ba8d078df7961f2e73a5b",
     "agent/modules/validator.py": "45481f38a3dcf8cb8d41208791e77b7b",
     "agent/modules/veo_video.py": "2d74a78d63e9e60f3c79e15e146bfc5e",
     "agent/modules/veononstop.py": "8837a60133e682f2165f3d14f36ead5b",
@@ -66,7 +68,7 @@
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
-    "agent/requirements.txt": "8a30d3bb4892aec359a4ed0e034a1bfb",
+    "agent/requirements.txt": "6f6c14333741ff90aa9f80efb06470fc",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
     "agent/schemas/veo_adapt_control.json": "e2c906593a943c1bbc8fc371935580fd",

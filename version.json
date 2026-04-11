@@ -1,26 +1,8 @@
 {
-  "version": "2026.04.11.0259",
+  "version": "2026.04.11.1627",
   "changelog": [
-    "reCAPTCHA: cancel+resubmit логика (3 retry → cancel → fresh task, max 3 resubmits)",
-    "reCAPTCHA: настройка VEONONSTOP_MAX_RESUBMITS в Settings",
-    "reCAPTCHA retry: 4с вместо 10с",
-    "Poll timeout: 180с (3 мин) вместо 1800с (30 мин)",
-    "VEONONSTOP_MAX_RETRIES: дефолт 5 (из config, не хардкод)",
-    "Poll 404: 3x подряд = task lost, resubmit",
-    "VEO submit: стаггер 1-2с после семафора",
-    "Person/censorship: ловится в Exception path → phase2 запускается",
-    "FastGen: Flower модель (Banana 2 via Flower)",
-    "FastGen: Grok edit 429 fallback на backup ключ",
-    "FastGen: rate limit retry 5-10с вместо 60-80с",
-    "FastGen: стаггер jitter 1-5с",
-    "watch_i2v: FAST_CENSOR=ultrafast пропускает remix",
-    "watch_i2v: MAX_CLIP_RETRIES из config",
-    "GPT Pass2: resume сессий между чанками",
-    "GPT Pass2: рефакторинг промпт-инструкции (10 визуальных блоков)",
-    "YT Pack: GPT модели в dropdown",
-    "video_concat: TRIM_MAX_DURATION=5.9 (обрезка вместо ускорения)",
-    "config: VEONONSTOP_MAX_RESUBMITS, POLL_TIMEOUT 180, MAX_RETRIES 5",
-    "updater: GPT_MODEL force gpt-5.4"
+    "YT Pack: GPT модели (gpt-5.4, gpt-5.4-mini) в Control Panel и Finalize dropdowns",
+    "YT Pack Finalize: выбор Content/Translate модели"
   ],
   "requires_restart": true,
   "files": {
@@ -170,7 +152,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "cdae403721157208ae650d0a02d62e15",
+    "varagent.py": "40ac3edfee4331d14f0d6d6023ae477a",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "f8338445622b0aa95499c6734bd2b8c0",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,11 +1,9 @@
 {
-  "version": "2026.04.14.0059",
+  "version": "2026.04.14.0111",
   "changelog": [
-    "КРИТИЧНЫЙ HOTFIX: director.py (Gemini) писал montage_plan.json с BOM — ломало всё downstream",
-    "Все 38 мест записи в director.py: utf-8-sig -> utf-8 (BOM больше не пишется)",
-    "video_concat.py теперь читает план с utf-8-sig (защита от старых файлов с BOM)",
-    "veo_video.py, gpt_director.py, codex_adapt.py: reads переведены на utf-8-sig",
-    "Старые планы с BOM из предыдущих запусков теперь читаются без ошибок",
+    "REWRITE_MODEL по умолчанию теперь gpt:gpt-5.4-mini (было gemini:gemini-2.5-flash)",
+    "Существующие юзеры со старым дефолтом автоматом обновятся при следующем update",
+    "Кто выставил свой кастомный REWRITE_MODEL — не будет перезаписан",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
@@ -25,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "38d00883581736b354427047ebaba69b",
+    "agent/config.py": "5359e433fc00a8ac05a70a52b6e7069c",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -47,7 +45,7 @@
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
     "agent/modules/transcriber.py": "4af5b895b32982cd14aa2adeed047cbf",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "53dd567caa50d8a5b25c9a9f757172e8",
+    "agent/modules/updater.py": "d2c40c884470a76f8f8dd413d47d9238",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "126e64ec63f5ebf15e67d2199e735bcd",
     "agent/modules/veononstop.py": "8837a60133e682f2165f3d14f36ead5b",

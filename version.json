@@ -1,9 +1,11 @@
 {
-  "version": "2026.04.14.0051",
+  "version": "2026.04.14.0059",
   "changelog": [
-    "HOTFIX: Unexpected UTF-8 BOM error — все чтения montage_plan.json / transcription.json теперь utf-8-sig",
-    "Фикс в 6 местах: veo_video.py, gpt_director.py (4), codex_adapt.py",
-    "Теперь файлы с BOM (от блокнота/редакторов) читаются корректно",
+    "КРИТИЧНЫЙ HOTFIX: director.py (Gemini) писал montage_plan.json с BOM — ломало всё downstream",
+    "Все 38 мест записи в director.py: utf-8-sig -> utf-8 (BOM больше не пишется)",
+    "video_concat.py теперь читает план с utf-8-sig (защита от старых файлов с BOM)",
+    "veo_video.py, gpt_director.py, codex_adapt.py: reads переведены на utf-8-sig",
+    "Старые планы с BOM из предыдущих запусков теперь читаются без ошибок",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
@@ -32,7 +34,7 @@
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
-    "agent/modules/director.py": "35edb717feadfa5d1c71e632e17da7e8",
+    "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
     "agent/modules/fastgen.py": "8817cf774b1d0fde59c1cb3ef2b440b6",
     "agent/modules/gemini_rewrite.py": "aaddb784b92fd8e671b1416d93720030",
     "agent/modules/gpt_director.py": "6bd449e396421cd0ebf8d52ed25a7286",
@@ -156,7 +158,7 @@
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "46979878559fd052318abb868e6d5577",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "3f730c4041d51286620fef087229d6ac",
+    "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

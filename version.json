@@ -1,9 +1,12 @@
 {
-  "version": "2026.04.13.2003",
+  "version": "2026.04.13.2013",
   "changelog": [
-    "HOTFIX: Finalize ImageGen падал с 'cannot access local variable os' — убран import os в _finalize_worker. Grok remix timeout 120->180s. Видимый лог REF REMIX FAILED в консоли. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ, Сергею и Oplus"
+    "HOTFIX: import os убран из _finalize_worker — Finalize ImageGen больше не падает с 'cannot access local variable os'",
+    "Grok remix timeout увеличен 120 -> 180s",
+    "REF REMIX FAILED теперь видно в консоли",
+    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -152,7 +155,6 @@
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "46979878559fd052318abb868e6d5577",
-    "varagent.py.bak_20260412": "32f460be3d0575e1519ae2a36ee05f44",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "3f730c4041d51286620fef087229d6ac",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

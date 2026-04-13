@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.12.1446",
+  "version": "2026.04.13.2003",
   "changelog": [
-    "UTF-8 BOM fix (Codex), GPT timeout, YT Pack dynamic config, logo burning, Spanish prompt v2.0"
+    "HOTFIX: Finalize ImageGen падал с 'cannot access local variable os' — убран import os в _finalize_worker. Grok remix timeout 120->180s. Видимый лог REF REMIX FAILED в консоли. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ, Сергею и Oplus"
   ],
   "requires_restart": true,
   "files": {
@@ -30,7 +30,7 @@
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/codex_adapt.py": "030a5cd8c89189b8ea2692a78fec069f",
     "agent/modules/director.py": "35edb717feadfa5d1c71e632e17da7e8",
-    "agent/modules/fastgen.py": "4e598dc7b9d95d64ce9326e270762e98",
+    "agent/modules/fastgen.py": "8817cf774b1d0fde59c1cb3ef2b440b6",
     "agent/modules/gemini_rewrite.py": "39b5ed01c73184a74b5a18d4d0a96499",
     "agent/modules/gpt_director.py": "7fc9292b0dc6fca429a7b7619210d848",
     "agent/modules/imggen.py": "43cebe3eec64c395c6a7660f78805a25",
@@ -151,7 +151,8 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "32f460be3d0575e1519ae2a36ee05f44",
+    "varagent.py": "46979878559fd052318abb868e6d5577",
+    "varagent.py.bak_20260412": "32f460be3d0575e1519ae2a36ee05f44",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "3f730c4041d51286620fef087229d6ac",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

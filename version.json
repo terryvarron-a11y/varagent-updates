@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.14.2102",
+  "version": "2026.04.14.2103",
   "changelog": [
-    "Sync: SynthID hook in imggen+fastgen, config watermark vars, per-key base URL mapping fully synced"
+    "Auto-inject VEONONSTOP_API_BASE per-key + SynthID vars into user .env on update"
   ],
   "requires_restart": false,
   "files": {
@@ -43,7 +43,7 @@
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
     "agent/modules/transcriber.py": "6e0b94275d15765e0c7d4b6ea284cbf5",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "d2c40c884470a76f8f8dd413d47d9238",
+    "agent/modules/updater.py": "8132a171f54cfef52f1996142bef0d89",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "83f2b0bbc53fb335442e7239b449ba2b",
     "agent/modules/veononstop.py": "77c0f797bba934f93b68d79cd2435714",

@@ -1,12 +1,12 @@
 {
-  "version": "2026.04.14.0542",
+  "version": "2026.04.14.0607",
   "changelog": [
-    "HOTFIX: watch_i2v.py (inflight VideoGen) теперь поддерживает per-key base URL",
-    "Key2 на viet.veo.kotsklad.ru больше не получает 401 Invalid API key в inflight режиме",
-    "imggen.py остаётся на глобальном VEONONSTOP_API_BASE (viet не поддерживает image-gen)",
+    "HOTFIX: 'NameError: name root is not defined' в ControlPanel separate stages",
+    "Причина: _update_quota_header был вставлен внутри __init__ перед paste-fix блоком, ломая scope",
+    "Теперь _update_quota_header — отдельный метод класса VarAgentGUI, paste-fix корректно в __init__",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -155,7 +155,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "168f46d8786d40cf70431332ed6796fe",
+    "varagent.py": "2727c74e4537f7b52b3814ef173462a0",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

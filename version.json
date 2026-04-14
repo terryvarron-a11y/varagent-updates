@@ -1,10 +1,7 @@
 {
-  "version": "2026.04.14.0607",
+  "version": "2026.04.14.2058",
   "changelog": [
-    "HOTFIX: 'NameError: name root is not defined' в ControlPanel separate stages",
-    "Причина: _update_quota_header был вставлен внутри __init__ перед paste-fix блоком, ломая scope",
-    "Теперь _update_quota_header — отдельный метод класса VarAgentGUI, paste-fix корректно в __init__",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "SynthID inflight watermark removal + Audio WM Cleaner (disabled, pending better tool) + per-key VeoNonStop base URL mapping"
   ],
   "requires_restart": true,
   "files": {
@@ -109,7 +106,9 @@
     "agent/templates/subtitles_1080p.ass": "4e33a7d53b823412dc4f528b7f4a95f4",
     "agent/templates/subtitles_720p.ass": "5371c7aea61e53c9adbd2f2055aaa566",
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
+    "agent/tools/audio_cleaner.py": "cbef766ed1d8989adecb03efbe16fff5",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
+    "agent/tools/synthid_cleaner.py": "49c08aabcfcdbbe58f86cb1181aacf72",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "9273bc9af24641abd0c0c5f170a6701f",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
@@ -155,7 +154,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "2727c74e4537f7b52b3814ef173462a0",
+    "varagent.py": "f0bb143374aacfd7fa7ca9ea95e66165",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

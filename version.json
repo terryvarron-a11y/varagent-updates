@@ -1,18 +1,12 @@
 {
-  "version": "2026.04.14.0522",
+  "version": "2026.04.14.0542",
   "changelog": [
-    "VeoNonStop: per-key base URL — каждый из 4 ключей может быть на своём хосте (veononstop.org / viet.veo.kotsklad.ru)",
-    "VeoNonStop: submit rate limiter — мин 2 сек между sem.acquire на одном ключе, защита от slots_full каскада",
-    "VeoNonStop: shutdown check во всех retry блоках (ratelimit/hung/generation/timeout/generic) — STOP теперь мгновенный",
-    "VeoNonStop: slots_full детектит новый формат 'Allocated 0 new + 0 existing = 0 cookies (limit: N)'",
-    "Grok remix: retry delay 30s -> 5s для всех 429 и Cloudflare ошибок",
-    "GPT Quota indicator: видно в theme header + detail blок в Pipeline tab (примерно сколько осталось 5h/weekly)",
-    "GPT Quota: источник — live API /backend-api/wham/usage + session JSONL tail при активной генерации, auto-refresh 5 min + manual button",
-    "Transcriber: авто-фикс zero-duration фрагментов (end==start) — AssemblyAI иногда возвращает битый timing",
-    "varagent.py: пайплайн теперь правильно суммирует max_parallel по всем ключам учитывая per-key base URL (Key2 на viet больше не 0)",
+    "HOTFIX: watch_i2v.py (inflight VideoGen) теперь поддерживает per-key base URL",
+    "Key2 на viet.veo.kotsklad.ru больше не получает 401 Invalid API key в inflight режиме",
+    "imggen.py остаётся на глобальном VEONONSTOP_API_BASE (viet не поддерживает image-gen)",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -117,7 +111,7 @@
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
-    "agent/watch_i2v.py": "287241c01826bda2d719284005a1021e",
+    "agent/watch_i2v.py": "9273bc9af24641abd0c0c5f170a6701f",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",

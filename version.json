@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.14.2100",
+  "version": "2026.04.14.2102",
   "changelog": [
-    "Add VEONONSTOP_API_BASE per-key mapping to .env (was missing from PORTABLE)"
+    "Sync: SynthID hook in imggen+fastgen, config watermark vars, per-key base URL mapping fully synced"
   ],
   "requires_restart": false,
   "files": {
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "5d8cf4df7564ce13ab686f2416c14efb",
+    "agent/config.py": "94a225f72e012ef9942c2f52ad33517e",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -31,10 +31,10 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "8817cf774b1d0fde59c1cb3ef2b440b6",
+    "agent/modules/fastgen.py": "a8b04eb3a8120406c99ec21bee2e098f",
     "agent/modules/gemini_rewrite.py": "aaddb784b92fd8e671b1416d93720030",
     "agent/modules/gpt_director.py": "6bd449e396421cd0ebf8d52ed25a7286",
-    "agent/modules/imggen.py": "43cebe3eec64c395c6a7660f78805a25",
+    "agent/modules/imggen.py": "c59d720943bd77958b34fed3fdce6ca0",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "beafd1b2be4d9a0def12bb76eceee023",

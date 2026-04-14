@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.14.2058",
+  "version": "2026.04.14.2100",
   "changelog": [
-    "SynthID inflight watermark removal + Audio WM Cleaner (disabled, pending better tool) + per-key VeoNonStop base URL mapping"
+    "Add VEONONSTOP_API_BASE per-key mapping to .env (was missing from PORTABLE)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

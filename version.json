@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.14.2103",
+  "version": "2026.04.15.1821",
   "changelog": [
-    "Auto-inject VEONONSTOP_API_BASE per-key + SynthID vars into user .env on update"
+    "Fix: PUBLIC_ERROR_SEXUAL/CHILD → censorship rewrite chain; TIMED_OUT → no attempt wasted; localhost:3001 desktop backend in base URL dropdown; reCAPTCHA jitter 3+0.5-3s; process_1080p KeyError fix"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -45,7 +45,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "8132a171f54cfef52f1996142bef0d89",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
-    "agent/modules/veo_video.py": "83f2b0bbc53fb335442e7239b449ba2b",
+    "agent/modules/veo_video.py": "9c16d5983ed762eb5004a0f411a9ee1a",
     "agent/modules/veononstop.py": "77c0f797bba934f93b68d79cd2435714",
     "agent/modules/vision_checks.py": "5306804851964265a8a7a4c385ad8b4b",
     "agent/modules/yt_packer.py": "cbcce953f1797146d207eccd302e80e2",
@@ -69,7 +69,7 @@
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
     "agent/schemas/veo_adapt_control.json": "e2c906593a943c1bbc8fc371935580fd",
     "agent/templates/process_1080p.command": "07530329f776aed6f64cb22479d10d49",
-    "agent/templates/process_1080p.txt": "c0093e4710270ab3124020586b105587",
+    "agent/templates/process_1080p.txt": "2a6224186a328fe0475f5ea4c0b47e1d",
     "agent/templates/process_1080p_interactive.command": "739d98b515c9808eb532eda61904b5f3",
     "agent/templates/process_fast.command": "e26433ea45066bf9fb8a09d4cabebadc",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
@@ -154,7 +154,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "f0bb143374aacfd7fa7ca9ea95e66165",
+    "varagent.py": "eefab57de0abade0ff2f8cf78aed802f",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

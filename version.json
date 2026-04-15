@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.15.1821",
+  "version": "2026.04.15.1850",
   "changelog": [
-    "Fix: PUBLIC_ERROR_SEXUAL/CHILD → censorship rewrite chain; TIMED_OUT → no attempt wasted; localhost:3001 desktop backend in base URL dropdown; reCAPTCHA jitter 3+0.5-3s; process_1080p KeyError fix"
+    "Rewrite model selector in Control Panel ImageGen/VideoGen dialogs and Finalize Stage ImgGen/VideoGen sections"
   ],
   "requires_restart": true,
   "files": {
@@ -154,7 +154,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "eefab57de0abade0ff2f8cf78aed802f",
+    "varagent.py": "f1e33d90fe6aaebed753a56e30d9cc1b",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

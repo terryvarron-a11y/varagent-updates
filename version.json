@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.16.0837",
+  "version": "2026.04.16.1526",
   "changelog": [
-    "Fix: reCAPTCHA delay+jitter in Settings tab GUI (Spinbox widgets, env injection, preset save/load)"
+    "Fix: imggen.py per-key base_url not passed to VeoNonStopClient (Key2+ always used Key1 base URL)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -34,7 +34,7 @@
     "agent/modules/fastgen.py": "b503b6e86efb517400c7f5d48a2d4c87",
     "agent/modules/gemini_rewrite.py": "ddcf3d789beafedce4230ed7e295c135",
     "agent/modules/gpt_director.py": "c16f6e51b7ed8ed5938f287eb421836a",
-    "agent/modules/imggen.py": "16ef8aef278ce757b704cf4af9b70fb3",
+    "agent/modules/imggen.py": "618c28d7d5c13ddfae96ce8eb3664b1f",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "beafd1b2be4d9a0def12bb76eceee023",

@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.16.0542",
+  "version": "2026.04.16.0740",
   "changelog": [
-    "Fix: GPT director sequential clip processing + [CLIP N] ID format + raw_gpt session archiving + Rewrite model selector in Control Panel + localhost:3002/3003 VeoNonStop Desktop ports + veo_video PUBLIC_ERROR_SEXUAL/TIMED_OUT handling + reCAPTCHA jitter"
+    "Fix: SynthID non-ASCII path (Cyrillic) via temp dir + v3 codebook auto-download + pink OK log color + refusal retry x3 in gemini_rewrite + finalize panel SynthID checkbox"
   ],
   "requires_restart": true,
   "files": {
@@ -32,7 +32,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
     "agent/modules/fastgen.py": "a8b04eb3a8120406c99ec21bee2e098f",
-    "agent/modules/gemini_rewrite.py": "aaddb784b92fd8e671b1416d93720030",
+    "agent/modules/gemini_rewrite.py": "ddcf3d789beafedce4230ed7e295c135",
     "agent/modules/gpt_director.py": "700787b11e05140248437f4d90d97139",
     "agent/modules/imggen.py": "c59d720943bd77958b34fed3fdce6ca0",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
@@ -108,7 +108,7 @@
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/audio_cleaner.py": "cbef766ed1d8989adecb03efbe16fff5",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
-    "agent/tools/synthid_cleaner.py": "49c08aabcfcdbbe58f86cb1181aacf72",
+    "agent/tools/synthid_cleaner.py": "4005925555ca7ace979f6eb184ed228b",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "9273bc9af24641abd0c0c5f170a6701f",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
@@ -154,7 +154,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "4c57adccbb8ff7954ab9625d869b7230",
+    "varagent.py": "c0ac15b0e3f5a4ee1358bedad9f612d6",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

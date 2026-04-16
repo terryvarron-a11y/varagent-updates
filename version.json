@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.16.1526",
+  "version": "2026.04.16.1531",
   "changelog": [
-    "Fix: imggen.py per-key base_url not passed to VeoNonStopClient (Key2+ always used Key1 base URL)"
+    "Fix: rename_videos.py SyntaxWarning (\\d in docstring → \\d)"
   ],
   "requires_restart": false,
   "files": {
@@ -64,7 +64,7 @@
     "agent/prompts/veo_adapt_prompt.txt": "97a013461beb153360f0655e0b304683",
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
-    "agent/rename_videos.py": "0b0037fab5b8eba356c9800b7372ed70",
+    "agent/rename_videos.py": "9171bb1a78612f79e4dbcb0f3dbd8fc1",
     "agent/requirements.txt": "6f6c14333741ff90aa9f80efb06470fc",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",

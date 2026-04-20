@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.20.2337",
+  "version": "2026.04.21.0052",
   "changelog": [
-    "Fix: Gemini rewrite / vision_checks paid-quota leak — VISION_API_KEY now falls back only to new GEMINI_API_KEY_FREE (free-tier), never to paid GEMINI_API_KEY. VISION_API_KEY force-updated for all users. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: detect PUBLIC_ERROR_PROMINENT_PEOPLE_UPLOAD so i2v clips with celebrity images go through the existing rewrite+image-remix cycle instead of retrying blindly. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
   "files": {
@@ -45,7 +45,7 @@
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
     "agent/modules/updater.py": "b5faed5bcdc59257fba91e8e6a87e314",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
-    "agent/modules/veo_video.py": "d04537b6072b1cbfe2e74e6daf9d21aa",
+    "agent/modules/veo_video.py": "47c353365b315b8cafcdf91cdee846ed",
     "agent/modules/veononstop.py": "61aa29f8eb262e4ba0ace94be72e7f18",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "cbcce953f1797146d207eccd302e80e2",

@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.20.1802",
+  "version": "2026.04.20.2159",
   "changelog": [
-    "Fix: GPT Pass 2 MAX_PATH truncation — long project names with em dash broke Codex control file reading on Windows (260-char limit). Also bundled: Flow Ultra T2V/Ingredients buttons, veononstop download retry with backoff 5/10/20s. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: Gemini rewrite VEO3 backend crash — detect veo3_prompt_rewriter errors and retry with sanitized instruction (strip VEO/cinematic/video_prompt triggers). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -32,7 +32,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
     "agent/modules/fastgen.py": "cf7e2b9b418fa3d6d49232e04cf14ac5",
-    "agent/modules/gemini_rewrite.py": "2fb4e29c47224ed5ab9f041d029e8433",
+    "agent/modules/gemini_rewrite.py": "357ebaa526700bcdbd75d2a4fcc26674",
     "agent/modules/gpt_director.py": "9776d70251ead29479453a1524192c07",
     "agent/modules/imggen.py": "618c28d7d5c13ddfae96ce8eb3664b1f",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",

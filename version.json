@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.21.0052",
+  "version": "2026.04.21.0155",
   "changelog": [
-    "Fix: detect PUBLIC_ERROR_PROMINENT_PEOPLE_UPLOAD so i2v clips with celebrity images go through the existing rewrite+image-remix cycle instead of retrying blindly. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: YT Packer timeout — split GPT_REWRITE_TIMEOUT (90s) and YT_PACK_GPT_TIMEOUT (600s). Big multi-lang title+description+tags prompts no longer timeout at 90s. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
   "files": {
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "3f3521b3af3b18976e43d9e9ba047ed7",
+    "agent/config.py": "dbd0447b38e1bc0fc751f0539ace411c",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -32,7 +32,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
     "agent/modules/fastgen.py": "cf7e2b9b418fa3d6d49232e04cf14ac5",
-    "agent/modules/gemini_rewrite.py": "a574db1b43d7020e97f672eda3ba4863",
+    "agent/modules/gemini_rewrite.py": "dd1fc841320333bf91760686327e6a70",
     "agent/modules/gpt_director.py": "9776d70251ead29479453a1524192c07",
     "agent/modules/imggen.py": "618c28d7d5c13ddfae96ce8eb3664b1f",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
@@ -43,12 +43,12 @@
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
     "agent/modules/transcriber.py": "6e0b94275d15765e0c7d4b6ea284cbf5",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "b5faed5bcdc59257fba91e8e6a87e314",
+    "agent/modules/updater.py": "2e19465702dcd4729afd8e50389794a6",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "47c353365b315b8cafcdf91cdee846ed",
     "agent/modules/veononstop.py": "61aa29f8eb262e4ba0ace94be72e7f18",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
-    "agent/modules/yt_packer.py": "cbcce953f1797146d207eccd302e80e2",
+    "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
     "agent/modules/yt_transcriber.py": "f829ffb1ebac2b43435b73e11bbbf513",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "bc77a442d02f737f972a7a4f0439146a",

@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.21.0325",
+  "version": "2026.04.21.0600",
   "changelog": [
-    "Fix: GPT Pass 2 'high demand' cooldown + theme swap. (1) OpenAI 'We're currently experiencing high demand' now triggers 90s cooldown before retry — no more burning 3 retries in 3 seconds. (2) ClaudeVAR theme is now default; old purple theme available as 'purple'. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: Hard Stop + preflight model leak + patch_env leak. (1) Hard Stop now actually stops FastGen/VeoNonStop polling loops, retry waits, preflight. (2) FastGen preflight now sends model chosen in GUI, not config.FASTGEN_MODEL (was triggering 422 validation). (3) 'Failed to generate' with refs → treated as ref-block suspect (binary search triggered). (4) Grok chain fallback Key1→10s→Key2→30s→Key1→KieAI. (5) FastGen Key1/Key2/Both selector в Finalize. (6) patch_env removed from _load_env_editor — was overwriting user FastGen keys on every varagent start. (7) Preflight exception visibility — SKIPPED shows real error. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -31,13 +31,13 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "cf7e2b9b418fa3d6d49232e04cf14ac5",
+    "agent/modules/fastgen.py": "23818a40b3d85ebc4dfb938dc8c9f3b6",
     "agent/modules/gemini_rewrite.py": "dd1fc841320333bf91760686327e6a70",
     "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
-    "agent/modules/imggen.py": "618c28d7d5c13ddfae96ce8eb3664b1f",
+    "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
-    "agent/modules/remix.py": "c10681ad8643d561871e28cd8586d356",
+    "agent/modules/remix.py": "746cf34083576a16ec086723500afb75",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
@@ -46,7 +46,7 @@
     "agent/modules/updater.py": "6a79136493bf5f57ff1b3c2960430f66",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "47c353365b315b8cafcdf91cdee846ed",
-    "agent/modules/veononstop.py": "61aa29f8eb262e4ba0ace94be72e7f18",
+    "agent/modules/veononstop.py": "3841d21fd4db9d6848b10fdc4f4f9e09",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
     "agent/modules/yt_transcriber.py": "f829ffb1ebac2b43435b73e11bbbf513",
@@ -167,7 +167,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "09f56e2d92b951f5bce89a69af09f076",
+    "varagent.py": "3fe5ffc1fc9b222bf5aee85c43eae23a",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

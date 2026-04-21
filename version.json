@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.21.0826",
+  "version": "2026.04.21.0831",
   "changelog": [
-    "Fix: Grok chain with Flower img2img fallback before KieAI (both ref + i2v remix). Grok max_attempts=1 per key, pauses 1s. Cloudflare 403 on /v4/grok/image/edit теперь быстро переключается на /v4/flower/image/generate с reference_image — проверено что работает. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: unified remix chains. Both ref and i2v: Grok Key1x1 → 1s → Grok Key2x1 → Flower img2img → KieAI → raise. i2v got Key2 fallback (было один вызов), ref убрал Key1-retry phase. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
   "files": {
@@ -37,7 +37,7 @@
     "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
-    "agent/modules/remix.py": "d3677835972096c5496ff1114a26ae4f",
+    "agent/modules/remix.py": "7ea3e7c84f30483523319a171b403d74",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",

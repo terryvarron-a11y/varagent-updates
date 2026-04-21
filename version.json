@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.21.0155",
+  "version": "2026.04.21.0325",
   "changelog": [
-    "Fix: YT Packer timeout — split GPT_REWRITE_TIMEOUT (90s) and YT_PACK_GPT_TIMEOUT (600s). Big multi-lang title+description+tags prompts no longer timeout at 90s. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: GPT Pass 2 'high demand' cooldown + theme swap. (1) OpenAI 'We're currently experiencing high demand' now triggers 90s cooldown before retry — no more burning 3 retries in 3 seconds. (2) ClaudeVAR theme is now default; old purple theme available as 'purple'. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": false,
   "files": {
@@ -20,7 +20,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "dbd0447b38e1bc0fc751f0539ace411c",
+    "agent/config.py": "d418520c09426f821b93a3f1ba2a3fd7",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -33,7 +33,7 @@
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
     "agent/modules/fastgen.py": "cf7e2b9b418fa3d6d49232e04cf14ac5",
     "agent/modules/gemini_rewrite.py": "dd1fc841320333bf91760686327e6a70",
-    "agent/modules/gpt_director.py": "9776d70251ead29479453a1524192c07",
+    "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
     "agent/modules/imggen.py": "618c28d7d5c13ddfae96ce8eb3664b1f",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
@@ -43,7 +43,7 @@
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
     "agent/modules/transcriber.py": "6e0b94275d15765e0c7d4b6ea284cbf5",
     "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
-    "agent/modules/updater.py": "2e19465702dcd4729afd8e50389794a6",
+    "agent/modules/updater.py": "6a79136493bf5f57ff1b3c2960430f66",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "47c353365b315b8cafcdf91cdee846ed",
     "agent/modules/veononstop.py": "61aa29f8eb262e4ba0ace94be72e7f18",
@@ -160,8 +160,8 @@
     "split_srt.bat": "71f7fd7bbb2725f3f01c154fbe830254",
     "split_srt.py": "a69ff3acc442451b2237a0b695b3cea7",
     "START_HERE.md": "970fec509b6e2f2c6baa9227b902ee28",
-    "themes/default.json": "4e6ce5ef6bf62e167f71f1d24880b12d",
-    "themes/zombovar.json": "c254a2291566850c86160d9e8d93e812",
+    "themes/default.json": "c254a2291566850c86160d9e8d93e812",
+    "themes/purple.json": "daf264d94a54f38b4f79e4036a088216",
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "update.bat": "59c6354bc324d54da95457f3f599d627",
     "update.command": "12174fc7d7bac38fc195616258237946",

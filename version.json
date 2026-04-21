@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.21.0600",
+  "version": "2026.04.21.0759",
   "changelog": [
-    "Fix: Hard Stop + preflight model leak + patch_env leak. (1) Hard Stop now actually stops FastGen/VeoNonStop polling loops, retry waits, preflight. (2) FastGen preflight now sends model chosen in GUI, not config.FASTGEN_MODEL (was triggering 422 validation). (3) 'Failed to generate' with refs → treated as ref-block suspect (binary search triggered). (4) Grok chain fallback Key1→10s→Key2→30s→Key1→KieAI. (5) FastGen Key1/Key2/Both selector в Finalize. (6) patch_env removed from _load_env_editor — was overwriting user FastGen keys on every varagent start. (7) Preflight exception visibility — SKIPPED shows real error. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: preflight auto-prompt from ref filenames (ловит celebrity до генерации); binary search retry on SKIPPED; failed-remix refs dropped (no infinite loop); global Hard Stop between stages; rewrite/Grok chain/KieAI retry stoppable; patch_env removed from _load_env_editor (user keys no longer overwritten); FastGen Key1/Key2/Both + VeoNonStop 4-keys в Image Gen dialog. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
   "files": {
@@ -31,13 +31,13 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "23818a40b3d85ebc4dfb938dc8c9f3b6",
-    "agent/modules/gemini_rewrite.py": "dd1fc841320333bf91760686327e6a70",
+    "agent/modules/fastgen.py": "67c6649da40728c71fc84de727de267f",
+    "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
     "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
     "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
-    "agent/modules/remix.py": "746cf34083576a16ec086723500afb75",
+    "agent/modules/remix.py": "df951675eefb76188531fa538e33c804",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
@@ -167,7 +167,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "3fe5ffc1fc9b222bf5aee85c43eae23a",
+    "varagent.py": "a9353b063066c0c7071f259900738a60",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

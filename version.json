@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.21.0835",
+  "version": "2026.04.21.0903",
   "changelog": [
-    "Fix: Hard Stop blocked next Finalize run — shutdown events now clear() at start of _finalize_worker. Previously event stayed set after Hard Stop, _is_hard_stopped() check at start of stage loop fired → break → pipeline skipped entirely. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: preflight и ref remix — timeout 15s (backend hang = скрытый ref-block, не надо ждать 90-180s). Preflight TimeoutError trait как ref-block напрямую. Binary search retry остался для transient network errors. i2v remix и обычная генерация не задеты. Hard Stop events clear в начале Finalize (чтобы не блочить следующий запуск). СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -31,7 +31,7 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "6ddc8f31fd3e42850cf4c7f2112ae774",
+    "agent/modules/fastgen.py": "e310adbca72ecc0a08be67f9487ae28a",
     "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
     "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
     "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",

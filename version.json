@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.21.0831",
+  "version": "2026.04.21.0835",
   "changelog": [
-    "Fix: unified remix chains. Both ref and i2v: Grok Key1x1 → 1s → Grok Key2x1 → Flower img2img → KieAI → raise. i2v got Key2 fallback (было один вызов), ref убрал Key1-retry phase. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: Hard Stop blocked next Finalize run — shutdown events now clear() at start of _finalize_worker. Previously event stayed set after Hard Stop, _is_hard_stopped() check at start of stage loop fired → break → pipeline skipped entirely. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -167,7 +167,7 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "a9353b063066c0c7071f259900738a60",
+    "varagent.py": "610696c3593b725cac2892aa1ad871e1",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.21.0759",
+  "version": "2026.04.21.0826",
   "changelog": [
-    "Fix: preflight auto-prompt from ref filenames (ловит celebrity до генерации); binary search retry on SKIPPED; failed-remix refs dropped (no infinite loop); global Hard Stop between stages; rewrite/Grok chain/KieAI retry stoppable; patch_env removed from _load_env_editor (user keys no longer overwritten); FastGen Key1/Key2/Both + VeoNonStop 4-keys в Image Gen dialog. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "Fix: Grok chain with Flower img2img fallback before KieAI (both ref + i2v remix). Grok max_attempts=1 per key, pauses 1s. Cloudflare 403 on /v4/grok/image/edit теперь быстро переключается на /v4/flower/image/generate с reference_image — проверено что работает. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -31,13 +31,13 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "67c6649da40728c71fc84de727de267f",
+    "agent/modules/fastgen.py": "6ddc8f31fd3e42850cf4c7f2112ae774",
     "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
     "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
     "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",
     "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
-    "agent/modules/remix.py": "df951675eefb76188531fa538e33c804",
+    "agent/modules/remix.py": "d3677835972096c5496ff1114a26ae4f",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",

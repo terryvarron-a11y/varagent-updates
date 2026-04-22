@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.22.0707",
+  "version": "2026.04.22.0714",
   "changelog": [
-    "AUDIO_FILTERED cascade-fix (rewrite+remix hint вместо пустого retry); REWRITE_MODEL flash->flash-lite (1000 RPD free-tier); VISION_CHECK_MODEL forced flash-lite; Stage Finalize/Control Panel прокидывают rewriter в subprocess; transcriber reversed-after-overlap autofix; rewrite_prompt запрет [REDACTED]-placeholder; FLOWER в FASTGEN dropdown. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "veononstop.py: integrity check после download (ffprobe); битый → один перескач того же task_id → если снова битый, raise в veo_video для resubmit новой генерации"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -46,7 +46,7 @@
     "agent/modules/updater.py": "941c17c907f1d773692ae5951121e5f8",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "430b8b9bf051e97ba5c39b60cbf0c84d",
-    "agent/modules/veononstop.py": "3841d21fd4db9d6848b10fdc4f4f9e09",
+    "agent/modules/veononstop.py": "a8a33d1222a2c9aef49a047c4f06f4eb",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
     "agent/modules/yt_transcriber.py": "f829ffb1ebac2b43435b73e11bbbf513",

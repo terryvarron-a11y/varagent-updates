@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.22.0714",
+  "version": "2026.04.22.1534",
   "changelog": [
-    "veononstop.py: integrity check после download (ffprobe); битый → один перескач того же task_id → если снова битый, raise в veo_video для resubmit новой генерации"
+    "video_concat: auto-rename vid_img/ + generated/ в 3-значный формат (001.mp4, 001.png) перед склейкой; rename_videos.py: новый --zero-pad (default 3), работает и для картинок типа banana_0001_Long Title.png"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -31,7 +31,7 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "e310adbca72ecc0a08be67f9487ae28a",
+    "agent/modules/fastgen.py": "52e35cd197002cce7870f3dc93f09676",
     "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
     "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
     "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",
@@ -46,7 +46,7 @@
     "agent/modules/updater.py": "941c17c907f1d773692ae5951121e5f8",
     "agent/modules/validator.py": "0a065494a3276869ddc27141d32ed231",
     "agent/modules/veo_video.py": "430b8b9bf051e97ba5c39b60cbf0c84d",
-    "agent/modules/veononstop.py": "a8a33d1222a2c9aef49a047c4f06f4eb",
+    "agent/modules/veononstop.py": "4be8bbe182e03ca967ac04be9a036aa1",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
     "agent/modules/yt_transcriber.py": "f829ffb1ebac2b43435b73e11bbbf513",
@@ -76,7 +76,7 @@
     "agent/prompts/veo_adapt_prompt.txt": "97a013461beb153360f0655e0b304683",
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
-    "agent/rename_videos.py": "9171bb1a78612f79e4dbcb0f3dbd8fc1",
+    "agent/rename_videos.py": "992adb4ed173439ff064c282fe672798",
     "agent/requirements.txt": "6f6c14333741ff90aa9f80efb06470fc",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
@@ -167,9 +167,9 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "fcea0ec53370c64fd729f6db26c48a5f",
+    "varagent.py": "aaf9e1f5f7260783badf9893e0bad159",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "73be8a8d10ed59eb4bdce0efab68390f",
+    "video_concat.py": "8dd7b654d25afd5ac96f6c963807b90e",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

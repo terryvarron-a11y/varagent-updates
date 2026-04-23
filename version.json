@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.22.1534",
+  "version": "2026.04.23.0558",
   "changelog": [
-    "video_concat: auto-rename vid_img/ + generated/ в 3-значный формат (001.mp4, 001.png) перед склейкой; rename_videos.py: новый --zero-pad (default 3), работает и для картинок типа banana_0001_Long Title.png"
+    "FastGen Flow Ultra video engine integration (full parity with VeoNonStop: retry/rewrite/remix/static chain, inflight watcher watch_i2v_flowultra.py, Pipeline+Finalize+ControlPanel dialogs), preflight cold-start timeout fix (15s→180s + SKIPPED vs BLOCKED), Hard Stop propagation, logo aspect-ratio preservation in concat (no more egg), log classifier false-positive guard, VideoGen config override scope fix (fast_censor/skipper now applies to both engines)"
   ],
   "requires_restart": true,
   "files": {
@@ -15,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "b5cee1eff352cd016e6922a122c3feb9",
+    "agent/agent.py": "238114bba315077f5be0fb65843ca2fa",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -31,7 +31,8 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "a0614660107c7d05349acad881eb6684",
-    "agent/modules/fastgen.py": "52e35cd197002cce7870f3dc93f09676",
+    "agent/modules/fastgen.py": "336c039fd6b256988b43bffa212a62e7",
+    "agent/modules/flowultra.py": "432f085a802a3bb6ebdc0e37da31433b",
     "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
     "agent/modules/gpt_director.py": "bce4135cf02dc8e6a2d39e217694b890",
     "agent/modules/imggen.py": "4d4f66fbd32ceef386ab52d8001e160a",
@@ -124,6 +125,7 @@
     "agent/tools/synthid_cleaner.py": "5054b67ca28ea772576d423eceb8653d",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "17f4caec351fb8ac9815b0ae170eda8a",
+    "agent/watch_i2v_flowultra.py": "4221caa752c7ec294a4c75bee5a6981d",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -131,6 +133,7 @@
     "check_update_debug.py": "ee09fb9493c65199d237b9ae08c2414e",
     "check_veo_key.py": "17964d2ff2ce74e6e9aef6af7240690d",
     "check_version.py": "133c121fb9f2648388ddc7ca0f5e79be",
+    "CLAUDE.md": "156f4dc3e0d9bf91ebee88d320a92613",
     "Codex/README.txt": "c619829be90439784e94c8bae74de73c",
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
@@ -167,9 +170,10 @@
     "update.command": "12174fc7d7bac38fc195616258237946",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "aaf9e1f5f7260783badf9893e0bad159",
+    "varagent.py": "a228e914113a1f45005a33eba678ac34",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "8dd7b654d25afd5ac96f6c963807b90e",
+    "video_concat.py": "b0ae5f965c1ef4d3392e614931cb55b3",
+    "video_concat.py.bak_20260422_apostrophe": "8dd7b654d25afd5ac96f6c963807b90e",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

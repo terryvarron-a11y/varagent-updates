@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.26.1551",
+  "version": "2026.04.27.1518",
   "changelog": [
-    "Chain mode Pass 2 refactor: HEAD/EXTEND labels in clip cards, chain-aware chunking, adaptive i2v/t2v prompt, CHAIN_IMGGEN_HEADS_ONLY filter wired, chain GUI params propagation"
+    "Update Codex CLI кнопка теперь кросс-платформенная: Windows качает exe в Codex/ как раньше, Mac запускает brew install/upgrade --cask codex (Codex окажется в PATH, искатель найдёт через shutil.which). Искатель (config.py + _codex_login) НЕ менялся. СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
   "files": {
@@ -15,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "238114bba315077f5be0fb65843ca2fa",
+    "agent/agent.py": "5a69c4f85e83954b1891893abf02c792",
     "agent/cancel_all.py": "c75dbf7895b05448a24e42cf96576909",
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
@@ -36,7 +36,7 @@
     "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
     "agent/modules/gpt_director.py": "07f91a9da21572ce2c50e08739de26af",
     "agent/modules/imggen.py": "0848524f377bddc6f4a94bca72d7aeaf",
-    "agent/modules/queue.py": "7423535b1af34d5ad1ad20624974e3a4",
+    "agent/modules/queue.py": "aad6431a2eaa05a41b38060ad1530c01",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "7ea3e7c84f30483523319a171b403d74",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
@@ -168,10 +168,10 @@
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "update.bat": "59c6354bc324d54da95457f3f599d627",
     "update.command": "12174fc7d7bac38fc195616258237946",
-    "update_codex.py": "62ae0969590d7391ebe2293aa511509e",
+    "update_codex.py": "e1f2cc4f88db0d7c3d1669b17d727142",
     "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "7f94cb03a5835fdecbbd61313b49af46",
+    "varagent.py": "ebea625ad84afad33af56bf3aa873c79",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "56c48ce73b55fc799993ec0b6dee8e5a",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

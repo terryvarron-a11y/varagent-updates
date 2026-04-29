@@ -1,7 +1,7 @@
 {
-  "version": "2026.04.29.2159",
+  "version": "2026.04.29.2202",
   "changelog": [
-    "HOTFIX Mac SSL: multi-fallback SSL context (certifi → default → unverified). Added certifi to requirements.txt"
+    "EMERGENCY UPDATE: добавлен emergency_update.py/.bat/.command для обхода SSL ошибки в старом updater (скачивает обновление напрямую с GitHub)"
   ],
   "requires_restart": false,
   "files": {
@@ -139,7 +139,11 @@
     "Codex/README.txt": "c619829be90439784e94c8bae74de73c",
     "debug/varagent.py": "cdf5eb7722b539156389bbe273a69918",
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
+    "emergency_update.bat": "bbc270d273f7d18fefb478de20ac4cab",
+    "emergency_update.command": "79e8be7911211f92a55d68dfbc2c9cb6",
+    "emergency_update.py": "be13ad493b1568ee5f599c85b44fbdfa",
     "fix_macos.command": "34344f8afa0cf5e4318a65fb0392cd88",
+    "fix_ssl_mac.command": "9bb19ee83b8cbab76bcb03cc80fd3262",
     "fix_tkinter.command": "dd7ef3027f446a8f66e7d58133658d38",
     "install.bat": "5a9775c18dc4f4873d29256183f61c5b",
     "install.command": "c22d8c4cbd0d5d01471e159c31d70d5c",

@@ -1,8 +1,9 @@
 {
-  "version": "2026.04.29.1337",
+  "version": "2026.04.29.2012",
   "changelog": [
-    "Fix: VeoNonStop IP image fallback now uses per-clip image prompts for Banana regeneration instead of the global motion prompt.",
-    "Fix: prevents unrelated Banana-regenerated frames when using single-prompt i2v mode."
+    "Fix: user text files saved as UTF-16/UTF-32 on macOS or Windows are now decoded automatically.",
+    "Fix: TTS scripts, style guides, and script-director inputs no longer crash with UTF-8 decode errors.",
+    "Fix: Windows launcher now detects Python 3.14 pythoncore installs and command-based Python installs."
   ],
   "requires_restart": false,
   "files": {
@@ -31,20 +32,20 @@
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
-    "agent/modules/director.py": "67130bd19cae86a2bd21ab3514e20ced",
+    "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
     "agent/modules/fastgen.py": "cfe3d8187d24d6d9c0aeb36c3a75dda2",
     "agent/modules/flowultra.py": "23704bcacfe34aa76bd6f582dc671d06",
     "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
-    "agent/modules/gpt_director.py": "07f91a9da21572ce2c50e08739de26af",
+    "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "0848524f377bddc6f4a94bca72d7aeaf",
-    "agent/modules/queue.py": "aad6431a2eaa05a41b38060ad1530c01",
+    "agent/modules/queue.py": "d37068c2062446c9a32f79e800e903dc",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "7ea3e7c84f30483523319a171b403d74",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
-    "agent/modules/script_director.py": "6c6b8242d482205f3b8762515e4a7323",
+    "agent/modules/script_director.py": "f91ee515976931c16d950e07467f061b",
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
     "agent/modules/transcriber.py": "89b3f3d48ac554e27ecfb24077b386b7",
-    "agent/modules/tts.py": "4390e2b9061e12a75df3cc890b34aead",
+    "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
     "agent/modules/updater.py": "25ee2e5b7efd92ba605e0e45af1d1fc6",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_video.py": "88bedd34a838d9e77ca302a04ceb455d",
@@ -170,11 +171,12 @@
     "update.bat": "59c6354bc324d54da95457f3f599d627",
     "update.command": "12174fc7d7bac38fc195616258237946",
     "update_codex.py": "e1f2cc4f88db0d7c3d1669b17d727142",
-    "varagent.bat": "f59654b8c87260d6b46e111fd2ec271f",
+    "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "ebea625ad84afad33af56bf3aa873c79",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "56c48ce73b55fc799993ec0b6dee8e5a",
-    "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
+    "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
+    "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a"
   }
 }

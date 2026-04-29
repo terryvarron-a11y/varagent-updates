@@ -1,9 +1,9 @@
 {
-  "version": "2026.04.29.2143",
+  "version": "2026.04.29.2159",
   "changelog": [
-    "SSL fix: updater.py — добавлен SSL context для обхода CERTIFICATE_VERIFY_FAILED. Синк: veo_video.py (timeout retries), config.py (MAX_TIMEOUT_RETRIES var), varagent.py (Preset UI)"
+    "HOTFIX Mac SSL: multi-fallback SSL context (certifi → default → unverified). Added certifi to requirements.txt"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
@@ -46,7 +46,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "89b3f3d48ac554e27ecfb24077b386b7",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "cbb35d5e956feee7e309bd9e494c6e87",
+    "agent/modules/updater.py": "4880be5ddbe08f807804392d7c89dcd2",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_video.py": "65076cc6f2ed0510a9792c525c8fcc02",
     "agent/modules/veononstop.py": "3112138272b932b49c53b694fbac1a18",
@@ -80,7 +80,7 @@
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "992adb4ed173439ff064c282fe672798",
-    "agent/requirements.txt": "6f6c14333741ff90aa9f80efb06470fc",
+    "agent/requirements.txt": "f3b44ef74d4ba0a97d180bc4158c3cef",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
     "agent/schemas/veo_adapt_control.json": "e2c906593a943c1bbc8fc371935580fd",

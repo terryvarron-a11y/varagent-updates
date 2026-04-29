@@ -1,12 +1,11 @@
 {
-  "version": "2026.04.29.2012",
+  "version": "2026.04.29.2143",
   "changelog": [
-    "Fix: user text files saved as UTF-16/UTF-32 on macOS or Windows are now decoded automatically.",
-    "Fix: TTS scripts, style guides, and script-director inputs no longer crash with UTF-8 decode errors.",
-    "Fix: Windows launcher now detects Python 3.14 pythoncore installs and command-based Python installs."
+    "SSL fix: updater.py — добавлен SSL context для обхода CERTIFICATE_VERIFY_FAILED. Синк: veo_video.py (timeout retries), config.py (MAX_TIMEOUT_RETRIES var), varagent.py (Preset UI)"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
+    ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -22,7 +21,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "803619f4757faed5a835a1e768eb41c7",
+    "agent/config.py": "23120c35050bf2ff88ce7e4dbd714e38",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "d9e3067c428ba29f1fcea4c0de207db6",
@@ -44,11 +43,12 @@
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "f91ee515976931c16d950e07467f061b",
     "agent/modules/sg_adapter.py": "00b87c0bc29d87cdb51c350ddcd4524f",
+    "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "89b3f3d48ac554e27ecfb24077b386b7",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "25ee2e5b7efd92ba605e0e45af1d1fc6",
+    "agent/modules/updater.py": "cbb35d5e956feee7e309bd9e494c6e87",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
-    "agent/modules/veo_video.py": "88bedd34a838d9e77ca302a04ceb455d",
+    "agent/modules/veo_video.py": "65076cc6f2ed0510a9792c525c8fcc02",
     "agent/modules/veononstop.py": "3112138272b932b49c53b694fbac1a18",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
@@ -141,11 +141,11 @@
     "debug/video_concat.py": "16bcddb83519cf2a1acabd9b944586fd",
     "fix_macos.command": "34344f8afa0cf5e4318a65fb0392cd88",
     "fix_tkinter.command": "dd7ef3027f446a8f66e7d58133658d38",
-    "install.bat": "da681d7d9387e873d7dfe1269dab31cc",
+    "install.bat": "5a9775c18dc4f4873d29256183f61c5b",
     "install.command": "c22d8c4cbd0d5d01471e159c31d70d5c",
-    "install_arm.bat": "956bdd0e2e3a49b26c8fe69dfaff820a",
+    "install_arm.bat": "addbf7d55f03138fd2cc11b54c2bd248",
     "install_colorama.command": "f3ca4ce7c3cb2dd299d4320296db1588",
-    "install_ffmpeg.bat": "96b2ca0a052f7db45f9fb3778faf6ad5",
+    "install_ffmpeg.bat": "a57637035f07f1113b6d83bbeb477adc",
     "install_ffmpeg.command": "3c01ecccf41279448ab444488feeacbd",
     "install_mac.command": "a721640449eaa63b6fed4d77a407402a",
     "photo_concat.py": "9de6c35af4c6d1b710cf97bffc7f34b3",
@@ -173,10 +173,9 @@
     "update_codex.py": "e1f2cc4f88db0d7c3d1669b17d727142",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "ebea625ad84afad33af56bf3aa873c79",
+    "varagent.py": "7928dd8e16121a00590e62230ba06e74",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "56c48ce73b55fc799993ec0b6dee8e5a",
-    "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
-    "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a"
+    "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

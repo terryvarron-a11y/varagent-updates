@@ -1,9 +1,10 @@
 {
-  "version": "2026.04.30.1532",
+  "version": "2026.04.30.2349",
   "changelog": [
-    "UI fix: Preset combobox не уезжает за границу столбца (убран expand=True, добавлен padx)"
+    "YT Pack: логируем stderr/returncode GPT/Codex при пустом ответе вместо скрытой JSON-ошибки",
+    "Video concat: фикс PNG-вставок в VEO audio inline - добавляется тихая AAC-дорожка и старые silent processed-файлы пересоздаются"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
@@ -34,7 +35,7 @@
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
     "agent/modules/fastgen.py": "cfe3d8187d24d6d9c0aeb36c3a75dda2",
     "agent/modules/flowultra.py": "23704bcacfe34aa76bd6f582dc671d06",
-    "agent/modules/gemini_rewrite.py": "a42e4b8d5b442c34dd0193730fa1f71b",
+    "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "0848524f377bddc6f4a94bca72d7aeaf",
     "agent/modules/queue.py": "d37068c2062446c9a32f79e800e903dc",
@@ -179,7 +180,7 @@
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "16429471b519010537a6716921511523",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "56c48ce73b55fc799993ec0b6dee8e5a",
+    "video_concat.py": "afddda18c048cd6eedc536104c641c70",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

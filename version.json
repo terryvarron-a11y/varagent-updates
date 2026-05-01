@@ -1,8 +1,7 @@
 {
-  "version": "2026.04.30.2349",
+  "version": "2026.05.02.0036",
   "changelog": [
-    "YT Pack: логируем stderr/returncode GPT/Codex при пустом ответе вместо скрытой JSON-ошибки",
-    "Video concat: фикс PNG-вставок в VEO audio inline - добавляется тихая AAC-дорожка и старые silent processed-файлы пересоздаются"
+    "Parallel chain processing (veo_video + flowultra) + AUDIO_FILTERED fix (retry instead of rewrite)"
   ],
   "requires_restart": false,
   "files": {
@@ -34,7 +33,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
     "agent/modules/fastgen.py": "cfe3d8187d24d6d9c0aeb36c3a75dda2",
-    "agent/modules/flowultra.py": "23704bcacfe34aa76bd6f582dc671d06",
+    "agent/modules/flowultra.py": "4d9a02770bd0d65209b6879d18f72e50",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "0848524f377bddc6f4a94bca72d7aeaf",
@@ -49,7 +48,7 @@
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
     "agent/modules/updater.py": "4880be5ddbe08f807804392d7c89dcd2",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
-    "agent/modules/veo_video.py": "65076cc6f2ed0510a9792c525c8fcc02",
+    "agent/modules/veo_video.py": "dc5b7de313cb5e8c70fac0b7a60825bb",
     "agent/modules/veononstop.py": "3112138272b932b49c53b694fbac1a18",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
@@ -124,7 +123,7 @@
     "agent/templates/subtitles_720p.ass": "5371c7aea61e53c9adbd2f2055aaa566",
     "agent/test_refs.py": "e941af4cd31d8bf95991619d644cf9a7",
     "agent/tools/audio_cleaner.py": "cbef766ed1d8989adecb03efbe16fff5",
-    "agent/tools/extract_last_frame.py": "8f0649bb1a76e536a8fc1739cac62d3b",
+    "agent/tools/extract_last_frame.py": "fb2752a12ec556634dbad5d572a0d229",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/synthid_cleaner.py": "5054b67ca28ea772576d423eceb8653d",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
@@ -180,7 +179,7 @@
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "16429471b519010537a6716921511523",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
-    "video_concat.py": "afddda18c048cd6eedc536104c641c70",
+    "video_concat.py": "2170bede1c2ab26631aa99a5075e3011",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

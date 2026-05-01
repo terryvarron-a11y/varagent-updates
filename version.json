@@ -1,9 +1,9 @@
 {
-  "version": "2026.05.02.0036",
+  "version": "2026.05.02.0049",
   "changelog": [
-    "Parallel chain processing (veo_video + flowultra) + AUDIO_FILTERED fix (retry instead of rewrite)"
+    "Resizable panel divider in Pipeline tab (drag left/right to resize panels)"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     ".gitignore": "8112c6a49cc2afee72755c956feab7fa",
@@ -177,7 +177,7 @@
     "update_codex.py": "e1f2cc4f88db0d7c3d1669b17d727142",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "16429471b519010537a6716921511523",
+    "varagent.py": "de2a8643de686e364afa6d75cd590e70",
     "variable_concat.py": "57251fb00a33c9d0cbdd7bf03f75adc2",
     "video_concat.py": "2170bede1c2ab26631aa99a5075e3011",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"

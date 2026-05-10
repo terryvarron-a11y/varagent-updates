@@ -1,12 +1,9 @@
 {
-  "version": "2026.05.10.1607",
+  "version": "2026.05.10.1716",
   "changelog": [
-    "HOTFIX: исправлен критический баг с перезаписью пользовательских presets.json",
-    "Bridge Integration: USATAYAI/Korshun adapters для интеграции с внешними генераторами",
-    "EXTEND промпты оптимизированы (action-centric, -70% токенов)",
-    "presets.json и cost_log.json теперь НЕ перезаписываются при обновлениях"
+    "Fix: толще watermark шторы (закрывают краешек логотипа Veo)"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -168,7 +165,7 @@
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "694a51cfca258631dfac3fe653ae6db5",
-    "video_concat.py": "63553a1442a5fa6334adb620f0b65bad",
+    "video_concat.py": "00a9b1c8573ba633b806bfa06949b4f7",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

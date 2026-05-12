@@ -1,10 +1,10 @@
 {
-  "version": "2026.05.12.1846",
+  "version": "2026.05.12.1923",
   "changelog": [
     "Pipeline: FastGen Ultra workers no longer clamp to VeoNonStop key limit.",
-    "Pipeline: FastGen Ultra video generation can select more than 12 workers when the FastGen account allows it."
+    "Full portable patch refreshed so older installs can update all modules in one pass."
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

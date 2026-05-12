@@ -1,10 +1,10 @@
 {
-  "version": "2026.05.12.1923",
+  "version": "2026.05.12.2136",
   "changelog": [
-    "Pipeline: FastGen Ultra workers no longer clamp to VeoNonStop key limit.",
-    "Full portable patch refreshed so older installs can update all modules in one pass."
+    "ImgGen: after transient VeoNonStop 5xx/censorship/slot errors, workers hold their submit slot briefly before retrying instead of immediately hammering cookie slots.",
+    "Pipeline: FastGen Ultra workers no longer clamp to VeoNonStop key limit."
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -40,7 +40,7 @@
     "agent/modules/flowultra.py": "4d9a02770bd0d65209b6879d18f72e50",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
-    "agent/modules/imggen.py": "0848524f377bddc6f4a94bca72d7aeaf",
+    "agent/modules/imggen.py": "d06908a3bd5871554cc996f943a9ea93",
     "agent/modules/queue.py": "d37068c2062446c9a32f79e800e903dc",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "7ea3e7c84f30483523319a171b403d74",

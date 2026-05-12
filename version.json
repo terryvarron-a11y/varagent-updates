@@ -1,9 +1,10 @@
 {
-  "version": "2026.05.10.1716",
+  "version": "2026.05.12.1846",
   "changelog": [
-    "Fix: толще watermark шторы (закрывают краешек логотипа Veo)"
+    "Pipeline: FastGen Ultra workers no longer clamp to VeoNonStop key limit.",
+    "Pipeline: FastGen Ultra video generation can select more than 12 workers when the FastGen account allows it."
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -164,7 +165,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "694a51cfca258631dfac3fe653ae6db5",
+    "varagent.py": "40d5d0f33f98e68f957e55195fca1dce",
     "video_concat.py": "00a9b1c8573ba633b806bfa06949b4f7",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

@@ -1,10 +1,11 @@
 {
-  "version": "2026.05.12.2136",
+  "version": "2026.05.13.1805",
   "changelog": [
-    "ImgGen: after transient VeoNonStop 5xx/censorship/slot errors, workers hold their submit slot briefly before retrying instead of immediately hammering cookie slots.",
+    "VideoGen: worker pool now matches available server slots exactly; removed +5 oversubscribe workers.",
+    "ImgGen: transient VeoNonStop submit errors hold their submit slot briefly before retrying.",
     "Pipeline: FastGen Ultra workers no longer clamp to VeoNonStop key limit."
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -52,7 +53,7 @@
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
     "agent/modules/updater.py": "18e2e83ece162d00422705a39fdec9fe",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
-    "agent/modules/veo_video.py": "a6117d66799f43de9de6b2be4e0a1823",
+    "agent/modules/veo_video.py": "637f2c2f65f926a0c1a8956c8099bd8a",
     "agent/modules/veo_video.py.backup_before_semaphore_fix_20260411_195546": "8563ecf2027447d275ea1193e6fab7d3",
     "agent/modules/veo_video.py.backup_semaphore_20260411_194930": "8563ecf2027447d275ea1193e6fab7d3",
     "agent/modules/veononstop.py": "3112138272b932b49c53b694fbac1a18",

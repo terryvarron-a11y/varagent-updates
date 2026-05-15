@@ -1,10 +1,8 @@
 {
-  "version": "2026.05.15.1747",
+  "version": "2026.05.15.1841",
   "changelog": [
-    "Full portable patch republished to restore dependency consistency",
-    "Included extract_prompt.py required by VeoNonStop/Flow Ultra prompt remapping",
-    "Flow Ultra: fixed FastGen key mapping and unified prompt parsing across pipeline/finalize/control-panel/inflight",
-    "VeoNonStop: added /account/usage pre-submit gate using active_tasks + queued_tasks"
+    "Hotfix: updater no longer overwrites user .env API keys",
+    "Env migration now adds missing key fields without forcing secret values"
   ],
   "requires_restart": false,
   "files": {
@@ -52,7 +50,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "89b3f3d48ac554e27ecfb24077b386b7",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "18e2e83ece162d00422705a39fdec9fe",
+    "agent/modules/updater.py": "a90d06bbb24d3b11a7021e6bec9d989c",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_video.py": "32e056d67dad87c9678e81e64ed81b21",
     "agent/modules/veo_video.py.backup_before_semaphore_fix_20260411_195546": "8563ecf2027447d275ea1193e6fab7d3",

@@ -1,11 +1,11 @@
 {
-  "version": "2026.05.15.1845",
+  "version": "2026.05.15.1846",
   "changelog": [
-    "FastGen ImageGen: added Key3/Key4 worker pool support",
-    "Updater adds missing FASTGEN_API_KEY_3/4 and parallel fields without overwriting user secrets",
-    "Settings tab shows new FastGen fields after .env migration/reload"
+    "Full sync: FastGen ImageGen Key3/Key4 worker pool support",
+    "Full sync: updater adds missing FastGen 3/4 env fields without overwriting user secrets",
+    "Full sync: pipeline, control panel, finalize and CLI use the same FastGen key mapping"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -51,7 +51,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "89b3f3d48ac554e27ecfb24077b386b7",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "cc7c8818ec238a3d75d0ba67a97eadcf",
+    "agent/modules/updater.py": "edf48bfc9e78b43c40d23e141485f40b",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_video.py": "32e056d67dad87c9678e81e64ed81b21",
     "agent/modules/veo_video.py.backup_before_semaphore_fix_20260411_195546": "8563ecf2027447d275ea1193e6fab7d3",

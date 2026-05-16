@@ -1,9 +1,9 @@
 {
-  "version": "2026.05.15.1846",
+  "version": "2026.05.16.1419",
   "changelog": [
-    "Full sync: FastGen ImageGen Key3/Key4 worker pool support",
-    "Full sync: updater adds missing FastGen 3/4 env fields without overwriting user secrets",
-    "Full sync: pipeline, control panel, finalize and CLI use the same FastGen key mapping"
+    "Full sync: Flow Ultra standard i2v no longer overpools workers",
+    "Flow Ultra worker pool now uses exactly total_parallel futures, no +5 pre-submit burst",
+    "Flow Ultra parallel is clamped by flow_ultra_threads_allowed when usage is available"
   ],
   "requires_restart": false,
   "files": {
@@ -38,7 +38,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
     "agent/modules/fastgen.py": "1616efe9dc75185dcb22e799a9060016",
-    "agent/modules/flowultra.py": "c75f1d676f90c828d99fd808eb9f40b3",
+    "agent/modules/flowultra.py": "38d749e19128fb9c9bdf05a63d3bf35a",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "992f509fa3abca959e92fb7ce150e79d",
@@ -121,7 +121,7 @@
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "17f4caec351fb8ac9815b0ae170eda8a",
-    "agent/watch_i2v_flowultra.py": "6a092c9f15df237b7d34ef5ab8698369",
+    "agent/watch_i2v_flowultra.py": "9a0e67d763bfd8b5c1596cba1a88d53b",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",

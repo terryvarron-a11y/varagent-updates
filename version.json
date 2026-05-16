@@ -1,11 +1,11 @@
 {
-  "version": "2026.05.16.1419",
+  "version": "2026.05.16.1423",
   "changelog": [
-    "Full sync: Flow Ultra standard i2v no longer overpools workers",
-    "Flow Ultra worker pool now uses exactly total_parallel futures, no +5 pre-submit burst",
-    "Flow Ultra parallel is clamped by flow_ultra_threads_allowed when usage is available"
+    "Full sync: Control Panel Stop now targets Flow Ultra shutdown across both import namespaces",
+    "Flow Ultra standard T2V, Ingredients and Keyframes stop loops no longer continue after cancel",
+    "Flow Ultra worker pool remains capped to configured/server threads without +5 overpool"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -38,7 +38,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
     "agent/modules/fastgen.py": "1616efe9dc75185dcb22e799a9060016",
-    "agent/modules/flowultra.py": "38d749e19128fb9c9bdf05a63d3bf35a",
+    "agent/modules/flowultra.py": "384d1b2729b6883a2c7f3c58236adc80",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "992f509fa3abca959e92fb7ce150e79d",
@@ -121,7 +121,7 @@
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
     "agent/watch_i2v.py": "17f4caec351fb8ac9815b0ae170eda8a",
-    "agent/watch_i2v_flowultra.py": "9a0e67d763bfd8b5c1596cba1a88d53b",
+    "agent/watch_i2v_flowultra.py": "2d0b941098356fe66d560488530ac90f",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -166,7 +166,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "42dbe85fc31bc0739c45194bbc93bcb8",
+    "varagent.py": "05f951cc9230242bab1e5e05833a8cfb",
     "video_concat.py": "00a9b1c8573ba633b806bfa06949b4f7",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

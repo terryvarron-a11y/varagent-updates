@@ -1,9 +1,9 @@
 {
-  "version": "2026.05.16.1423",
+  "version": "2026.05.17.2219",
   "changelog": [
-    "Full sync: Control Panel Stop now targets Flow Ultra shutdown across both import namespaces",
-    "Flow Ultra standard T2V, Ingredients and Keyframes stop loops no longer continue after cancel",
-    "Flow Ultra worker pool remains capped to configured/server threads without +5 overpool"
+    "﻿Concat: fixed bottom blur curtain to reach frame bottom",
+    "Installer: FFmpeg install now falls back from winget to direct download",
+    "Subtitles: added bottom/center ASS preset selection for concat"
   ],
   "requires_restart": true,
   "files": {
@@ -115,7 +115,9 @@
     "agent/templates/start_yt_pack.command": "36ccacf7fa79f536e993327046e8f55f",
     "agent/templates/start_yt_pack_interactive.command": "78f4aa9a42e66b490c464bbdd3f5ea6a",
     "agent/templates/subtitles_1080p.ass": "4e33a7d53b823412dc4f528b7f4a95f4",
+    "agent/templates/subtitles_1080p_center.ass": "efb781f79a1b164450047a47bdd77a54",
     "agent/templates/subtitles_720p.ass": "5371c7aea61e53c9adbd2f2055aaa566",
+    "agent/templates/subtitles_720p_center.ass": "36608740afc9876c193f1e761effd182",
     "agent/tools/audio_cleaner.py": "cbef766ed1d8989adecb03efbe16fff5",
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
@@ -134,11 +136,11 @@
     "fix_macos.command": "34344f8afa0cf5e4318a65fb0392cd88",
     "fix_ssl_mac.command": "9bb19ee83b8cbab76bcb03cc80fd3262",
     "fix_tkinter.command": "dd7ef3027f446a8f66e7d58133658d38",
-    "install.bat": "d652cd45c3393dc4c5bd41e8d4b7e0a4",
+    "install.bat": "61897f86b9164936cd6ea695570d2503",
     "install.command": "c22d8c4cbd0d5d01471e159c31d70d5c",
     "install_arm.bat": "addbf7d55f03138fd2cc11b54c2bd248",
     "install_colorama.command": "f3ca4ce7c3cb2dd299d4320296db1588",
-    "install_ffmpeg.bat": "a57637035f07f1113b6d83bbeb477adc",
+    "install_ffmpeg.bat": "c11d415590ec999257a78210b5dc14f2",
     "install_ffmpeg.command": "3c01ecccf41279448ab444488feeacbd",
     "install_mac.command": "a721640449eaa63b6fed4d77a407402a",
     "photo_concat.py": "9de6c35af4c6d1b710cf97bffc7f34b3",
@@ -166,8 +168,8 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "05f951cc9230242bab1e5e05833a8cfb",
-    "video_concat.py": "00a9b1c8573ba633b806bfa06949b4f7",
+    "varagent.py": "9f90449f9c0849b6b7750e5d449445f3",
+    "video_concat.py": "95d2b6ea69bd2d700ffb9afa776a6780",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

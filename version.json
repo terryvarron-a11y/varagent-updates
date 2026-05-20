@@ -1,11 +1,11 @@
 {
-  "version": "2026.05.17.2219",
+  "version": "2026.05.20.2122",
   "changelog": [
-    "﻿Concat: fixed bottom blur curtain to reach frame bottom",
-    "Installer: FFmpeg install now falls back from winget to direct download",
-    "Subtitles: added bottom/center ASS preset selection for concat"
+    "Flow Ultra: protected logo/trademark image errors now go to remix/static instead of burning full retry chains",
+    "Flow Ultra: fast-censor after_rewrites/ultrafast now immediately uses static fallback for blocked input images",
+    "Flow Ultra: server generation timeouts fall back to static faster so tail clips do not stall the pipeline"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -38,7 +38,7 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
     "agent/modules/fastgen.py": "1616efe9dc75185dcb22e799a9060016",
-    "agent/modules/flowultra.py": "384d1b2729b6883a2c7f3c58236adc80",
+    "agent/modules/flowultra.py": "c4fb13f501c643416e67f9ba67933914",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "992f509fa3abca959e92fb7ce150e79d",

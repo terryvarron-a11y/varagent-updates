@@ -1,12 +1,11 @@
 {
-  "version": "2026.05.22.0103",
+  "version": "2026.05.22.0156",
   "changelog": [
-    "Fix Control Panel project selection crash when continuing from Finalize/Stage run",
-    "Add VideoGen duplicate guard: skip existing vid_img media and use atomic clip claims for parallel Veo/FastGen runs",
-    "Fix stale Hard Stop flag so new Finalize/Concat starts cleanly",
-    "Sync FastGen/Flow Ultra watcher and VideoGen reliability fixes"
+    "Fix Pipeline Veo key-slot mapping: Veo ImageGen no longer gets overwritten by FastGen key selector.",
+    "Read legacy VEONONSTOP_*_KEY_SLOT defaults as fallback and keep GUI key checkboxes in sync.",
+    "Full portable patch, user .env values are not overwritten by update."
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -18,7 +17,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "f12c8a7cc8801fee4ef3f4dffec101f7",
+    "agent/agent.py": "6351b0160413488d53c9fc1ff4da29d1",
     "agent/bridges/korshun_var_bridge.py": "bf71423ac2199b40586c0b7860c7f03b",
     "agent/bridges/usatayai_generator_bridge.py": "32c9331ceb1847e402efd6fd5738aabc",
     "agent/bridges/usatayai_var_stage_bridge.py": "d9c2fc55d3cac7aa2cbf93522cdf78ec",
@@ -168,7 +167,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "6336774a3f87b1ce0bfc4d7bd96e48b7",
+    "varagent.py": "40c35ee9a610621961b3756d3574ba0d",
     "video_concat.py": "95d2b6ea69bd2d700ffb9afa776a6780",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

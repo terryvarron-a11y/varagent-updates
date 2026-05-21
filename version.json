@@ -1,11 +1,12 @@
 {
-  "version": "2026.05.20.2122",
+  "version": "2026.05.22.0102",
   "changelog": [
-    "Flow Ultra: protected logo/trademark image errors now go to remix/static instead of burning full retry chains",
-    "Flow Ultra: fast-censor after_rewrites/ultrafast now immediately uses static fallback for blocked input images",
-    "Flow Ultra: server generation timeouts fall back to static faster so tail clips do not stall the pipeline"
+    "Fix Control Panel project selection crash when continuing from Finalize/Stage run",
+    "Add VideoGen duplicate guard: skip existing vid_img media and use atomic clip claims for parallel Veo/FastGen runs",
+    "Fix stale Hard Stop flag so new Finalize/Concat starts cleanly",
+    "Sync FastGen/Flow Ultra watcher and VideoGen reliability fixes"
   ],
-  "requires_restart": false,
+  "requires_restart": true,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -37,8 +38,8 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
-    "agent/modules/fastgen.py": "1616efe9dc75185dcb22e799a9060016",
-    "agent/modules/flowultra.py": "c4fb13f501c643416e67f9ba67933914",
+    "agent/modules/fastgen.py": "d27f9a5c2983165799b77349bf8f03be",
+    "agent/modules/flowultra.py": "f155314a80e1557a199a84908b1d04e5",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "bd8b7c71924b36d6eac248c7e2613b26",
     "agent/modules/imggen.py": "992f509fa3abca959e92fb7ce150e79d",
@@ -53,10 +54,11 @@
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
     "agent/modules/updater.py": "edf48bfc9e78b43c40d23e141485f40b",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
-    "agent/modules/veo_video.py": "32e056d67dad87c9678e81e64ed81b21",
+    "agent/modules/veo_video.py": "b085176127adaf810914df370b8c4d30",
     "agent/modules/veo_video.py.backup_before_semaphore_fix_20260411_195546": "8563ecf2027447d275ea1193e6fab7d3",
     "agent/modules/veo_video.py.backup_semaphore_20260411_194930": "8563ecf2027447d275ea1193e6fab7d3",
     "agent/modules/veononstop.py": "4740367aaef8c358e89a61296b8d7d3d",
+    "agent/modules/video_claims.py": "54a34eaab586a7d29239b6d8afc85a93",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
     "agent/modules/yt_packer.py": "bdb9edd49a1149b377518e4375a1cff1",
     "agent/modules/yt_transcriber.py": "280889dedcf5509e11e8429ca6b34668",
@@ -122,8 +124,8 @@
     "agent/tools/image_search.py": "bcc1ac961ca1358c371bab991bca53d7",
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "d9140bdc6021f4250fd693c7204fbf30",
-    "agent/watch_i2v.py": "17f4caec351fb8ac9815b0ae170eda8a",
-    "agent/watch_i2v_flowultra.py": "2d0b941098356fe66d560488530ac90f",
+    "agent/watch_i2v.py": "a7cd035f8b8927ecba2ef5b565c3fd5e",
+    "agent/watch_i2v_flowultra.py": "a1e032492bf6d1950d55903a83560af2",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -168,7 +170,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "9f90449f9c0849b6b7750e5d449445f3",
+    "varagent.py": "6336774a3f87b1ce0bfc4d7bd96e48b7",
     "video_concat.py": "95d2b6ea69bd2d700ffb9afa776a6780",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

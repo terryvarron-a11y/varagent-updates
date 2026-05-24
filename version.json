@@ -1,10 +1,7 @@
 {
-  "version": "2026.05.23.0148",
+  "version": "2026.05.24.1008",
   "changelog": [
-    "Targeted portable sync with current VarAgent API refactors; user .env is not included or overwritten.",
-    "Pipeline VideoGen Both mode: selected VeoNonStop keys run with their combined worker pool while FastGen Flow Ultra runs separately.",
-    "RealPhoto concat fix: removed unsafe scale=8000 and render Ken Burns at 720p/1080p target resolution.",
-    "Shared video clip claims prevent duplicate VeoNonStop/Flow Ultra submissions for the same clip."
+    "vislide state persistence: pipeline_config.json в папке проекта, Finalize Stage восстанавливает vislide_interval/intro_block_duration после закрытия GUI; smooth zoom (ZOOM_AMOUNT/ZOOM_CURVE) для статик-фолбека в video_concat — заменил дрожащий zoompan на scale eval=frame + crop"
   ],
   "requires_restart": true,
   "files": {
@@ -26,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "8e0e962dbdf5593b258fc43cada072df",
+    "agent/config.py": "cd0dc5e05bff0858f02aef140cff8b1b",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "48ef9c48fb6a957a8819efadf70ba137",
@@ -38,12 +35,12 @@
     "agent/modules/codex_adapt.py": "ba5cdc3137920ace296923d47bc39ce3",
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "26f2687be13cdcf2e1d7ac6c2aed3349",
-    "agent/modules/fastgen.py": "ba9dcc9ae7593085ff378fca17a5fa58",
+    "agent/modules/fastgen.py": "392935d8979b9b900e7879fc05ffea40",
     "agent/modules/flowultra.py": "f155314a80e1557a199a84908b1d04e5",
     "agent/modules/gemini_rewrite.py": "fd551c6efac08a34ef470f378fec4322",
     "agent/modules/gpt_director.py": "e372ba51ca93157ecc46fbaabecf3cd9",
     "agent/modules/imggen.py": "8e3b3e1c0b045ea5050b2d296f811e17",
-    "agent/modules/queue.py": "d37068c2062446c9a32f79e800e903dc",
+    "agent/modules/queue.py": "f73572867cd06caa94026f6c21e397c9",
     "agent/modules/real_photo.py": "a41b78e2e90253425484758013dec572",
     "agent/modules/ref_compress.py": "12eb215b10ede05b98034f69d79992af",
     "agent/modules/remix.py": "7ea3e7c84f30483523319a171b403d74",
@@ -53,7 +50,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "89b3f3d48ac554e27ecfb24077b386b7",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "edf48bfc9e78b43c40d23e141485f40b",
+    "agent/modules/updater.py": "99b694c331ca297d313a239792574444",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_video.py": "b085176127adaf810914df370b8c4d30",
     "agent/modules/veononstop.py": "4740367aaef8c358e89a61296b8d7d3d",
@@ -177,8 +174,8 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "51469bac2e9e7220eec672392a7f40a1",
-    "video_concat.py": "de72bcd64a1a11fdb9a8222ef373079c",
+    "varagent.py": "fbcfa2ac9efe3d0aed4e0e53d6c054fb",
+    "video_concat.py": "0dba18d726ccd111b5da4937b7d00ea2",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

@@ -1,7 +1,8 @@
 {
-  "version": "2026.05.24.1008",
+  "version": "2026.06.02.1403",
   "changelog": [
-    "vislide state persistence: pipeline_config.json в папке проекта, Finalize Stage восстанавливает vislide_interval/intro_block_duration после закрытия GUI; smooth zoom (ZOOM_AMOUNT/ZOOM_CURVE) для статик-фолбека в video_concat — заменил дрожащий zoompan на scale eval=frame + crop"
+    "Finalize ImageGen: add FastGen aspect selector.",
+    "Finalize FastGen ImageGen now defaults to landscape and passes aspect into generation."
   ],
   "requires_restart": true,
   "files": {
@@ -174,7 +175,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "fbcfa2ac9efe3d0aed4e0e53d6c054fb",
+    "varagent.py": "60da539851ac844d43301f92daf5513b",
     "video_concat.py": "0dba18d726ccd111b5da4937b7d00ea2",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

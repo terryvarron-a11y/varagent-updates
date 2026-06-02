@@ -1,10 +1,10 @@
 {
-  "version": "2026.06.02.1403",
+  "version": "2026.06.02.1404",
   "changelog": [
-    "Finalize ImageGen: add FastGen aspect selector.",
-    "Finalize FastGen ImageGen now defaults to landscape and passes aspect into generation."
+    "Finalize ImageGen: FastGen aspect selector added to Finalize panel.",
+    "Finalize FastGen ImageGen defaults to landscape and passes aspect into generation."
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

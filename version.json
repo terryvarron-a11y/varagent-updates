@@ -1,7 +1,7 @@
 {
-  "version": "2026.06.03.1902",
+  "version": "2026.06.03.1906",
   "changelog": [
-    "FastGen v5 named-refs (filename+ext, default ON) + slotsfull fix + 4K render + Pass2 director updates + GPT_PASS2_PARALLEL=6"
+    "Re-publish без старых dev-логов в agent/logs/ (patch.zip пересобран чище)"
   ],
   "requires_restart": false,
   "files": {
@@ -131,23 +131,6 @@
     "agent/watch_i2v.py": "a7cd035f8b8927ecba2ef5b565c3fd5e",
     "agent/watch_i2v_flowultra.py": "a1e032492bf6d1950d55903a83560af2",
     "api-1.json": "03cd62465bc7dca1ffd62c2d272008ae",
-    "APPS/INSERTER/audio_inserter.py": "e36053eebac99b7a8dfc9aaf9260ff22",
-    "APPS/INSERTER/audio_inserter_user_defaults.json": "e5cf8e014f857e921875faa911d138fe",
-    "APPS/INSERTER/AudioInserter.bat": "1aba50cfeb01d5623e321df82d1aa7a8",
-    "APPS/INSERTER/AudioInserter.command": "1419c407339123e0e0d5b10437a590e9",
-    "APPS/INSERTER/install_mac.command": "748dd863ea95703eae6ce2381a0eb2bf",
-    "APPS/INSERTER/install_win.bat": "e3d9a8264a8fd5edf7234808df1626b8",
-    "APPS/INSERTER/README_MAC.txt": "661163e6c86acb12256560125864a1b9",
-    "APPS/INSERTER/README_WIN.txt": "21bc4771e5b02047ba75e0fe25b3dfea",
-    "APPS/INSERTER/requirements.txt": "c230e9bac1b9f8706d28c0ef4c7c7715",
-    "APPS/INSERTER_PORTABLE/audio_inserter.py": "e36053eebac99b7a8dfc9aaf9260ff22",
-    "APPS/INSERTER_PORTABLE/AudioInserter.bat": "1aba50cfeb01d5623e321df82d1aa7a8",
-    "APPS/INSERTER_PORTABLE/AudioInserter.command": "1419c407339123e0e0d5b10437a590e9",
-    "APPS/INSERTER_PORTABLE/install_mac.command": "748dd863ea95703eae6ce2381a0eb2bf",
-    "APPS/INSERTER_PORTABLE/install_win.bat": "e3d9a8264a8fd5edf7234808df1626b8",
-    "APPS/INSERTER_PORTABLE/README_MAC.txt": "661163e6c86acb12256560125864a1b9",
-    "APPS/INSERTER_PORTABLE/README_WIN.txt": "21bc4771e5b02047ba75e0fe25b3dfea",
-    "APPS/INSERTER_PORTABLE/requirements.txt": "c230e9bac1b9f8706d28c0ef4c7c7715",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",

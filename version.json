@@ -1,7 +1,7 @@
 {
-  "version": "2026.06.03.1906",
+  "version": "2026.06.03.2230",
   "changelog": [
-    "Re-publish без старых dev-логов в agent/logs/ (patch.zip пересобран чище)"
+    "HOTFIX: добавлены отсутствовавшие 4K templates (process_4k.txt/.command + subtitles_4k.ass) — фиксит FileNotFoundError при создании новых проектов"
   ],
   "requires_restart": false,
   "files": {
@@ -88,6 +88,8 @@
     "agent/templates/process_1080p.command": "07530329f776aed6f64cb22479d10d49",
     "agent/templates/process_1080p.txt": "2a6224186a328fe0475f5ea4c0b47e1d",
     "agent/templates/process_1080p_interactive.command": "7ec72f64a88ce23c3d4af3d57f5eed7a",
+    "agent/templates/process_4k.command": "a2adccceb02d850fe7a2860647f5f2ae",
+    "agent/templates/process_4k.txt": "cf339ca2706de6d91ef64bf3cbd2ad64",
     "agent/templates/process_fast.command": "e26433ea45066bf9fb8a09d4cabebadc",
     "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
     "agent/templates/process_fast_interactive.command": "545d284aba5a22a5e3447ccf6649084f",
@@ -122,6 +124,8 @@
     "agent/templates/start_yt_pack_interactive.command": "78f4aa9a42e66b490c464bbdd3f5ea6a",
     "agent/templates/subtitles_1080p.ass": "4e33a7d53b823412dc4f528b7f4a95f4",
     "agent/templates/subtitles_1080p_center.ass": "efb781f79a1b164450047a47bdd77a54",
+    "agent/templates/subtitles_4k.ass": "549a6ef2b878f4a025ad546ef2e04dd9",
+    "agent/templates/subtitles_4k_center.ass": "1288a41071e8deef3abd2335f3f205bd",
     "agent/templates/subtitles_720p.ass": "5371c7aea61e53c9adbd2f2055aaa566",
     "agent/templates/subtitles_720p_center.ass": "36608740afc9876c193f1e761effd182",
     "agent/tools/audio_cleaner.py": "cbef766ed1d8989adecb03efbe16fff5",

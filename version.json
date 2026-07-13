@@ -1,7 +1,7 @@
 {
-  "version": "2026.06.27.0303",
+  "version": "2026.07.13.2056",
   "changelog": [
-    "Очередь: каждый файл генерится со своими настройками (кнопка «Сохранить настройки генерации»), вся очередь обрабатывается стабильно; Claude-режиссёр: выбор модели + размер чанка Pass2; Карточки сущностей: выбор движка детекции (deepseek/openrouter/gemini/claude/regex); YT-упаковщик: не требует ключ Gemini при выбранном GPT; DeepSeek/OpenRouter MaxTok по умолчанию 64000"
+    "FastGen переведён на новый endpoint V6 (/api/v6/generations) — старый V5 отключён сервером (404). Единый путь image+video, named-рефы персонажей, storage /v2/upload, дефолт модели Flower"
   ],
   "requires_restart": true,
   "files": {
@@ -23,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "f6d1915f15195618cb921ba898849d3a",
+    "agent/config.py": "3afa33eda8785ac8c34fc248f3a102b4",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "48ef9c48fb6a957a8819efadf70ba137",
@@ -47,8 +47,8 @@
     "agent/modules/codex_usage.py": "d08a00740d6cf9681391edabe9578a79",
     "agent/modules/director.py": "cede5773f2bdc8da9f4bff27fd006177",
     "agent/modules/entity_overlay.py": "d22d0da33e4973d3452cb17a0a381a64",
-    "agent/modules/fastgen.py": "8514e7c348321b8349cab02e8494262b",
-    "agent/modules/flowultra.py": "b268cb5c94c4b928fe6fa95760e0fd5d",
+    "agent/modules/fastgen.py": "38a1e7feec77a4500becc24b5c3e4e29",
+    "agent/modules/flowultra.py": "bb24d32937361a5af7bd98b78c6360f5",
     "agent/modules/gemini_rewrite.py": "50507fc1bf039ae01303fafa492cf60f",
     "agent/modules/gpt_director.py": "e5b60335a3dcbb84cae059172ea0bf31",
     "agent/modules/imggen.py": "4459d69069a83796f853dd4299bae501",
@@ -219,7 +219,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "066944105f238f595804d5a17c80834a",
+    "varagent.py": "9e030aae14cf872711de8e80abc847c8",
     "video_concat.py": "e940b0ccce7883d12d414fe4ae9f5834",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

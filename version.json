@@ -1,7 +1,7 @@
 {
-  "version": "2026.07.14.1725",
+  "version": "2026.07.14.1831",
   "changelog": [
-    "Добавлена новая модель VeoNonStop imggen — Banana 2 Lite (HARBOR_SEAL). Быстрее и стабильнее"
+    "Очередь: добавление файлов на лету во время генерации + фикс дубля проектов (живой pull). GPU: приоритет дискретной NVIDIA над встроенной AMD Radeon — фикс краша real-photo на этапе Concat на гибридных ПК. YT Packer: фикс падения на GPT-модели"
   ],
   "requires_restart": true,
   "files": {
@@ -79,7 +79,7 @@
     "agent/modules/veononstop.py": "4740367aaef8c358e89a61296b8d7d3d",
     "agent/modules/video_claims.py": "54a34eaab586a7d29239b6d8afc85a93",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
-    "agent/modules/yt_packer.py": "9788042ff2849884706d6923a60658ef",
+    "agent/modules/yt_packer.py": "fdc577a673e88e2e8fc86c488144aa6d",
     "agent/modules/yt_transcriber.py": "280889dedcf5509e11e8429ca6b34668",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",
@@ -111,12 +111,12 @@
     "agent/schemas/real_photo_query_control.json": "5f71870e62f4c20bf0fd29b553eba944",
     "agent/schemas/veo_adapt_control.json": "e2c906593a943c1bbc8fc371935580fd",
     "agent/templates/process_1080p.command": "07530329f776aed6f64cb22479d10d49",
-    "agent/templates/process_1080p.txt": "2a6224186a328fe0475f5ea4c0b47e1d",
+    "agent/templates/process_1080p.txt": "2d0c60a57ffc9840dac962fd2396aafe",
     "agent/templates/process_1080p_interactive.command": "7ec72f64a88ce23c3d4af3d57f5eed7a",
     "agent/templates/process_4k.command": "a2adccceb02d850fe7a2860647f5f2ae",
-    "agent/templates/process_4k.txt": "cf339ca2706de6d91ef64bf3cbd2ad64",
+    "agent/templates/process_4k.txt": "890d5765c13d8e52c0c9d658f5c1e73c",
     "agent/templates/process_fast.command": "e26433ea45066bf9fb8a09d4cabebadc",
-    "agent/templates/process_fast.txt": "5b003d21f97755504917e97fcb729258",
+    "agent/templates/process_fast.txt": "62954ad5871146204f4fe5a59a268630",
     "agent/templates/process_fast_interactive.command": "545d284aba5a22a5e3447ccf6649084f",
     "agent/templates/run_director.txt": "c25f9676037a3138c7e4ae2a5bed38c3",
     "agent/templates/run_dogenerator.txt": "c940b76c89b73108af213f9c5530a109",
@@ -219,8 +219,8 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "e214836fcc41ae111784971f1de3faad",
-    "video_concat.py": "e940b0ccce7883d12d414fe4ae9f5834",
+    "varagent.py": "bd7716c06ae166b7d28b462d691494f5",
+    "video_concat.py": "488e00a7598ceff009fa5884827a6c33",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

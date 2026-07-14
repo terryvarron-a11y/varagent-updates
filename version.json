@@ -1,7 +1,7 @@
 {
-  "version": "2026.07.13.2056",
+  "version": "2026.07.14.1725",
   "changelog": [
-    "FastGen переведён на новый endpoint V6 (/api/v6/generations) — старый V5 отключён сервером (404). Единый путь image+video, named-рефы персонажей, storage /v2/upload, дефолт модели Flower"
+    "Добавлена новая модель VeoNonStop imggen — Banana 2 Lite (HARBOR_SEAL). Быстрее и стабильнее"
   ],
   "requires_restart": true,
   "files": {
@@ -23,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "3afa33eda8785ac8c34fc248f3a102b4",
+    "agent/config.py": "61151d8b0aaa24dd00486bf3bf9847ec",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "48ef9c48fb6a957a8819efadf70ba137",
@@ -219,7 +219,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "9e030aae14cf872711de8e80abc847c8",
+    "varagent.py": "e214836fcc41ae111784971f1de3faad",
     "video_concat.py": "e940b0ccce7883d12d414fe4ae9f5834",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

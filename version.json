@@ -1,9 +1,9 @@
 {
-  "version": "2026.07.14.1831",
+  "version": "2026.07.14.1856",
   "changelog": [
-    "Очередь: добавление файлов на лету во время генерации + фикс дубля проектов (живой pull). GPU: приоритет дискретной NVIDIA над встроенной AMD Radeon — фикс краша real-photo на этапе Concat на гибридных ПК. YT Packer: фикс падения на GPT-модели"
+    "Entity cards (персоны/места): галка теперь самодостаточна — работает без строки в .env (фикс двойного гейта). Concat: фикс UnicodeDecodeError (cp1251) на проектах с кириллицей в имени — чтение вывода ffmpeg/ffprobe в UTF-8"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -220,7 +220,7 @@
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "bd7716c06ae166b7d28b462d691494f5",
-    "video_concat.py": "488e00a7598ceff009fa5884827a6c33",
+    "video_concat.py": "869edcc9fa7f1aed2292a45a678e5417",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

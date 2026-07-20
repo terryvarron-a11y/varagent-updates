@@ -1,8 +1,7 @@
 {
-  "version": "2026.07.20.2335",
+  "version": "2026.07.20.2347",
   "changelog": [
-    "Фикс YT Pack: при выбранной gpt-модели (gpt-5.5 и т.п.) контент/перевод больше не уходит в Gemini-API (404 models/gpt-5.5 not found) — gpt всегда идёт через Codex. Работает во всех путях: пайплайн, отдельная кнопка Control Panel и Finalize",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Владу!"
+    "Director cliproxy: explicit max_output 64k (was None -> Antigravity applied 8k default and silently truncated large plans/prompts)"
   ],
   "requires_restart": false,
   "files": {
@@ -33,7 +32,7 @@
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/chat_client.py": "b1727690c54bfe94c60cab42ca1764f9",
-    "agent/modules/chat_director.py": "4c57bdab88b50bb68ca50cd24af71747",
+    "agent/modules/chat_director.py": "22111ec6c3235d96d68edcb175adb150",
     "agent/modules/chat_music_director.py": "c200a44c781a46e24daf46021ef29200",
     "agent/modules/claude_api_director.py": "73d9d25c9a45de9660d3e5bd347ad117",
     "agent/modules/claude_api_music_director.py": "66581c792203b9049c1a99624fbd3897",

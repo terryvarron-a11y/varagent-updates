@@ -1,7 +1,7 @@
 {
-  "version": "2026.07.20.0933",
+  "version": "2026.07.20.2335",
   "changelog": [
-    "Фикс: видео-вход (.mp4/.mov и т.п.) — конкат при финише теперь берёт аудиодорожку из входного видео как нарацию (раньше искал только аудиофайлы и падал на видео-входе)",
+    "Фикс YT Pack: при выбранной gpt-модели (gpt-5.5 и т.п.) контент/перевод больше не уходит в Gemini-API (404 models/gpt-5.5 not found) — gpt всегда идёт через Codex. Работает во всех путях: пайплайн, отдельная кнопка Control Panel и Finalize",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Владу!"
   ],
   "requires_restart": false,
@@ -88,7 +88,7 @@
     "agent/modules/veononstop.py": "4740367aaef8c358e89a61296b8d7d3d",
     "agent/modules/video_claims.py": "54a34eaab586a7d29239b6d8afc85a93",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
-    "agent/modules/yt_packer.py": "cbee404798b7f037e446c404e6ba2f72",
+    "agent/modules/yt_packer.py": "93a1da88bd712d227b120acb8bbc5439",
     "agent/modules/yt_transcriber.py": "280889dedcf5509e11e8429ca6b34668",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",

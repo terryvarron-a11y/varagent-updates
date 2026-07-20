@@ -1,11 +1,7 @@
 {
-  "version": "2026.07.20.0744",
+  "version": "2026.07.20.0754",
   "changelog": [
-    "Фикс: краш при старте пайплайна с провайдером cliproxy (AttributeError self.log)",
-    "429 rate limit теперь идёт через штатную логику ретраев с нарастающим кулдауном и после исчерпания — фоллбэк на FastGen (раньше мог висеть при постоянном рейтлимите VeoNonStop)",
-    "Galка Keep VEO sound теперь работает как задумано: склеенная VEO-аудиодорожка в длину видео сохраняется в папку retimed_sound/, видео остаётся с нарацией (раньше слался inline-режим — звук VEO вместо нарации)",
-    "Зависимости для чтения cookie (rookiepy/browser-cookie3) теперь ставятся у всех: install.bat и updater ставят из requirements.txt",
-    "Слайдшоу/вертикаль 9:16, лог разметки Real Photo/Сток, чистка Яндекс-выдачи, вкладка Prompts с запросерами",
+    "Минус-флаги Яндекса (Real Photo) вынесены в редактируемый файл — теперь их видно и можно править во вкладке Prompts (Real Photo — Yandex exclude)",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Владу!"
   ],
   "requires_restart": true,
@@ -69,7 +65,7 @@
     "agent/modules/music_review.py": "23cf5c05f7c6d3782da1fb49b75e2f4c",
     "agent/modules/music_safe_stock.py": "9663731ac2f0ac681c2c93e11c08c153",
     "agent/modules/queue.py": "46c8faf03a25d1f94cc4e089be7aca72",
-    "agent/modules/real_photo.py": "2c83b4727272041cb4a3a30ea5f00dde",
+    "agent/modules/real_photo.py": "07cd15f14b2a129a7c5d5363e8c74408",
     "agent/modules/real_photo_markup.py": "a545bd0734bc42fee7fe9220c58b3334",
     "agent/modules/ref_compress.py": "dd66589bdcd58bfee7a97916c46f2ab4",
     "agent/modules/remix.py": "a711fb55bfb178faa2c4b3888433521e",
@@ -105,6 +101,7 @@
     "agent/prompts/real_photo_keyframe.txt": "b9955ca11b7dada9569b02805e7ad19b",
     "agent/prompts/real_photo_query_only.txt": "4b3a8777a1db34eee2c45b7bdf7eb8fb",
     "agent/prompts/real_photo_selector.txt": "ab403e0c1c4b41cde302a717369cd783",
+    "agent/prompts/real_photo_yandex_exclude.txt": "d252b7ab6153242d35cf09683c72ffc3",
     "agent/prompts/ref_remix_prompt.txt": "db3f438d6f5ca7d9d4c9d9701a76fa58",
     "agent/prompts/rewrite_prompt.txt": "13f89ac7380564ed45913f5f741d4ff9",
     "agent/prompts/script_director_prose.txt": "e26abf7ce8ea7b14d323be3d6fd5de49",
@@ -237,7 +234,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "f2f75f57bc33b5d0a36a1e6658a857e4",
+    "varagent.py": "be1b79edc5ee1ebed9356fa7f7d0d393",
     "video_concat.py": "f07beb3bf251acf9b79098563bc34428",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

@@ -1,10 +1,10 @@
 {
-  "version": "2026.07.20.0754",
+  "version": "2026.07.20.0933",
   "changelog": [
-    "Минус-флаги Яндекса (Real Photo) вынесены в редактируемый файл — теперь их видно и можно править во вкладке Prompts (Real Photo — Yandex exclude)",
+    "Фикс: видео-вход (.mp4/.mov и т.п.) — конкат при финише теперь берёт аудиодорожку из входного видео как нарацию (раньше искал только аудиофайлы и падал на видео-входе)",
     "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Владу!"
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "files": {
     ".codex_version_cache.json": "16228886ec4e802c070f155e667f741d",
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
@@ -235,7 +235,7 @@
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
     "varagent.py": "be1b79edc5ee1ebed9356fa7f7d0d393",
-    "video_concat.py": "f07beb3bf251acf9b79098563bc34428",
+    "video_concat.py": "88033f8ec592409bbd081aef08efc555",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

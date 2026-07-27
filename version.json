@@ -1,10 +1,14 @@
 {
-  "version": "2026.07.27.2136",
+  "version": "2026.07.27.2201",
   "changelog": [
-    "UI: knopka HIDE TAB (skryt ves stolbec pipeline) + svorachivaemye bloki nastroek + skrytie vkladok; fix Codex CLI na macOS (Style Extract i Real Photo)"
+    "Скрывашки для Влада: карточки, вкладки и весь левый столбец Pipeline; HIDE TAB теперь работает без чёрного кадра и помнит ширину.",
+    "Регексы для Юли: исправлено выделение STYLE/NEGATIVE на macOS, добавлен надёжный fallback по якорям и корректный запуск Codex CLI.",
+    "Рерайтеры получили выбор актуальных моделей GPT Codex и GPT Reseller; провайдер и модель маршрутизируются независимо и корректно.",
+    "Ошибки rewrite и возврат исходного промпта теперь явно видны в логе и сохраняются в диагностике.",
+    "Concat при отсутствующем изображении берёт ближайший кадр спереди или сзади вместо вечного ожидания."
   ],
   "requires_restart": true,
-  "patch_sha256": "fcdfff7cec462b6e2662745296a56ccda448c61555c046d7888856e8531fc7a6",
+  "patch_sha256": "47f29631f3c6ba31d7bc8520f129a71f308a8a1b454c6834602e2d4cc76b2d61",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -190,6 +194,7 @@
     "agent/watch_i2v.py": "1a2d0bf4df538f2e33c768824497a190",
     "agent/watch_i2v_flowultra.py": "b9fbadc422df8bc7b12510972ea5e357",
     "api-1.json": "03cd62465bc7dca1ffd62c2d272008ae",
+    "changelog_20260727_ui_collapse_codex_mac.md": "6271ca4f29a2498a4c1698ed4620a220",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -234,7 +239,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "2e81dc164de7851fed430a87800be744",
+    "varagent.py": "e25d0758e8b2890b6abe810aa8ca859a",
     "video_concat.py": "1a53329fc06358194bb05beb8f21ecaf",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

@@ -1,13 +1,14 @@
 {
-  "version": "2026.07.27.1337",
+  "version": "2026.07.27.1518",
   "changelog": [
-    "Entity-???????? ?????????? ? ????????? ???? ?? ????? ?????????? ??? ?????? ?? ????????.",
-    "?????? Entity detector ??????? ?? ??????? Prompts; ????? ???? ??? ????? ??????????.",
-    "???????? ???????? Codex Reseller ??? ??????????, ??????????, ?????? ? YT Packer.",
-    "?????????? ??????????: runtime-??? ???????? ?? ?????????, ?????? patch.zip ?????? ?? ????????????????."
+    "В шапку добавлены балансы Ailink и Nexus с фоновым и ручным обновлением.",
+    "Codex subscription изолирован от пользовательских provider-настроек; режиссёр и rewrite используют правильную авторизацию.",
+    "Ошибки rewrite теперь видны в логе, а debug-данные сохраняются с привязкой к проекту и клипу.",
+    "Финальная склейка больше не зависает на пропущенном медиа: после завершения пайплайна подставляется ближайший статичный кадр.",
+    "Выполнен полный sync portable; пользовательские .env и API-ключи не затрагиваются."
   ],
   "requires_restart": true,
-  "patch_sha256": "abf6493ada8deb5016554317da49664a624b5af0f0ceb6866e65a45eaf10add9",
+  "patch_sha256": "2fd23e6ddc40e3924a76a2b08f604c9ba91beb4e18cfe2f1bb9879ea30053527",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -26,7 +27,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "8485d862efb5b6f9931e6c974adc3940",
+    "agent/config.py": "da8d8333ebc0532c82bd9766eae793b3",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "377c0bf6d2942256497f42951fa22378",
@@ -55,9 +56,9 @@
     "agent/modules/fastgen.py": "d507728dd68db993e9edea9a7399f04d",
     "agent/modules/flowultra.py": "fb97e90c323cd8b907063797f4115db3",
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
-    "agent/modules/gemini_rewrite.py": "03d0f8c9e34d9a7e95930630821e5acb",
-    "agent/modules/gpt_director.py": "350941e350b046cf2928fe9f50881bef",
-    "agent/modules/imggen.py": "ab829e205ef99c0b3c38957c8e161bf6",
+    "agent/modules/gemini_rewrite.py": "f63f7d78d435a173c081d222932bb42a",
+    "agent/modules/gpt_director.py": "d3429eb5857a950b03cea8dc38386d90",
+    "agent/modules/imggen.py": "d21221ffc2b92fd0f99cb29c6b8a6b8d",
     "agent/modules/moonbridge_mgr.py": "33eeb1298b63f52fa76539d5b3377afe",
     "agent/modules/music_director.py": "dad0ad4bcd196e9643137ea584cdb80a",
     "agent/modules/music_fallback.py": "577c8e41526a2d7c6043469b519d349b",
@@ -71,6 +72,7 @@
     "agent/modules/real_photo_markup.py": "a545bd0734bc42fee7fe9220c58b3334",
     "agent/modules/ref_compress.py": "dd66589bdcd58bfee7a97916c46f2ab4",
     "agent/modules/remix.py": "a711fb55bfb178faa2c4b3888433521e",
+    "agent/modules/reseller_balance.py": "da7f128bda96a726d2dd07be2317eea9",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "100e154c81b2db096774453275f06786",
     "agent/modules/sg_adapter.py": "95edf5f84a2d593527ab257138814d61",
@@ -205,7 +207,6 @@
     "fix_ssl_mac.command": "9bb19ee83b8cbab76bcb03cc80fd3262",
     "fix_tkinter.command": "dd7ef3027f446a8f66e7d58133658d38",
     "install.bat": "d4ec4752549c8fb14ab7dd56ef3e82c2",
-    "install.bat.bak_reqs_20260719": "61897f86b9164936cd6ea695570d2503",
     "install.command": "c22d8c4cbd0d5d01471e159c31d70d5c",
     "install_arm.bat": "addbf7d55f03138fd2cc11b54c2bd248",
     "install_colorama.command": "f3ca4ce7c3cb2dd299d4320296db1588",
@@ -237,7 +238,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "9230f1d51280ff8af4461d7c1aa5a2ff",
+    "varagent.py": "4c7427e9ed15468e0871934ce4371c3b",
     "video_concat.py": "1a53329fc06358194bb05beb8f21ecaf",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

@@ -1,14 +1,10 @@
 {
-  "version": "2026.07.27.1518",
+  "version": "2026.07.27.2116",
   "changelog": [
-    "В шапку добавлены балансы Ailink и Nexus с фоновым и ручным обновлением.",
-    "Codex subscription изолирован от пользовательских provider-настроек; режиссёр и rewrite используют правильную авторизацию.",
-    "Ошибки rewrite теперь видны в логе, а debug-данные сохраняются с привязкой к проекту и клипу.",
-    "Финальная склейка больше не зависает на пропущенном медиа: после завершения пайплайна подставляется ближайший статичный кадр.",
-    "Выполнен полный sync portable; пользовательские .env и API-ключи не затрагиваются."
+    "Fix macOS: Codex CLI resolver brал windows .exe (Permission denied) - Style Extract i Real Photo ne rabotali na Mac; + fix bitogo importa CodexRunner"
   ],
-  "requires_restart": true,
-  "patch_sha256": "2fd23e6ddc40e3924a76a2b08f604c9ba91beb4e18cfe2f1bb9879ea30053527",
+  "requires_restart": false,
+  "patch_sha256": "b6d8851a0177a90bfeff7d5ed665ab397a08e90117dbb5d5f54f038f17100d37",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -68,7 +64,7 @@
     "agent/modules/music_review.py": "23cf5c05f7c6d3782da1fb49b75e2f4c",
     "agent/modules/music_safe_stock.py": "9663731ac2f0ac681c2c93e11c08c153",
     "agent/modules/queue.py": "46c8faf03a25d1f94cc4e089be7aca72",
-    "agent/modules/real_photo.py": "f2a6a6c9543baed259ac5d527a1867fd",
+    "agent/modules/real_photo.py": "a4f5df3fbf6c936ec9a24c32ddfd9bc5",
     "agent/modules/real_photo_markup.py": "a545bd0734bc42fee7fe9220c58b3334",
     "agent/modules/ref_compress.py": "dd66589bdcd58bfee7a97916c46f2ab4",
     "agent/modules/remix.py": "a711fb55bfb178faa2c4b3888433521e",

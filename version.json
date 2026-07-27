@@ -1,10 +1,10 @@
 {
-  "version": "2026.07.27.2116",
+  "version": "2026.07.27.2136",
   "changelog": [
-    "Fix macOS: Codex CLI resolver brал windows .exe (Permission denied) - Style Extract i Real Photo ne rabotali na Mac; + fix bitogo importa CodexRunner"
+    "UI: knopka HIDE TAB (skryt ves stolbec pipeline) + svorachivaemye bloki nastroek + skrytie vkladok; fix Codex CLI na macOS (Style Extract i Real Photo)"
   ],
-  "requires_restart": false,
-  "patch_sha256": "b6d8851a0177a90bfeff7d5ed665ab397a08e90117dbb5d5f54f038f17100d37",
+  "requires_restart": true,
+  "patch_sha256": "fcdfff7cec462b6e2662745296a56ccda448c61555c046d7888856e8531fc7a6",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -234,7 +234,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "4c7427e9ed15468e0871934ce4371c3b",
+    "varagent.py": "2e81dc164de7851fed430a87800be744",
     "video_concat.py": "1a53329fc06358194bb05beb8f21ecaf",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

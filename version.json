@@ -1,11 +1,12 @@
 {
-  "version": "2026.07.28.1233",
+  "version": "2026.08.06.2238",
   "changelog": [
-    "Флаг «Чанкинг режиссуры сцен» снова строго управляет Pass 1: выключен — один запрос, включён — окна выбранной в GUI длины.",
-    "HTML-страницы Cloudflare больше не заливают лог; ошибки шлюза и исчерпанной дневной квоты выводятся одной понятной строкой."
+    "Veo censorship fallback: two consecutive Veo censor-like responses route to static fallback",
+    "I2V copies source image to vid_img; T2V generates Banana 2 Lite HARBOR_SEAL frame",
+    "Full VARAGENT_API -> VARAGENT_API_PORTABLE release; no API keys rotated"
   ],
-  "requires_restart": false,
-  "patch_sha256": "73640fb763b129547dcfb57ae4f63543d98e06e57b476808d50febbd2f610c65",
+  "requires_restart": true,
+  "patch_sha256": "74834bef2bfdb934504ba4228a2f4d0cb3be72170bac942a93cf11813cad73e0",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -24,7 +25,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "da8d8333ebc0532c82bd9766eae793b3",
+    "agent/config.py": "dd689af1f94e76084722f8bdf57bb499",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "377c0bf6d2942256497f42951fa22378",
@@ -85,11 +86,11 @@
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
     "agent/modules/updater.py": "146b5dd96a60074095bd1856f70fc8ec",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
-    "agent/modules/veo_video.py": "31719485c523e2df6c133d59ad176b46",
+    "agent/modules/veo_video.py": "f1784e53a80d59ccbd68c82366924daa",
     "agent/modules/veononstop.py": "4740367aaef8c358e89a61296b8d7d3d",
     "agent/modules/video_claims.py": "54a34eaab586a7d29239b6d8afc85a93",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
-    "agent/modules/yt_packer.py": "2d2ca4f85c8c57f175fae7202d38cb0f",
+    "agent/modules/yt_packer.py": "5376f29ab3f239510f2b19765d28fc16",
     "agent/modules/yt_transcriber.py": "280889dedcf5509e11e8429ca6b34668",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",
@@ -193,6 +194,7 @@
     "api-1.json": "03cd62465bc7dca1ffd62c2d272008ae",
     "changelog_20260727_ui_collapse_codex_mac.md": "6271ca4f29a2498a4c1698ed4620a220",
     "changelog_20260728_reseller_524.md": "efc3ebf123ab6226e1d4ad02a2f6a273",
+    "changelog_20260806_veo_censor_fallback.md": "d4a2fde9dc6e531028445dc2f9e00abe",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -237,7 +239,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "e25d0758e8b2890b6abe810aa8ca859a",
+    "varagent.py": "517b32ad448dfdd075055135ce9bb568",
     "video_concat.py": "1a53329fc06358194bb05beb8f21ecaf",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

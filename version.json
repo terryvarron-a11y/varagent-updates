@@ -1,10 +1,10 @@
 {
-  "version": "2026.08.07.2052",
+  "version": "2026.08.07.2112",
   "changelog": [
-    "﻿Tk fix: reference hard-match is now enabled only when the project ref folder contains actual image files. Ref-free T2V no longer receives injected reference tokens; ref-based and components workflows with real refs remain supported. Synced to VARAGENT_API_PORTABLE and secret scan passed."
+    "﻿Remix fallback update: added selectable Banana Flower and GPT Image remixer engines, plus Off to bypass remix and continue to static fallback. Unified the GUI radio controls and Settings REMIX_ENGINE selector. Synced to Tk portable; Qt remains local-only and is not published."
   ],
-  "requires_restart": false,
-  "patch_sha256": "c5b5dee0328307f4a38d364ae8dfb91245c4410289e5ba2aa9b9282fc71d4a1d",
+  "requires_restart": true,
+  "patch_sha256": "fe472a5f9bd4bf98800d02176494a1cb42eb3993536e7663ab04931b498853ff",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -23,7 +23,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "dd689af1f94e76084722f8bdf57bb499",
+    "agent/config.py": "0fc8bf3979cd345942c06775423dd4d0",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "377c0bf6d2942256497f42951fa22378",
@@ -49,7 +49,7 @@
     "agent/modules/codex_usage.py": "09ba80785364e79a594d33cdb8110c15",
     "agent/modules/director.py": "8936bc6df016a6f7a833666e84f085dc",
     "agent/modules/entity_overlay.py": "ec4a2335a7b39731fd77aed998de4cb3",
-    "agent/modules/fastgen.py": "d507728dd68db993e9edea9a7399f04d",
+    "agent/modules/fastgen.py": "e450b8637867c0d9656357e21fc84356",
     "agent/modules/flowultra.py": "fb97e90c323cd8b907063797f4115db3",
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
     "agent/modules/gemini_rewrite.py": "f63f7d78d435a173c081d222932bb42a",
@@ -67,7 +67,7 @@
     "agent/modules/real_photo.py": "a4f5df3fbf6c936ec9a24c32ddfd9bc5",
     "agent/modules/real_photo_markup.py": "a545bd0734bc42fee7fe9220c58b3334",
     "agent/modules/ref_compress.py": "dd66589bdcd58bfee7a97916c46f2ab4",
-    "agent/modules/remix.py": "a711fb55bfb178faa2c4b3888433521e",
+    "agent/modules/remix.py": "55801c35e64a516a75d34bdac0c47b1c",
     "agent/modules/reseller_balance.py": "da7f128bda96a726d2dd07be2317eea9",
     "agent/modules/rewrite_names.py": "a97a7254dc4ea413001e9a0fb8462d2e",
     "agent/modules/script_director.py": "100e154c81b2db096774453275f06786",
@@ -82,7 +82,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "cc97d3925856420644e22f7cee787e3e",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "146b5dd96a60074095bd1856f70fc8ec",
+    "agent/modules/updater.py": "d8f91cee270ec8b35df363fbe0110e12",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_account_usage.py": "32f47548d690fcd7a37d60726567aced",
     "agent/modules/veo_video.py": "d0e18265737f431357dfe4e56a9a40fa",
@@ -195,6 +195,7 @@
     "changelog_20260728_reseller_524.md": "efc3ebf123ab6226e1d4ad02a2f6a273",
     "changelog_20260806_veo_censor_fallback.md": "d4a2fde9dc6e531028445dc2f9e00abe",
     "changelog_20260806_veo_header_limits.md": "8b95f698c6c51b4496eb80f138b32cc3",
+    "changelog_20260807_remix_engines.md": "b28f3087d7a26721484f5c31685d5c54",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -240,7 +241,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "3dd0316ce1d92466056e7b46b34bc2c1",
+    "varagent.py": "5c11910ecf7ca28681b0de148611d9d9",
     "video_concat.py": "1a53329fc06358194bb05beb8f21ecaf",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

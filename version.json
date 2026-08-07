@@ -1,12 +1,13 @@
 {
-  "version": "2026.08.06.2238",
+  "version": "2026.08.07.1432",
   "changelog": [
-    "Veo censorship fallback: two consecutive Veo censor-like responses route to static fallback",
-    "I2V copies source image to vid_img; T2V generates Banana 2 Lite HARBOR_SEAL frame",
-    "Full VARAGENT_API -> VARAGENT_API_PORTABLE release; no API keys rotated"
+    "Veo t2v: клипы, заблокированные IP-фильтром, больше не теряются. Раньше ошибка PUBLIC_ERROR_IP_INPUT_IMAGE убивала клип мгновенно — без единой попытки спасения, и так же падала во всех циклах ретраев. Теперь промпт переписывается (как при обычной цензуре), а если не помогло — кадр рисуется через banana и отправляется на оживление в i2v.",
+    "Стадия видео больше не пропускается, когда работаешь не первым ключом. Проверялся только слот 1 (MY): при выбранном BRO стадия молча скипалась, а падал уже concat с «Media missing for clips». Проверка теперь смотрит все четыре слота — в семи местах, где стояла старая.",
+    "Выбран слот без ключа — берётся первый заполненный, а не пустой первый.",
+    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
   ],
   "requires_restart": true,
-  "patch_sha256": "74834bef2bfdb934504ba4228a2f4d0cb3be72170bac942a93cf11813cad73e0",
+  "patch_sha256": "cfadae087ab160f97400991c639156ef542ec266c8289f660f6547be237926b4",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -17,7 +18,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "131b771a3007d38e28d0db21e3442ace",
+    "agent/agent.py": "0313fa869ac5a7d314cae52775f1d772",
     "agent/bridges/korshun_var_bridge.py": "bf71423ac2199b40586c0b7860c7f03b",
     "agent/bridges/usatayai_generator_bridge.py": "32c9331ceb1847e402efd6fd5738aabc",
     "agent/bridges/usatayai_var_stage_bridge.py": "04d0dc3cd71d3a72256dce498e000fce",
@@ -86,11 +87,12 @@
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
     "agent/modules/updater.py": "146b5dd96a60074095bd1856f70fc8ec",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
-    "agent/modules/veo_video.py": "f1784e53a80d59ccbd68c82366924daa",
+    "agent/modules/veo_account_usage.py": "32f47548d690fcd7a37d60726567aced",
+    "agent/modules/veo_video.py": "d0e18265737f431357dfe4e56a9a40fa",
     "agent/modules/veononstop.py": "4740367aaef8c358e89a61296b8d7d3d",
     "agent/modules/video_claims.py": "54a34eaab586a7d29239b6d8afc85a93",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",
-    "agent/modules/yt_packer.py": "5376f29ab3f239510f2b19765d28fc16",
+    "agent/modules/yt_packer.py": "2d2ca4f85c8c57f175fae7202d38cb0f",
     "agent/modules/yt_transcriber.py": "280889dedcf5509e11e8429ca6b34668",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",
@@ -195,6 +197,7 @@
     "changelog_20260727_ui_collapse_codex_mac.md": "6271ca4f29a2498a4c1698ed4620a220",
     "changelog_20260728_reseller_524.md": "efc3ebf123ab6226e1d4ad02a2f6a273",
     "changelog_20260806_veo_censor_fallback.md": "d4a2fde9dc6e531028445dc2f9e00abe",
+    "changelog_20260806_veo_header_limits.md": "8b95f698c6c51b4496eb80f138b32cc3",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -239,7 +242,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "517b32ad448dfdd075055135ce9bb568",
+    "varagent.py": "3dd0316ce1d92466056e7b46b34bc2c1",
     "video_concat.py": "1a53329fc06358194bb05beb8f21ecaf",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

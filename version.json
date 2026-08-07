@@ -1,14 +1,10 @@
 {
-  "version": "2026.08.07.1442",
+  "version": "2026.08.07.2052",
   "changelog": [
-    "Полный синк модулей из рабочей копии: yt_packer, install.bat, api-1.json отставали от неё и в прошлый патч не попали.",
-    "Veo t2v: клипы, заблокированные IP-фильтром, больше не теряются. Раньше ошибка PUBLIC_ERROR_IP_INPUT_IMAGE убивала клип мгновенно — без единой попытки спасения, и так же падала во всех циклах ретраев. Теперь промпт переписывается (как при обычной цензуре), а если не помогло — кадр рисуется через banana и отправляется на оживление в i2v.",
-    "Стадия видео больше не пропускается, когда работаешь не первым ключом. Проверялся только слот 1 (MY): при выбранном BRO стадия молча скипалась, а падал уже concat с «Media missing for clips». Проверка теперь смотрит все четыре слота — в семи местах, где стояла старая.",
-    "Выбран слот без ключа — берётся первый заполненный, а не пустой первый.",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "﻿Tk fix: reference hard-match is now enabled only when the project ref folder contains actual image files. Ref-free T2V no longer receives injected reference tokens; ref-based and components workflows with real refs remain supported. Synced to VARAGENT_API_PORTABLE and secret scan passed."
   ],
   "requires_restart": false,
-  "patch_sha256": "6657384e3f33a0723953411d8db3ede220ff33d1e1dba9bf390ee4634e8cdb65",
+  "patch_sha256": "c5b5dee0328307f4a38d364ae8dfb91245c4410289e5ba2aa9b9282fc71d4a1d",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -36,7 +32,7 @@
     "agent/fonts/BookAntiqua_Bold.ttf": "e6ad3e9485e85796a3ebb481164abee7",
     "agent/modules/__init__.py": "39375a814003403ec71f252c2b860dd0",
     "agent/modules/chat_client.py": "3836990ca3092c742ec3a3b38eaea7fd",
-    "agent/modules/chat_director.py": "6e41cfd0012df232b16e1d6b5ca14716",
+    "agent/modules/chat_director.py": "562fb81ddfdfbad26056ce0168a27178",
     "agent/modules/chat_music_director.py": "a57e4144b2796b1e570ef3b570f43869",
     "agent/modules/claude_api_director.py": "73d9d25c9a45de9660d3e5bd347ad117",
     "agent/modules/claude_api_music_director.py": "66581c792203b9049c1a99624fbd3897",
@@ -57,7 +53,7 @@
     "agent/modules/flowultra.py": "fb97e90c323cd8b907063797f4115db3",
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
     "agent/modules/gemini_rewrite.py": "f63f7d78d435a173c081d222932bb42a",
-    "agent/modules/gpt_director.py": "d3429eb5857a950b03cea8dc38386d90",
+    "agent/modules/gpt_director.py": "d641a3daca76a49a0d6e9d048264583a",
     "agent/modules/imggen.py": "d21221ffc2b92fd0f99cb29c6b8a6b8d",
     "agent/modules/moonbridge_mgr.py": "33eeb1298b63f52fa76539d5b3377afe",
     "agent/modules/music_director.py": "dad0ad4bcd196e9643137ea584cdb80a",
@@ -237,6 +233,7 @@
     "START_HERE.md": "970fec509b6e2f2c6baa9227b902ee28",
     "themes/default.json": "c254a2291566850c86160d9e8d93e812",
     "themes/purple.json": "daf264d94a54f38b4f79e4036a088216",
+    "TK_FIX_CHANGELOG.md": "63c135b6396e9071695673115a393dd2",
     "unlock_mac.py": "35125e66c2a75f249dc3fe88d4820fd0",
     "update.bat": "59c6354bc324d54da95457f3f599d627",
     "update.command": "12174fc7d7bac38fc195616258237946",

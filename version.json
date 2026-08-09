@@ -1,12 +1,10 @@
 {
-  "version": "2026.08.08.0142",
+  "version": "2026.08.09.1719",
   "changelog": [
-    "New infographic workflow with dedicated image provider and optional static concat.",
-    "Veo censorship fallback and selectable FastGen remix engines.",
-    "Tk portable sync hardening: safe defaults and backup exclusion from updates."
+    "﻿Fix: queue snapshots per file, FastGen key failover, and safe static fallbacks."
   ],
   "requires_restart": true,
-  "patch_sha256": "c2e8f552318fdbff9ca65dc954518a1271f26c84ed71070c23eae1de63a13a65",
+  "patch_sha256": "0e790ac95d18fe145e6413450853e22d43dbd2747becfea30b41663b36a63057",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -17,7 +15,7 @@
     "1_silentstart.bat": "11c893e669ebbb2763b625e9357e1866",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "014ad6afb2c852c26c7ff30c86089074",
+    "agent/agent.py": "43a469d8db75e36f661e4ad4bd358a94",
     "agent/bridges/korshun_var_bridge.py": "bf71423ac2199b40586c0b7860c7f03b",
     "agent/bridges/usatayai_generator_bridge.py": "32c9331ceb1847e402efd6fd5738aabc",
     "agent/bridges/usatayai_var_stage_bridge.py": "04d0dc3cd71d3a72256dce498e000fce",
@@ -51,7 +49,7 @@
     "agent/modules/codex_usage.py": "09ba80785364e79a594d33cdb8110c15",
     "agent/modules/director.py": "65427af9d81dbf23b9fb9ac49a58fe24",
     "agent/modules/entity_overlay.py": "ec4a2335a7b39731fd77aed998de4cb3",
-    "agent/modules/fastgen.py": "07942f4f26df61eb308d922b7e9c21ea",
+    "agent/modules/fastgen.py": "dc7c7818b2f82283e2270b3f0289f3f5",
     "agent/modules/flowultra.py": "69abf229df8793f68e333a49cdbd49a1",
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
     "agent/modules/gemini_rewrite.py": "f63f7d78d435a173c081d222932bb42a",
@@ -201,6 +199,7 @@
     "changelog_20260806_veo_header_limits.md": "8b95f698c6c51b4496eb80f138b32cc3",
     "changelog_20260807_infographics.md": "2977188a4e9f937d0ad8da49557e6234",
     "changelog_20260807_remix_engines.md": "b28f3087d7a26721484f5c31685d5c54",
+    "changelog_20260809_fastgen_failover_i2v_recovery.md": "d2bf734a1456c5f8c3d064d063fdc9c2",
     "check_and_fix.bat": "11a519d1aa9c2cdf3c3150a0dad16dcb",
     "check_and_fix.command": "75a0fe9415deccbd2e46599ed03e5a7e",
     "check_install.bat": "5d8678922638cd2ee3e9f8e552ab3b10",
@@ -246,7 +245,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "5ad3aafb25747a35478b4c53f5f652e3",
-    "varagent.py": "9e9e253203e9026993a09478e38e8e6b",
+    "varagent.py": "12654001c93ee5a62fecb8c65bf2870b",
     "video_concat.py": "5bba32614b8300b40263f56674724208",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }

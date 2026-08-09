@@ -1,9 +1,9 @@
 {
   "version": "2026.08.09.2359",
   "changelog": [
-    "﻿EPF: automatic portable bridge, private epf_data storage, Claude Nexus vision selection, and verified Google Drive installer."
+    "EPF: automatic portable bridge, private epf_data storage, Claude Nexus vision selection, and verified Google Drive installer."
   ],
-  "requires_restart": true,
+  "requires_restart": false,
   "patch_sha256": "02ca29491b758e6a1d963d9d138122d43af51765ac5b71a533d99eec80437346",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",

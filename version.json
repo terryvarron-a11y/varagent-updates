@@ -1,12 +1,12 @@
 {
-  "version": "2026.08.17.2359",
+  "version": "2026.08.17.2359.1",
   "changelog": [
-    "Final video metadata: replace old container tags with randomized title, artist, creation time, comment, description, and encoder.",
-    "Metadata is applied after bridge, entity overlays, and music, without re-encoding video or audio streams.",
-    "Updater installs Mutagen so the randomized MP4 encoder tag is actually preserved on Windows and macOS."
+    "Final metadata profile expanded to 36 NLE-style MP4 fields: project, sequence, reel, application, workflow, studio, camera, color, copyright, keywords, and technical export tags.",
+    "Metadata is written after bridge, entity overlays, and music without re-encoding the H.264/AAC streams.",
+    "Timecode is stored as timeline_timecode to avoid creating an extra MP4 data track."
   ],
   "requires_restart": false,
-  "patch_sha256": "9d716ec6a193894fd7ad47c18888e31b7df124c5322868385816fc46ed6f7173",
+  "patch_sha256": "d8673444921673e7d5d5a1f7e355d11d46112920daabd62d854cd3727ebc6f5c",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -120,7 +120,7 @@
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "992adb4ed173439ff064c282fe672798",
-    "agent/requirements.txt": "492f122dca8dadcaed1f803f4cf3e648",
+    "agent/requirements.txt": "821034020c88422fd726f6def584c22f",
     "agent/schemas/music_plan_control.json": "6391d0b692b8d7827b2e371a8cf1e03f",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
@@ -255,7 +255,7 @@
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "a78d930212ae2ea9b2f8858e565e993a",
     "varagent.py": "84a4441d0855ae98d37d2f1ad9f04b8e",
-    "video_concat.py": "74199eaef9c433215ec4af63b484d8bc",
+    "video_concat.py": "ceea5c0e508a6a9eee38342921aa9a19",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

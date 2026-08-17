@@ -1,15 +1,12 @@
 {
-  "version": "2026.08.17.2323",
+  "version": "2026.08.17.2359",
   "changelog": [
-    "Music: background generation and ConcatQueue behavior are now fully synced to portable, including Suno retries and captcha cooldown handling.",
-    "ConcatQueue: music detection accepts MP3, WAV, M4A, AAC, FLAC, and OGG instead of MP3 only.",
-    "Usage polling: transient account-usage timeouts retry and fail soft without blocking image generation.",
-    "Video downloads: concurrent finished-video transfers are capped at 12 to prevent relay saturation.",
-    "Style Guide: Individual queue mode preserves the current per-file mapping and validates missing mappings before launch.",
-    "macOS: launcher works with .venv, Homebrew Python, or a compatible system Python."
+    "Final video metadata: replace old container tags with randomized title, artist, creation time, comment, description, and encoder.",
+    "Metadata is applied after bridge, entity overlays, and music, without re-encoding video or audio streams.",
+    "Updater installs Mutagen so the randomized MP4 encoder tag is actually preserved on Windows and macOS."
   ],
-  "requires_restart": true,
-  "patch_sha256": "5b32db4be2549f96f33ca5dce8f4fa81f68acb70ad3d337bd368ea9306221882",
+  "requires_restart": false,
+  "patch_sha256": "9d716ec6a193894fd7ad47c18888e31b7df124c5322868385816fc46ed6f7173",
   "files": {
     "0_interactivestart.bat": "ee52c4f0385e760b417f66e882c7e01e",
     "0_interactivestart.command": "838f88a500131ce1545437bbbfcc42a6",
@@ -28,7 +25,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "5b59c85c864f394acb856c95528050cf",
+    "agent/config.py": "35fa5d4530cf8127fb5f0016b37c4ab6",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "377c0bf6d2942256497f42951fa22378",
@@ -91,7 +88,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "cc97d3925856420644e22f7cee787e3e",
     "agent/modules/tts.py": "1af33c9dac623b1f6175d6c0da679afd",
-    "agent/modules/updater.py": "2d9e0c5414528d419911fb6f1f7f3182",
+    "agent/modules/updater.py": "22ffb9123ab1961bb4f7574642a17800",
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_account_usage.py": "aa83a68f09ea49cfd9300255b2146297",
     "agent/modules/veo_video.py": "98dd117c3e292990b9cdea67df7c3ef0",
@@ -123,7 +120,7 @@
     "agent/prompts/yt_packer_prompt.txt": "fd6ce9ae217716e713ef365813daa561",
     "agent/quota_check.py": "5ca6318b9a3ae51aed65788995a99108",
     "agent/rename_videos.py": "992adb4ed173439ff064c282fe672798",
-    "agent/requirements.txt": "ed272a5fc7d0cd02227aa34c11c31aa0",
+    "agent/requirements.txt": "492f122dca8dadcaed1f803f4cf3e648",
     "agent/schemas/music_plan_control.json": "6391d0b692b8d7827b2e371a8cf1e03f",
     "agent/schemas/pass1_control.json": "ed0c46d9915743a21783bc8fd4b06355",
     "agent/schemas/pass2_control.json": "181282d8fd0a969fb9de46cc059bfdac",
@@ -258,7 +255,7 @@
     "varagent.bat": "b7e3acdd945452112116b7be2b391766",
     "varagent.command": "a78d930212ae2ea9b2f8858e565e993a",
     "varagent.py": "84a4441d0855ae98d37d2f1ad9f04b8e",
-    "video_concat.py": "862911194b9e09b229e28a79bb544b5c",
+    "video_concat.py": "74199eaef9c433215ec4af63b484d8bc",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f"
   }
 }

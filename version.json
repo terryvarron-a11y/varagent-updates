@@ -1,12 +1,12 @@
 {
-  "version": "2026.08.22.0010",
+  "version": "2026.08.22.0644",
   "changelog": [
-    "macOS concat now retries ASS subtitle burn-in without fontsdir when Homebrew FFmpeg/libass rejects that option.",
-    "Updater records successfully installed patch receipts so the same partial release is not offered repeatedly.",
-    "Published updates are now complete repair archives, with ZIP path validation and post-install SHA/MD5 verification."
+    "VeoNonStop Banana updated for the asynchronous task flow: accept HTTP 202 task responses, poll /video/status, and download images[].fifeUrl.",
+    "ALL_COOKIES_EXHAUSTED_FOR_MODEL now retries the same clip on the other documented Banana models: GEM_PIX_2 (Pro), NARWHAL (Banana 2), and HARBOR_SEAL (Banana 2 Lite).",
+    "Per-model cookie exhaustion stays separate from the API-key daily quota fallback."
   ],
-  "requires_restart": true,
-  "patch_sha256": "95eb8e07b587bca5ef25533af1a2a79bfc70e0bbace6ee5fc8b1b42ace623747",
+  "requires_restart": false,
+  "patch_sha256": "179f5bd5d43077f6bfd383d91cfe8c29af61fb644eab34c3e37fff5e01b4841d",
   "files": {
     "0_interactivestart.bat": "4bc5712d283290e92fcaf7e58f488e28",
     "0_interactivestart.command": "890d1f5592e72c51567b06b657b506ff",
@@ -25,7 +25,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "50682df84a0ebe6dc416f6973eafa293",
+    "agent/config.py": "9b431149a8b5c7c1efa2b0805a339bb5",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "377c0bf6d2942256497f42951fa22378",
@@ -61,7 +61,7 @@
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
     "agent/modules/gemini_rewrite.py": "82c37c2925e32f8f9496de98daec131b",
     "agent/modules/gpt_director.py": "8e17ce678070b7ea9ec296260e4037c9",
-    "agent/modules/imggen.py": "bf5b6a1ce6cdd096484ea9652fe679f5",
+    "agent/modules/imggen.py": "30ec55038bc700230e3c2472dffa8281",
     "agent/modules/infographic_markup.py": "e3b56f8ca61458a4d0a73a5b324d4471",
     "agent/modules/moonbridge_mgr.py": "33eeb1298b63f52fa76539d5b3377afe",
     "agent/modules/music_director.py": "722fa83ce6336fc7589741890e1ca0ef",
@@ -97,7 +97,7 @@
     "agent/modules/validator.py": "1bb28b7158e63aa096341c4edbb957a2",
     "agent/modules/veo_account_usage.py": "aa83a68f09ea49cfd9300255b2146297",
     "agent/modules/veo_video.py": "be81b293db038df74636ef72bdf8508b",
-    "agent/modules/veononstop.py": "95d71c03590e9bac7982c5f25ae8291a",
+    "agent/modules/veononstop.py": "280ededce9545382111d30011a12a646",
     "agent/modules/video_claims.py": "54a34eaab586a7d29239b6d8afc85a93",
     "agent/modules/video_prompting.py": "d4a9ab6272531bab9072cf205b71add9",
     "agent/modules/vision_checks.py": "b1e148319457a5335859e5f0a3584466",

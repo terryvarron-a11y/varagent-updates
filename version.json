@@ -1,14 +1,10 @@
 {
-  "version": "2026.08.29.1619",
+  "version": "2026.08.29.2028",
   "changelog": [
-    "ВАЖНО: обновление для тестировщиков. Если всё работает — можно не ставить. Хотите проверить новое — ставьте либо сделайте копию папки VARAGENT_API_PORTABLE и обновитесь в ней: будет два софта, экспериментальный и ваш рабочий.",
-    "Исправлено: запросы к архивам молча не писались. Оператор сохраняет ответ в файл внутри папки проекта, но подпапку под него никто не создавал — агент падал с «Failed to write last message file… os error 3», запрос оставался ненаписанным, и стадия уходила на аварийное сжатие описания: вместо осмысленного запроса в поиск шли первые слова из брифа. Теперь папка создаётся до записи.",
-    "Стадия YouTube печатает версию yt-dlp — раньше её нельзя было узнать ниоткуда. Если бинарнику больше двух месяцев, в лог и на экран идёт предупреждение: ютуб часто отвечает 403 именно из-за устаревшего yt-dlp. Обновляется он заменой файла yt-dlp.exe в корне папки софта — с обновлениями он не едет, слишком большой.",
-    "Понятная причина, когда ролик не скачался. Раньше в логе стояло «следующий вариант: zxYJHHSR3H1r…» — это был обрезок ссылки из чужой ошибки, и понять по нему ничего было нельзя. Теперь пишется так: «не вышло с «без куков» → пробую «chrome» | причина: 403 от сервера видео». Различаются требование входа в аккаунт, приватный и недоступный ролик, ролик для подписчиков, ограничение частоты, 403, отказ ffmpeg и таймаут сети.",
-    "СПАСИБО ЗА ПОМОЩЬ И ТЕСТЫ - АМИРУ❤️, Сергею и Oplus!"
+    "YouTube: ustanovka modulya (yt-dlp + deno) i pochinka kukov - kuki brauzera idut pervymi, perebor bolshe ne zakryvaetsya na pervom uspehe"
   ],
-  "requires_restart": false,
-  "patch_sha256": "1c2c1c0d17eb784a6b97d3c73265d0992432c3e88764b1b7529fbaf5b86bf3f5",
+  "requires_restart": true,
+  "patch_sha256": "c843d2a700bdff99df17222a8b41ee1a76364d16f4cf36e0e49c8feb81d4bb43",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -127,9 +123,9 @@
     "agent/modules/visual_story_query.py": "66779aaa64865b5c73dbe37ab86bbf84",
     "agent/modules/visual_story_validator.py": "874a70fffe4e4c72da2579291093d0af",
     "agent/modules/youtube_markup.py": "2b44d469021b642e046f531023480a6b",
-    "agent/modules/youtube_stage.py": "f68839df8577fb297b43910eb60f0c46",
+    "agent/modules/youtube_stage.py": "96d3dbb2edfde54f6ba9e7cde215d00c",
     "agent/modules/yt_packer.py": "40024924a80debb7a1e3f72bfbb602d6",
-    "agent/modules/yt_transcriber.py": "79782ae3995b7ed278ac8ce86de07a82",
+    "agent/modules/yt_transcriber.py": "c73159aef186fc3ecded8bdc553e9e93",
     "agent/presets_base.json": "ba3b64f9e83b985afa7eecdf58a094d3",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",
@@ -251,6 +247,7 @@
     "agent/tools/sota_watermark_remover.py": "d4cfd11258f755ba0710b0a185098bf2",
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "34f08400e01dd42f8bd01a30a20009c9",
+    "agent/tools/youtube_setup.py": "20210b624fbf588415a402ef3336d110",
     "agent/watch_i2v.py": "692ff4db6b8d8d108a63df277b85a9b3",
     "agent/watch_i2v_cinai.py": "028d41c41ce3595e73f16c4b57ce5698",
     "agent/watch_i2v_flowultra.py": "383f9812330b4c3ca773673d093f19ad",
@@ -306,7 +303,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "de0dd6ab9bdf45d14db9c759b2c1fc8d",
+    "varagent.py": "502e23c8d4ef84fb7b7071f049a75848",
     "video_concat.py": "1b43c5033f0b5814ca7db0ae0860ea33",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

@@ -1,10 +1,10 @@
 {
-  "version": "2026.08.29.2132",
+  "version": "2026.08.29.2154",
   "changelog": [
-    "YouTube и EPF: индикаторы готовности модулей, определение Firefox, EPF включается только в списке источников. Базовые пресеты обновлены"
+    "Установка YouTube-модуля теперь работает на macOS и Linux: свой бинарник yt-dlp и deno под систему и процессор, права на запуск, скачивание без GitHub API"
   ],
-  "requires_restart": true,
-  "patch_sha256": "36548f386852dccd3b2c824f14fa45553c64b981837157e4efe986b8cbdd1b17",
+  "requires_restart": false,
+  "patch_sha256": "6249b474b7d91e8e92ba3459a23f6ed39c39e2ab43fe2e618998e25d6a7b931e",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -123,9 +123,9 @@
     "agent/modules/visual_story_query.py": "66779aaa64865b5c73dbe37ab86bbf84",
     "agent/modules/visual_story_validator.py": "874a70fffe4e4c72da2579291093d0af",
     "agent/modules/youtube_markup.py": "2b44d469021b642e046f531023480a6b",
-    "agent/modules/youtube_stage.py": "96d3dbb2edfde54f6ba9e7cde215d00c",
+    "agent/modules/youtube_stage.py": "5c9d34431858c47eb9a6ce0c146218c3",
     "agent/modules/yt_packer.py": "40024924a80debb7a1e3f72bfbb602d6",
-    "agent/modules/yt_transcriber.py": "c73159aef186fc3ecded8bdc553e9e93",
+    "agent/modules/yt_transcriber.py": "a1eeafe2f4733e16dcf10ea3a50c20bd",
     "agent/presets_base.json": "fe3ca56d6267d09654689e8d21cf1599",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",
@@ -247,7 +247,7 @@
     "agent/tools/sota_watermark_remover.py": "d4cfd11258f755ba0710b0a185098bf2",
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "34f08400e01dd42f8bd01a30a20009c9",
-    "agent/tools/youtube_setup.py": "0565cdacdd76969da4ddf76a231f1129",
+    "agent/tools/youtube_setup.py": "41c4e1f22b1b5d42285498873e1847c9",
     "agent/watch_i2v.py": "692ff4db6b8d8d108a63df277b85a9b3",
     "agent/watch_i2v_cinai.py": "028d41c41ce3595e73f16c4b57ce5698",
     "agent/watch_i2v_flowultra.py": "383f9812330b4c3ca773673d093f19ad",

@@ -1,10 +1,10 @@
 {
-  "version": "2026.08.29.2028",
+  "version": "2026.08.29.2132",
   "changelog": [
-    "YouTube: ustanovka modulya (yt-dlp + deno) i pochinka kukov - kuki brauzera idut pervymi, perebor bolshe ne zakryvaetsya na pervom uspehe"
+    "YouTube и EPF: индикаторы готовности модулей, определение Firefox, EPF включается только в списке источников. Базовые пресеты обновлены"
   ],
   "requires_restart": true,
-  "patch_sha256": "c843d2a700bdff99df17222a8b41ee1a76364d16f4cf36e0e49c8feb81d4bb43",
+  "patch_sha256": "36548f386852dccd3b2c824f14fa45553c64b981837157e4efe986b8cbdd1b17",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -126,7 +126,7 @@
     "agent/modules/youtube_stage.py": "96d3dbb2edfde54f6ba9e7cde215d00c",
     "agent/modules/yt_packer.py": "40024924a80debb7a1e3f72bfbb602d6",
     "agent/modules/yt_transcriber.py": "c73159aef186fc3ecded8bdc553e9e93",
-    "agent/presets_base.json": "ba3b64f9e83b985afa7eecdf58a094d3",
+    "agent/presets_base.json": "fe3ca56d6267d09654689e8d21cf1599",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",
     "agent/prompts/director_instruction_pass1.txt": "5fbda7e4b3a6e84f2fc050d3165bafc8",
@@ -247,7 +247,7 @@
     "agent/tools/sota_watermark_remover.py": "d4cfd11258f755ba0710b0a185098bf2",
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "34f08400e01dd42f8bd01a30a20009c9",
-    "agent/tools/youtube_setup.py": "20210b624fbf588415a402ef3336d110",
+    "agent/tools/youtube_setup.py": "0565cdacdd76969da4ddf76a231f1129",
     "agent/watch_i2v.py": "692ff4db6b8d8d108a63df277b85a9b3",
     "agent/watch_i2v_cinai.py": "028d41c41ce3595e73f16c4b57ce5698",
     "agent/watch_i2v_flowultra.py": "383f9812330b4c3ca773673d093f19ad",
@@ -303,7 +303,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "502e23c8d4ef84fb7b7071f049a75848",
+    "varagent.py": "cd6547cad23242c6769dec686c236b7d",
     "video_concat.py": "1b43c5033f0b5814ca7db0ae0860ea33",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

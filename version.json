@@ -1,10 +1,10 @@
 {
-  "version": "2026.08.30.0057",
+  "version": "2026.08.30.0118",
   "changelog": [
-    "Плавный зум: суперсемпл x2 по умолчанию — дрожание на тонких линиях уходит; в настройках склейки можно вернуть как было или включить x3"
+    "Real Photo: микс источников включён по умолчанию — кандидаты со всех источников идут вижну одним листом"
   ],
   "requires_restart": true,
-  "patch_sha256": "4d31b87b273ca6987e3bbf1a9dca193822d35afa6abaddea844970facc6e2c1e",
+  "patch_sha256": "9c488aadf36a6891da237be320ef885e850c41df9fba44c43f341403395892b5",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -25,9 +25,9 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "bd3c82e04a30cd39e6d7023093addd3b",
+    "agent/config.py": "10d44b20c057e71b74fc6f41b74f5694",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
-    "agent/default_env.txt": "b2621a76be6f4b222128024030fa2378",
+    "agent/default_env.txt": "3e1e7236252e2c7270eba265e2abd920",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "2c9bd981360ab6571102afdf7110512e",
     "agent/find_missing_clips.py": "076858dda8baec215abe7dd838fdfa7c",
@@ -105,7 +105,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "a363eeef8994ff98a429095e09db491b",
     "agent/modules/tts.py": "c3e6317fd870abb930fc94eebbec4c22",
-    "agent/modules/updater.py": "39947bd31cb0373355e7c333b6da4675",
+    "agent/modules/updater.py": "ae74383740bbe3bc6562ce1273280bd0",
     "agent/modules/validator.py": "a4b5e17727e887fb356220992bdcece6",
     "agent/modules/veo_account_usage.py": "aa83a68f09ea49cfd9300255b2146297",
     "agent/modules/veo_video.py": "26ffc14a218756548720b45172221f43",
@@ -304,7 +304,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "46e43667d58c0973d60038b94fe811e9",
+    "varagent.py": "dde42ff2836385c95d3c7a64bd0c442d",
     "video_concat.py": "0447b7abb8549d82e32243bd00828f32",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

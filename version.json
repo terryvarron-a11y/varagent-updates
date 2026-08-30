@@ -1,10 +1,10 @@
 {
-  "version": "2026.08.30.1046",
+  "version": "2026.08.30.1234",
   "changelog": [
-    "Обновления: протухший GITHUB_TOKEN больше не ломает загрузку — при отказе качаем без него. В комплекте fix_updates для тех, у кого уже 404"
+    "Проверка кадров ютуба: в списке вижн-операторов появились Codex, Claude Code и Gemini — те же, что в Real Photo"
   ],
-  "requires_restart": false,
-  "patch_sha256": "12eadbee237096323677a064647b01cb3a5e34d0eb640ca36543c47549e3fe97",
+  "requires_restart": true,
+  "patch_sha256": "9619571b41127af2c3ba71b1fcc57475bdaf6bcb4a9541371d6a429376d03a11",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -306,7 +306,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "dde42ff2836385c95d3c7a64bd0c442d",
+    "varagent.py": "dde66ff89ce56ca631e2bafcdc709e87",
     "video_concat.py": "0447b7abb8549d82e32243bd00828f32",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

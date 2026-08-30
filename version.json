@@ -1,10 +1,10 @@
 {
-  "version": "2026.08.30.1234",
+  "version": "2026.08.30.1250",
   "changelog": [
-    "Проверка кадров ютуба: в списке вижн-операторов появились Codex, Claude Code и Gemini — те же, что в Real Photo"
+    "YouTube: софт снова видит вход в аккаунт (куки Google искались не на том домене), а на бот-проверку теперь тормозит и подсказывает, что делать"
   ],
-  "requires_restart": true,
-  "patch_sha256": "9619571b41127af2c3ba71b1fcc57475bdaf6bcb4a9541371d6a429376d03a11",
+  "requires_restart": false,
+  "patch_sha256": "6acc0077e3e071eff78290bd17318211ccff78d26f0b9b3cf337616b942762fe",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -124,9 +124,9 @@
     "agent/modules/visual_story_query.py": "66779aaa64865b5c73dbe37ab86bbf84",
     "agent/modules/visual_story_validator.py": "874a70fffe4e4c72da2579291093d0af",
     "agent/modules/youtube_markup.py": "2b44d469021b642e046f531023480a6b",
-    "agent/modules/youtube_stage.py": "5c9d34431858c47eb9a6ce0c146218c3",
+    "agent/modules/youtube_stage.py": "7619ce95103a800226df3269d71f9ff4",
     "agent/modules/yt_packer.py": "40024924a80debb7a1e3f72bfbb602d6",
-    "agent/modules/yt_transcriber.py": "a1eeafe2f4733e16dcf10ea3a50c20bd",
+    "agent/modules/yt_transcriber.py": "81debf67a074e30649c84d57d28bc49e",
     "agent/presets_base.json": "fe3ca56d6267d09654689e8d21cf1599",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/director_instruction.txt": "a0e4dd561208663fd3ace539cc4ea820",

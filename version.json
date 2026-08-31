@@ -1,10 +1,13 @@
 {
-  "version": "2026.08.31.2041",
+  "version": "2026.08.31.2348",
   "changelog": [
-    "Параллакс: новые короткие промпты (ставятся всем разово), шлюз оживления и ожидание без ImageGen; Сток: схема запросов и видимые причины отказа; Real Photo: параллельные потоки EPF; галка оживления по ходу теперь сохраняется"
+    "macOS DMG: исправлено падение Pipeline с ModuleNotFoundError: No module named tqdm. Пайплайн больше не запускается через случайный системный Homebrew Python.",
+    "VARAGENT автоматически создаёт или восстанавливает собственную .venv и устанавливает в неё недостающие зависимости перед первым запуском пайплайна.",
+    "Все дочерние Python-процессы и перезапуск GUI на macOS теперь используют управляемый runtime VARAGENT.",
+    "Updater на macOS устанавливает зависимости именно в .venv дистрибутива, чтобы последующие обновления не ломали окружение."
   ],
   "requires_restart": true,
-  "patch_sha256": "4dd6420468f772c4dd1a913aa009d6b670986472189c5fda4825fbc08a43a7a4",
+  "patch_sha256": "e4e049e32b0ba530318c689bd183afb4a22a1fa5e8f0fb18595586e7f22f1f21",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -64,6 +67,7 @@
     "agent/modules/entity_overlay.py": "33a5c3ce7048c15ec1523a5fc71ade85",
     "agent/modules/envato_stock.py": "0edd22cbe950aeeec6f64bf9969a48b3",
     "agent/modules/fastgen.py": "78503bf51b09eb8c72ae1ca6a72ed553",
+    "agent/modules/filesta_envato.py": "1a3b83ce76b60b0a753c34281a924981",
     "agent/modules/flowultra.py": "eccc8f48612abd4e0df50c3092687d05",
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
     "agent/modules/gemini_rewrite.py": "82c37c2925e32f8f9496de98daec131b",
@@ -106,7 +110,7 @@
     "agent/modules/textio.py": "29737fb296e67366544230c2d6ca760a",
     "agent/modules/transcriber.py": "a363eeef8994ff98a429095e09db491b",
     "agent/modules/tts.py": "c3e6317fd870abb930fc94eebbec4c22",
-    "agent/modules/updater.py": "dceaeddd1426bf54f032ae68b49c8b91",
+    "agent/modules/updater.py": "2f8e345547b082d4eaf0d41ea8db7a32",
     "agent/modules/validator.py": "a4b5e17727e887fb356220992bdcece6",
     "agent/modules/veo_account_usage.py": "aa83a68f09ea49cfd9300255b2146297",
     "agent/modules/veo_video.py": "4c65fd2a80ffa01ec204fa89772940e4",
@@ -308,7 +312,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "af40b06a1717f0d4243e359e355706e9",
+    "varagent.py": "7b8bc8c6a6d82204813e124f9918e706",
     "video_concat.py": "0447b7abb8549d82e32243bd00828f32",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

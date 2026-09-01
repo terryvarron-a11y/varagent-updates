@@ -1,10 +1,12 @@
 {
-  "version": "2026.09.01.0458",
+  "version": "2026.09.01.1229",
   "changelog": [
-    "﻿Envato Elements как платный сток (через Filesta): поиск по публичной выдаче, вижн смотрит бесплатные превью, покупка мастера только за победителя. Капча Cloudflare проходится сама - свой рендер, клик мышью, CapMonster в запасе (и у Filesta, и у Suno: музыка больше не встаёт). Вижн стока и Real Photo переведены на ранжирование: запас теперь второе место по оценке, а не случайный кандидат. Лестница фолбэков стока - ещё порция кандидатов, затем более узкий запрос, и только потом нейрогенерация. Фильтр длины min-length у Envato, добор сцены двумя кусками, общее хранилище оплаченных мастеров с ужиманием битрейта. Сторож тишины вместо глухих таймаутов: длинный ролик больше не теряет хвост сцен. Свой лог у каждой стадии. Галка Без товарных карточек (маркетплейсы). Разметка режиссёра выводится заметным блоком с целями и предупреждениями."
+    "macOS: Pipeline теперь сам переключается с Homebrew Python на собственную .venv до импорта tqdm.",
+    "Если .venv отсутствует или в ней не хватает пакетов, agent.py создаёт окружение и устанавливает полный requirements.txt автоматически.",
+    "Исправление работает даже при запуске из старого GUI и не требует ручной установки tqdm в системный Python."
   ],
-  "requires_restart": true,
-  "patch_sha256": "ebc3f9c5ffef67d1ac3e93df2a24d5089fcb7585ff8b028b6716b77d520652be",
+  "requires_restart": false,
+  "patch_sha256": "de4aa395c51f5cf5139c2d282c6e669b461a0b7bd0fd171b42438e8867867b48",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -17,7 +19,7 @@
     "1_silentstart.bat": "4b0f380ffbe58aa7664f91a404334f8d",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "cd2607528f3c0ff0008799e56542f7f4",
+    "agent/agent.py": "0fb7e2acb94ce2a64916865dfb2c2fcd",
     "agent/bridges/korshun_var_bridge.py": "f8d0f9bf796aef7d08a219986f96dc3b",
     "agent/bridges/usatayai_generator_bridge.py": "32c9331ceb1847e402efd6fd5738aabc",
     "agent/bridges/usatayai_var_stage_bridge.py": "04d0dc3cd71d3a72256dce498e000fce",
@@ -64,7 +66,6 @@
     "agent/modules/entity_overlay.py": "33a5c3ce7048c15ec1523a5fc71ade85",
     "agent/modules/envato_stock.py": "0edd22cbe950aeeec6f64bf9969a48b3",
     "agent/modules/fastgen.py": "78503bf51b09eb8c72ae1ca6a72ed553",
-    "agent/modules/filesta_envato.py": "8a98c247531e4bd754e831b75a479bff",
     "agent/modules/flowultra.py": "eccc8f48612abd4e0df50c3092687d05",
     "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
     "agent/modules/gemini_rewrite.py": "82c37c2925e32f8f9496de98daec131b",

@@ -1,12 +1,11 @@
 {
-  "version": "2026.09.01.1813",
+  "version": "2026.09.01.1958",
   "changelog": [
-    "macOS: Pipeline автоматически устанавливает FFmpeg через Homebrew, если ffmpeg или ffprobe отсутствуют.",
-    "Проверка видео использует абсолютный путь к ffprobe и больше не принимает отсутствие утилиты за повреждённые ролики.",
-    "DMG-инсталлятор проверяет работоспособность и ffmpeg, и ffprobe; Filesta включена в полный синхронизированный portable."
+    "СРОЧНО: генерация видео падала на каждом клипе с ошибкой «scene_seconds is not defined». Причина — наша вчерашняя правка длительности клипа. Исправлено, генерация снова работает.",
+    "Заодно устранена вторая ошибка того же рода в записи лога генерации — она проявилась бы при включённой подгонке длительности."
   ],
-  "requires_restart": true,
-  "patch_sha256": "5faecec5385fb7b1f9f36be1e9a0ba32e9d2553d8a57eb6416e96f8805729d02",
+  "requires_restart": false,
+  "patch_sha256": "129a92214b35bc1905e01c497299b587a0ee7243507bcb5ece7f3d5cd81b53a5",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -115,7 +114,7 @@
     "agent/modules/updater.py": "24515075be3e0b04642a781b0abf862e",
     "agent/modules/validator.py": "a4b5e17727e887fb356220992bdcece6",
     "agent/modules/veo_account_usage.py": "aa83a68f09ea49cfd9300255b2146297",
-    "agent/modules/veo_video.py": "8d8dbfb97510d870357c3cb40d0e3513",
+    "agent/modules/veo_video.py": "d4ff547407ce824c5dbf5cca1236d9cd",
     "agent/modules/veononstop.py": "40770afb2a31670f25c9aa11f0de9807",
     "agent/modules/video_claims.py": "1579d7b5ccbdd7b765eed8d0a2346fc2",
     "agent/modules/video_prompting.py": "d4a9ab6272531bab9072cf205b71add9",

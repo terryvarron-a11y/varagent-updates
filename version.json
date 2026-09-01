@@ -1,12 +1,11 @@
 {
-  "version": "2026.09.01.1229",
+  "version": "2026.09.01.1237",
   "changelog": [
-    "macOS: Pipeline теперь сам переключается с Homebrew Python на собственную .venv до импорта tqdm.",
-    "Если .venv отсутствует или в ней не хватает пакетов, agent.py создаёт окружение и устанавливает полный requirements.txt автоматически.",
-    "Исправление работает даже при запуске из старого GUI и не требует ручной установки tqdm в системный Python."
+    "macOS: исправлено определение активного виртуального окружения при запуске Pipeline через Homebrew Python.",
+    "Pipeline теперь переключается в VARAGENT/.venv до импорта Python-зависимостей, включая tqdm."
   ],
   "requires_restart": false,
-  "patch_sha256": "de4aa395c51f5cf5139c2d282c6e669b461a0b7bd0fd171b42438e8867867b48",
+  "patch_sha256": "09eea091aa73782bd7d79d810915711e7c39c90652a7f46bef7e5f90bbc7ee82",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -19,7 +18,7 @@
     "1_silentstart.bat": "4b0f380ffbe58aa7664f91a404334f8d",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "0fb7e2acb94ce2a64916865dfb2c2fcd",
+    "agent/agent.py": "ef14cd6039216e08c6e1296e220911c4",
     "agent/bridges/korshun_var_bridge.py": "f8d0f9bf796aef7d08a219986f96dc3b",
     "agent/bridges/usatayai_generator_bridge.py": "32c9331ceb1847e402efd6fd5738aabc",
     "agent/bridges/usatayai_var_stage_bridge.py": "04d0dc3cd71d3a72256dce498e000fce",

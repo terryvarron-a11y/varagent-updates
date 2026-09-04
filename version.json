@@ -1,12 +1,10 @@
 {
-  "version": "2026.09.03.1720",
+  "version": "2026.09.04.1811",
   "changelog": [
-    "Added user-defined vision rejection rules for existing footage.",
-    "The Prompts tab now includes a template for stock, archive and YouTube footage.",
-    "User-edited vision rules are preserved by future updates."
+    "Fix: на macOS падал запуск из Finder (закрытый stdin ломал починку .venv/pip)"
   ],
   "requires_restart": true,
-  "patch_sha256": "78d9840fd2dab934c436f7e73753c329b9b61ece347b44ae4c2429ff76d4981f",
+  "patch_sha256": "38c657e372bd35ff0190d31af5ee8784d536dc3241d860b4751da90631bd4166",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -27,7 +25,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "5f893731fa329d45e9fc21b9b42c9289",
+    "agent/config.py": "11c27ca497dcb867aa3c3d5f7e942e1d",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/default_env.txt": "e656211029ef987347bac4d227c9d9a2",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
@@ -91,7 +89,7 @@
     "agent/modules/pipeline_video_modes.py": "0aa18385259f28a49f96ae6bcc04c1a6",
     "agent/modules/proc_utils.py": "85c12707a2c7ab1b133485d7f588a74d",
     "agent/modules/queue.py": "86f431fb856aa0c48ab8d31bb9958e58",
-    "agent/modules/real_photo.py": "a0ba8b69ad72571c3a4b86680ef66738",
+    "agent/modules/real_photo.py": "498019d92e678f95e378dc9368f0beac",
     "agent/modules/real_photo_markup.py": "0c7d619245299a211e90b53cec7895b1",
     "agent/modules/ref_compress.py": "dd66589bdcd58bfee7a97916c46f2ab4",
     "agent/modules/remix.py": "5b9daaf0eaa9e7b547c9ae6b7d5f336e",
@@ -114,7 +112,7 @@
     "agent/modules/transcriber.py": "a363eeef8994ff98a429095e09db491b",
     "agent/modules/tts.py": "6a3514cc658ffd77be8bffe1915b7f81",
     "agent/modules/turnstile_solver.py": "a5db91ef73d8b5a5e52ab5a9b36599ec",
-    "agent/modules/updater.py": "4fc028c7b5660ef498ee2d959a8245c1",
+    "agent/modules/updater.py": "daa9462ba5f7d0871f049042b44b59ad",
     "agent/modules/validator.py": "a4b5e17727e887fb356220992bdcece6",
     "agent/modules/veo_account_usage.py": "7226582119bf4ebff5b1a2d8f26575a6",
     "agent/modules/veo_video.py": "2095efeb2d1a86cf06762c46050fb865",
@@ -318,7 +316,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "e1f83a70b3c9ae54d8342619c84b26bb",
+    "varagent.py": "26ec0b73bfc9bded859bfbe3c8a9e41f",
     "video_concat.py": "1254248408202a10451a3b8854edcfc7",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

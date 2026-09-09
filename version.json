@@ -1,10 +1,10 @@
 {
-  "version": "2026.09.04.1811",
+  "version": "2026.09.09.1806",
   "changelog": [
-    "Fix: на macOS падал запуск из Finder (закрытый stdin ломал починку .venv/pip)"
+    "﻿Базовый пресет обновлён — свежие настройки генерации приезжают всем пользователям"
   ],
-  "requires_restart": true,
-  "patch_sha256": "38c657e372bd35ff0190d31af5ee8784d536dc3241d860b4751da90631bd4166",
+  "requires_restart": false,
+  "patch_sha256": "474bd732c0c80905f268f3a2c4c520ec5a40f3fbf53a605fa432056c4053f7f6",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -135,7 +135,7 @@
     "agent/modules/youtube_stage.py": "764e3220d58688ad968ea410de2e9af6",
     "agent/modules/yt_packer.py": "40024924a80debb7a1e3f72bfbb602d6",
     "agent/modules/yt_transcriber.py": "81debf67a074e30649c84d57d28bc49e",
-    "agent/presets_base.json": "fe3ca56d6267d09654689e8d21cf1599",
+    "agent/presets_base.json": "a5e6df29d0f41af0c95d840eb3a3870b",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/cover_hook_prompts.txt": "443fdf3a4620438c374d5fcc4091286a",
     "agent/prompts/director_instruction.txt": "1a4c7b5f9191819dcd068f92880a0eab",

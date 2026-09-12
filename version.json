@@ -1,10 +1,10 @@
 {
-  "version": "2026.09.09.1806",
+  "version": "2026.09.13.0016",
   "changelog": [
-    "﻿Базовый пресет обновлён — свежие настройки генерации приезжают всем пользователям"
+    "Базовый шаблон «ен_тест»: все LLM-этапы переведены на GPT Nexus 5.6 Terra."
   ],
-  "requires_restart": false,
-  "patch_sha256": "474bd732c0c80905f268f3a2c4c520ec5a40f3fbf53a605fa432056c4053f7f6",
+  "requires_restart": true,
+  "patch_sha256": "20f1eb2c42dfc372f6bf44c0632ee3a1e29595efc422b1d317895b080098a150",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -25,7 +25,7 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "11c27ca497dcb867aa3c3d5f7e942e1d",
+    "agent/config.py": "df535300a9b4f4e8212b2f3afff73c64",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
     "agent/default_env.txt": "e656211029ef987347bac4d227c9d9a2",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
@@ -68,7 +68,7 @@
     "agent/modules/filesta_accounts.py": "7fea86250449d725ce02e594592fd023",
     "agent/modules/filesta_envato.py": "c10acf97e1dd5d626bb356168a232dcc",
     "agent/modules/flowultra.py": "eccc8f48612abd4e0df50c3092687d05",
-    "agent/modules/footage_cut.py": "67d59e5e7c1581a7c54bb527348f2261",
+    "agent/modules/footage_cut.py": "65a1ed2379f230ab20faaa1e7a1273b4",
     "agent/modules/gemini_rewrite.py": "99af7f28e222fb3a04bab4d5c4662caf",
     "agent/modules/gpt_director.py": "c84c2c210510d243e019c2de676794e8",
     "agent/modules/image_claims.py": "68de3f5e65e9087fb5097b3dc2b0fa78",
@@ -132,10 +132,10 @@
     "agent/modules/visual_story_query.py": "66779aaa64865b5c73dbe37ab86bbf84",
     "agent/modules/visual_story_validator.py": "874a70fffe4e4c72da2579291093d0af",
     "agent/modules/youtube_markup.py": "2b44d469021b642e046f531023480a6b",
-    "agent/modules/youtube_stage.py": "764e3220d58688ad968ea410de2e9af6",
+    "agent/modules/youtube_stage.py": "a1222fe00229eb4770c3ec47944acd08",
     "agent/modules/yt_packer.py": "40024924a80debb7a1e3f72bfbb602d6",
     "agent/modules/yt_transcriber.py": "81debf67a074e30649c84d57d28bc49e",
-    "agent/presets_base.json": "a5e6df29d0f41af0c95d840eb3a3870b",
+    "agent/presets_base.json": "8e513c7e75176fda11a5cea5579719ee",
     "agent/process.bat": "1f41dab03bd0925bb80996a3246760b7",
     "agent/prompts/cover_hook_prompts.txt": "443fdf3a4620438c374d5fcc4091286a",
     "agent/prompts/director_instruction.txt": "1a4c7b5f9191819dcd068f92880a0eab",
@@ -258,7 +258,7 @@
     "agent/tools/sota_watermark_remover.py": "d4cfd11258f755ba0710b0a185098bf2",
     "agent/tools/synthid_cleaner.py": "d1b7b62a4c7239c33671c8d60ee11bbe",
     "agent/tools/tts_runner.py": "668ccdb8875d8fe9d5a5618e1e9ab602",
-    "agent/tools/youtube_setup.py": "41c4e1f22b1b5d42285498873e1847c9",
+    "agent/tools/youtube_setup.py": "ca821ba3a9e69109efb94424438b2770",
     "agent/watch_i2v.py": "692ff4db6b8d8d108a63df277b85a9b3",
     "agent/watch_i2v_cinai.py": "028d41c41ce3595e73f16c4b57ce5698",
     "agent/watch_i2v_flowultra.py": "383f9812330b4c3ca773673d093f19ad",
@@ -316,8 +316,8 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "26ec0b73bfc9bded859bfbe3c8a9e41f",
-    "video_concat.py": "1254248408202a10451a3b8854edcfc7",
+    "varagent.py": "86793f944973f9d74d4338baddfbee06",
+    "video_concat.py": "a390c56fed1fc72cf8c53a90402e42d1",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"
   }

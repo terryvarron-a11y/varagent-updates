@@ -1,14 +1,11 @@
 {
-  "version": "2026.09.14.1625",
+  "version": "2026.09.14.1924",
   "changelog": [
-    "Fixed runaway memory use when reading large Codex rollout logs: only a bounded tail is read and polling now runs every 5 minutes.",
-    "Fixed CinAI browser session recovery so Chromium LevelDB files are scanned in bounded chunks instead of loaded fully into RAM.",
-    "CinAI is temporarily disabled by default; saved credentials remain intact and startup refresh jobs no longer run.",
-    "Prevented background checks from constructing lazy tabs and prevented duplicate project music workers.",
-    "Suppressed missed Codex subprocess console windows on Windows."
+    "VeoVideo: после исчерпания лимита попыток клип сразу переводится в статичный fallback.",
+    "Исправлено многочасовое повторение одного неудачного клипа во внешних silent-циклах."
   ],
-  "requires_restart": true,
-  "patch_sha256": "2f6074f9fd58be83c276a69440e3b9506d19ffa8e7a7e567a1529ad26d04fcca",
+  "requires_restart": false,
+  "patch_sha256": "626cb4f3fda0b874a5ab5e67438ab70fc3fa25f7eebe14b3641362cd42083d51",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -119,7 +116,7 @@
     "agent/modules/updater.py": "daa9462ba5f7d0871f049042b44b59ad",
     "agent/modules/validator.py": "a4b5e17727e887fb356220992bdcece6",
     "agent/modules/veo_account_usage.py": "7226582119bf4ebff5b1a2d8f26575a6",
-    "agent/modules/veo_video.py": "2095efeb2d1a86cf06762c46050fb865",
+    "agent/modules/veo_video.py": "482c9f7dbbc49218b75ecd2db410f87b",
     "agent/modules/veononstop.py": "33c0aaffd4fdd2dfa8ed2550d8468314",
     "agent/modules/video_claims.py": "1579d7b5ccbdd7b765eed8d0a2346fc2",
     "agent/modules/video_prompting.py": "d4a9ab6272531bab9072cf205b71add9",

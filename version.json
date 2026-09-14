@@ -1,11 +1,11 @@
 {
-  "version": "2026.09.14.1924",
+  "version": "2026.09.14.2104",
   "changelog": [
-    "VeoVideo: после исчерпания лимита попыток клип сразу переводится в статичный fallback.",
-    "Исправлено многочасовое повторение одного неудачного клипа во внешних silent-циклах."
+    "Finalized Stage: добавлены фоновая музыка, выбор источника и папки локальной библиотеки.",
+    "VideoGen: остановлены бесконечные циклы добивки клипа; после лимита используется статический fallback."
   ],
-  "requires_restart": false,
-  "patch_sha256": "626cb4f3fda0b874a5ab5e67438ab70fc3fa25f7eebe14b3641362cd42083d51",
+  "requires_restart": true,
+  "patch_sha256": "1b9afc72597e633e083177acab2a011cb8bb05bb55ca51ebfed2597d417419cd",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -317,7 +317,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "bd5fbbc0fcb52ca9c43c11719d253da8",
+    "varagent.py": "15577ba776fc70c16b66a20433e4c24f",
     "video_concat.py": "a390c56fed1fc72cf8c53a90402e42d1",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"

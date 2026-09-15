@@ -1,11 +1,11 @@
 {
-  "version": "2026.09.15.1805",
+  "version": "2026.09.15.2332",
   "changelog": [
-    "Settings: добавлены строки GPT_NEXUS_API_KEY и GPT_NEXUS_URL в отдельную карточку GPT Nexus.",
-    "Ключ можно вписать прямо в Settings и сохранить кнопкой Save .env."
+    "VeoNonStop VideoGen: один полный цикл попыток для проблемного клипа, затем автоматическая статическая подстановка вместо многочасовых повторов.",
+    "Обновление принудительно переводит старое VEONONSTOP_MAX_SILENT_CYCLES=5 в 1; Pipeline, пресеты и Finalize больше не могут вернуть пять циклов."
   ],
   "requires_restart": true,
-  "patch_sha256": "27aa6b04cf17520efcf44f16a3b796db3fd3b27779f7afd96338f1ee237d974d",
+  "patch_sha256": "510a6f5f1e5a982ac9e60159b809af4ee900cbc6d55877159a288c821020ef5c",
   "files": {
     ".github/workflows/build-macos.yml": "e340f281a4cba0cd78c2512b4dc9978d",
     ".github/workflows/publish-macos-artifacts.yml": "8ea9441c1faf8f61f9f1b679aa164a97",
@@ -18,7 +18,7 @@
     "1_silentstart.bat": "4b0f380ffbe58aa7664f91a404334f8d",
     "1_silentstart.command": "584ae1d607b7991f17699c47ca185d5f",
     "_fix_crlf_tmp.py": "4086575528a723cdc58d03c081ae9bee",
-    "agent/agent.py": "5f87dcc92abcf7137202a91cc5c56f1d",
+    "agent/agent.py": "a93a3580e139e212a6979bb373aabfce",
     "agent/bridges/korshun_var_bridge.py": "f8d0f9bf796aef7d08a219986f96dc3b",
     "agent/bridges/usatayai_generator_bridge.py": "32c9331ceb1847e402efd6fd5738aabc",
     "agent/bridges/usatayai_var_stage_bridge.py": "04d0dc3cd71d3a72256dce498e000fce",
@@ -26,9 +26,9 @@
     "agent/check_fastgen_slots.py": "9873807e3b017c8014794b6abdf0ab30",
     "agent/check_import.py": "1f60171ca5e211ceedd075a45127d490",
     "agent/check_slots.py": "6e2e98f1543ec2dd7842338fd8d165b3",
-    "agent/config.py": "05f8842a8e6e8bd7e11f907c54b25b33",
+    "agent/config.py": "9b752c0772b8eed1098f3da18283e3db",
     "agent/copy_images_to_vid.py": "d78b610e27d971b58506f7e481c3597e",
-    "agent/default_env.txt": "e656211029ef987347bac4d227c9d9a2",
+    "agent/default_env.txt": "2c77f74d1d2f06e971f4fe9ca18da0ee",
     "agent/detect_ref_mode.py": "24b1ad1978771999853ecac30776f709",
     "agent/extract_prompt.py": "2c9bd981360ab6571102afdf7110512e",
     "agent/find_missing_clips.py": "076858dda8baec215abe7dd838fdfa7c",
@@ -113,7 +113,7 @@
     "agent/modules/transcriber.py": "a363eeef8994ff98a429095e09db491b",
     "agent/modules/tts.py": "6a3514cc658ffd77be8bffe1915b7f81",
     "agent/modules/turnstile_solver.py": "a5db91ef73d8b5a5e52ab5a9b36599ec",
-    "agent/modules/updater.py": "daa9462ba5f7d0871f049042b44b59ad",
+    "agent/modules/updater.py": "e4a780ac298ddee9178c4c213b71b753",
     "agent/modules/validator.py": "a4b5e17727e887fb356220992bdcece6",
     "agent/modules/veo_account_usage.py": "7226582119bf4ebff5b1a2d8f26575a6",
     "agent/modules/veo_video.py": "482c9f7dbbc49218b75ecd2db410f87b",
@@ -317,7 +317,7 @@
     "usatayai_bridge.py": "36e2917b344c215e8e6429ec2322dd18",
     "varagent.bat": "ebfcb806ba860fc83595f0da1393d4f9",
     "varagent.command": "e9fdbe4a205e637702f7c69c18334efc",
-    "varagent.py": "eb8af6a3861e8f2f595cdffb5aedef8d",
+    "varagent.py": "d61adb947477d0c2a345586cf98dbcc9",
     "video_concat.py": "a390c56fed1fc72cf8c53a90402e42d1",
     "video_concat_старая_версия.py": "409a91b863554672841bf899c4bbb40f",
     "YOUTUBE_MODULE_IMPLEMENTATION_PLAN.md": "18d428df6d5679715a8165e86c657c63"
